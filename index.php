@@ -44,11 +44,11 @@
                 <h2 class="ms-3" class="logo_name"><b>Akmeemana</b> Pradeshiya Sabha</h2>
             </a>
             <div class="language_btn d-flex justify-content-end align-items-center w-100">
-                <button class="btn">සිංහල</button>
-                <button class="btn ms-3">தமிழ்</button>
+                <a href="#"><button class="btn">සිංහල</button></a>
+                <a href="#"><button class="btn ms-3">தமிழ்</button></a>
             </div>
         </div>
-      <header id="header" class="header d-flex align-items-center sticky-top">
+      <header id="header" class="header shadow d-flex align-items-center sticky-top">
         <div class="container d-flex align-items-center">
 
           <a href="index.html" class="logo logoAndNameFormobile d-flex align-items-center me-auto me-xl-0">
@@ -283,7 +283,7 @@
                   <div class="post-meta"><span class="mx-1">•</span><?= $data[3] ?></span></div>
                   <h2 class="mb-2"><a href="./tenders.php#<?= $Id ?>"><?= $data[2] ?></a></h2>
                   <div class="text-end">
-                    <button class="btn mb-2 rounded-5" style="background-color: #4a0d0d; color: white;">
+                    <button class="btn mb-2 rounded-5" style="background-color: #00506f; color: white;">
                       <a href="./controllers/assets/files/tenders/<?= $data[1] ?>" target="_blank" style="color: white;">Download</a>
                     </button>
                   </div>
@@ -365,17 +365,17 @@
             <div class="row gy-4">
               <div class="col-lg-4 col-md-6 footer-about">
                 <a href="./index.php" class="logo d-flex align-items-center">
-                  <span class="sitename">Welivitya Divithura <br> Pradeshiya Sabha</span>
+                  <span class="sitename">Akmeemana <br> Pradeshiya Sabha</span>
                 </a>
                 <div class="footer-contact pt-3">
-                  <p>Welivitiya Divithura</p>
-                  <p>Pradeshiya Sabha, Agaliya</p>
-                  <p class="mt-3"><strong>Phone:</strong> <span>0912260554</span></p>
-                  <p><strong>Email:</strong> <span>wdps2006@gmail.com</span></p>
+                  <p>Akmeemana</p>
+                  <p>Pradeshiya Sabha, Pinnaduwa</p>
+                  <p class="mt-3"><strong>Phone:</strong> <span>0912222375</span></p>
+                  <p><strong>Email:</strong> <span>akmeemanaps@gmail.com</span></p>
                 </div>
                 <div class="social-links d-flex mt-4">
                   <a href="https://www.facebook.com/profile.php?id=61552307069235&mibextid=ZbWKwL" target="_blank" class="text-primary" style="border-color: #0d6efd;"><i class="bi bi-facebook"></i></a>
-                  <a href="https://play.google.com/store/apps/details?id=io.akva.esabha&pcampaignid=web_share" target="_blank" style="color: #0074b1;border-color:#0074b1;"><i class="bi bi-bank"></i></a> <span class="mt-2"  style="color: #0074b1;border-color:#0074b1;">eSabha App</span>
+                  <!-- <a href="https://play.google.com/store/apps/details?id=io.akva.esabha&pcampaignid=web_share" target="_blank" style="color: #0074b1;border-color:#0074b1;"><i class="bi bi-bank"></i></a> <span class="mt-2"  style="color: #0074b1;border-color:#0074b1;">eSabha App</span> -->
                 </div>
               </div>
 
@@ -445,7 +445,7 @@
 
             <!-- Chat Box -->
             <div class="card chat-box d-none" id="chatBox">
-                <div class="card-header text-bg-danger">
+                <div class="card-header text-bg-primary">
                     Chat
                     <button type="button" class="btn-close btn-close-white float-end" onclick="toggleChat()"></button>
                 </div>
@@ -458,14 +458,14 @@
                         <label for="email">Email :</label>
                         <input type="email" id="email" name="email" class="form-control border-dark mb-2" placeholder="Enter Your Email">
                         <label for="message">Message :</label>
-                        <textarea name="message" id="message" class="form-control border-dark mb-2" placeholder="Enter Your Message" style="height: 150px;"></textarea>
+                        <textarea name="message" id="message" class="form-control border-dark mb-2" placeholder="Enter Your Message" style="height: 90px;"></textarea>
                         <div class="row mb-2">
                             <div class="col-8">
                                 <p>If you want, you can attach a voice recording to your message.</p>
                             </div>
                             <div class="col-4 d-flex align-items-center justify-content-end">
-                                <button type="button" class="btn btn-danger me-2" id="startRecording">Record</button>
-                                <button type="button" class="btn btn-danger d-none" id="stopRecording">Stop</button>
+                                <button type="button" class="btn btn-primary me-2" id="startRecording">Record</button>
+                                <button type="button" class="btn btn-primary d-none" id="stopRecording">Stop</button>
                             </div>
                         </div>
                         <audio id="audioPlayback" class="mb-2 w-100 d-none" controls></audio>
