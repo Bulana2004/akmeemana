@@ -1,5 +1,5 @@
 <?php 
-include '../config/config.php';
+include './config/config.php';
 $ck = $_COOKIE['login'];
 
 if($ck){
@@ -25,10 +25,10 @@ if($ck){
 	<title>Control Panel Dashboard</title>
 
 	<link href="./assets/css/sidebar.css" rel="stylesheet">
-	<link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
-<?php include '../config/config.php'; ?>
+<?php include './config/config.php'; ?>
 <body>
 	<div class="wrapper">
 		<nav id="sidebar" class="sidebar js-sidebar">
@@ -70,7 +70,7 @@ if($ck){
 					</li>
 
 					<li class="sidebar-item">
-						<a class="sidebar-link" href="../index.php">
+						<a class="sidebar-link" href="www.akmeemanaps.lk">
 							<i class="align-middle" data-feather="log-out"></i> <span class="align-middle">LogOut</span>
 						</a>
 					</li>
@@ -166,7 +166,7 @@ if($ck){
 								<p class="mb-0"> Design by : 
 									<a class="text-muted" href="https://adminkit.io/"
 										target="_blank"><strong>N Code UX Private Limited</strong></a> 
-										<img class="ms-2" src="../images/company logo.png" width="33px" alt="">
+										<img class="ms-2" src="./assets/images/company logo.png" width="33px" alt="">
 								</p>
 							</div>
 						<!-- <div class="col-6 text-end">
@@ -192,7 +192,8 @@ if($ck){
 	</div>
 
 	<script src="./assets/js/sidebar.js"></script>
-	<script src="../assets/js/jquery.min.js"></script>
+	<script src="./assets/js/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 </body>
 
@@ -234,7 +235,7 @@ if($ck){
 			$('#progressBar').css('width', '0%').text('0%').attr('aria-valuenow', '0');
 
 			$.ajax({
-				url: '../pages/home_upload',
+				url: './pages/home_upload.php',
 				type: 'POST',
 				data: formData,
 				processData: false, // Do not process the data
@@ -269,7 +270,7 @@ if($ck){
 		$.ajax({
 			type:'post',
 			data:{id , id},
-			url:'../pages/home_delete',
+			url:'./pages/home_delete.php',
 			success:function(responce){
 				location.reload();
 			}
