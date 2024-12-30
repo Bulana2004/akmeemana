@@ -2382,14 +2382,14 @@ section,
 }
 
 .stats-item:hover .number {
-  color: #971b1c; /* Optional: color change on hover */
+  color: black; /* Optional: color change on hover */
   transition: color 0.3s ease;
 }
 
 .stats-item .number {
   font-size: 42px;
   font-weight: bold;
-  color: #971b1c;
+  color: black;
   margin-bottom: 10px;
   display: block;
 }
