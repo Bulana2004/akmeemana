@@ -44,8 +44,8 @@
                 <h2 class="ms-3" class="logo_name"><b>Akmeemana</b> Pradeshiya Sabha</h2>
             </a>
             <div class="language_btn d-flex justify-content-end align-items-center w-100">
-                <a href="#"><button class="btn">සිංහල</button></a>
-                <a href="#"><button class="btn ms-3">தமிழ்</button></a>
+                <a href="./sinhala/index.php"><button class="btn">සිංහල</button></a>
+                <a href="./Tamil/index.php"><button class="btn ms-3">தமிழ்</button></a>
             </div>
         </div>
       <header id="header" class="header shadow d-flex align-items-center sticky-top">
