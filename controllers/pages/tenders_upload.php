@@ -40,14 +40,15 @@ if($vals[1] > 0){
             Update Successfully!
         </div>";
 }else{
-    $sql = $bdd -> prepare("select * from tenders ORDER BY id DESC");
+    $id = 0;
+    $sql = $bdd -> prepare("SELECT * FROM tenders ORDER BY id DESC");
     $sql -> execute();
     $id = $sql -> fetch();
     $id = $id[0] + 1;
 
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         if (isset($_FILES['uploadedFiles'])) {
-            $uploadFileDir = '../controllers/assets/files/tenders/';
+            $uploadFileDir = '../assets/files/tenders/';
 
             // Check if the directory exists; if not, create it
             if (!is_dir($uploadFileDir)) {
