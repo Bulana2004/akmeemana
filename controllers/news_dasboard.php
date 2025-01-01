@@ -1,5 +1,5 @@
 <?php 
-include '../config/config.php';
+include './config/config.php';
 $ck = $_COOKIE['login'];
 
 if($ck){
@@ -28,7 +28,7 @@ if($ck){
 	<link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.css">
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
-<?php include '../config/config.php'; ?>
+<?php include './config/config.php'; ?>
 <body>
 	<div class="wrapper">
 		<nav id="sidebar" class="sidebar js-sidebar">
