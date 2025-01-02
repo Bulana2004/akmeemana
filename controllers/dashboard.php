@@ -70,7 +70,7 @@ if($ck){
 					</li>
 
 					<li class="sidebar-item">
-						<a class="sidebar-link" href="www.akmeemanaps.lk">
+						<a class="sidebar-link" href="https://www.akmeemanaps.lk/index.php">
 							<i class="align-middle" data-feather="log-out"></i> <span class="align-middle">LogOut</span>
 						</a>
 					</li>

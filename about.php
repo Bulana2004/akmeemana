@@ -123,39 +123,18 @@ $current_page = basename($_SERVER['REQUEST_URI']);
 
           <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
             <p class="who-we-are">Who We Are</p>
-            <h3>Welivitiya Divithura Pradeshiya Sabha</h3>
+            <h3>Akmeemana Pradeshiya Sabha</h3>
             <p class="">
-              Welivitiya Divithura Pradeshiya Sabha serves as the cornerstone of local governance in the Agaliya region of Sri Lanka.
-              Dedicated to enhancing the quality of life for its residents, the Sabha oversees community development projects,
-              public infrastructure maintenance, and administrative services with a focus on transparency and efficiency.
+             The Akmeemana Pradeshiya Sabha is a local government institution in the Galle District of Sri Lanka. It is responsible for managing public services, community development, and infrastructure within its jurisdiction. The Sabha oversees essential services such as waste management, road maintenance, and local markets, contributing to the welfare and development of the Akmeemana area. Its mission is to enhance the quality of life for residents by promoting sustainable and efficient local governance.
             </p>
             <ul>
               <li><i class="bi bi-check-circle"></i>
                 <span class="fs-5 fw-medium">Our Mission</span>
-                <p class="ms-2">"To work for betterment
-                  of our people by
-                  providing health facilities,
-                  developing and maintaining
-                  road system, providing drinking
-                  water facilities, lightning roads,
-                  controlling and maintaining
-                  markets, maintaining and
-                  developing libraries, developing
-                  play grounds, giving facilities
-                  for per-school education
-                  and conservation of
-                  environment with
-                  in our local authority."</p>
+                <p class="ms-2">"To provide satisfactory service to the residents of the Pradeshiya Sabha area by effectively utilizing the physical and human resources of the area, contributing to the social development process of the area and national development, by effectively providing public amenities and public utility services relevant to the well-being of the people living within the Akmeemana Pradeshiya Sabha area."</p>
               </li>
               <li><i class="bi bi-check-circle"></i>
                 <span class="fs-5 fw-medium">Our Vision</span>
-                <p class="ms-2">"To make better
-                  future for our
-                  people through
-                  local government
-                  with the practice
-                  of good
-                  governance"</p>
+                <p class="ms-2">"Providing satisfactory public services to the town of Akmeemana and becoming the best local government institution in the Southern Province."</p>
               </li>
             </ul>
           </div>

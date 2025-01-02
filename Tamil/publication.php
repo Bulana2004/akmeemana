@@ -76,7 +76,7 @@
           </a>
           <div class="language_btn d-flex justify-content-end align-items-center w-100">
             <a href="../sinhala/publication.php"><button class="btn">සිංහල</button></a>
-            <a href="../publication.php"><button class="btn">English</button></a>
+            <a href="../publication.php"><button class="btn ms-3">English</button></a>
           </div>
         </div>
         <header id="header" class="header shadow d-flex align-items-center sticky-top">

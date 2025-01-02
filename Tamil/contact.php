@@ -48,7 +48,7 @@ $current_page = basename($_SERVER['REQUEST_URI']);
     </a>
     <div class="language_btn d-flex justify-content-end align-items-center w-100">
       <a href="../sinhala/contact.php"><button class="btn">සිංහල</button></a>
-      <a href="../contact.php"><button class="btn">English</button></a>
+      <a href="../contact.php"><button class="btn ms-3">English</button></a>
     </div>
   </div>
   <header id="header" class="header shadow d-flex align-items-center sticky-top">
