@@ -1,10 +1,10 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $recipient = "wdps2006@gmail.com"; // Replace with your email address
+    $recipient = "akmeemanaps@gmail.com"; // Replace with your email address
     $name = htmlspecialchars($_POST['name']);
     $phoneNumber = $_POST['phonenumber'];
     $email = htmlspecialchars($_POST['email']);
-    $subject = "Message From Welivitiya Divithura Website";
+    $subject = "Message From Akmeemanaps.lk Website";
     $message = $_POST['message'];
 
     $fullMessage = "Name: $name\nEmail: $email\nPhone Number: $phoneNumber\n\n$message";
