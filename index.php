@@ -568,9 +568,9 @@
               submitMsg.style.display = 'none';
               responseMessage.innerHTML = '';
 
-              fetch('./pages/contact_process', {
-                  method: 'POST',
-                  body: formData
+                fetch('./pages/contact_process.php', {
+                    method: 'POST',
+                    body: formData
                 })
                 .then(response => response.text())
                 .then(data => {
