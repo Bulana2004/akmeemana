@@ -178,15 +178,16 @@ $current_page = basename($_SERVER['REQUEST_URI']);
 
             <div class="row gy-4 d-flex justify-content-center">
 
+              <!- - Tam Member - ->
               <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
                 <div class="team-member d-flex align-items-start">
-                  <div class="pic"><img src="./images/secretarysir.jpg" class="img-fluid" alt=""></div>
+                  <div class="pic"><img src="./images/lekam.jpg" class="img-fluid" alt=""></div>
                   <div class="member-info">
-                    <h4>Mr. Akila Sameera Fernando </h4>
-                    <span>Secretary ,
-                      Welivitiya Divitura Pradeshiya Sabha
-                    </span>
-                    <p>M.A.(UOR) <br> B.A.(OUSL)</p>
+                        <h4>Manjula H.S Dahanayake</h4>
+                        <span>Secretary ,
+                          Akmeemana Pradeshiya Sabha
+                        </span>
+                      </div>
                     <!-- <div class="social">
                           <a href=""><i class="bi bi-twitter-x"></i></a>
                           <a href=""><i class="bi bi-facebook"></i></a>
