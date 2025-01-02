@@ -302,7 +302,7 @@
 
         <!-- Chat Box -->
         <div class="card chat-box d-none" id="chatBox">
-          <div class="card-header text-bg-danger">
+          <div class="card-header text-bg-primary">
             அரட்டையடிக்கவும்
             <button type="button" class="btn-close btn-close-white float-end" onclick="toggleChat()"></button>
           </div>

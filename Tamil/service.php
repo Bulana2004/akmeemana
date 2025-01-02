@@ -438,7 +438,7 @@ $current_page = basename($_SERVER['REQUEST_URI']);
 
         <!-- Chat Box -->
         <div class="card chat-box d-none" id="chatBox">
-            <div class="card-header text-bg-danger">
+            <div class="card-header text-bg-primary">
                 அரட்டையடிக்கவும்
                 <button type="button" class="btn-close btn-close-white float-end" onclick="toggleChat()"></button>
             </div>
@@ -457,8 +457,8 @@ $current_page = basename($_SERVER['REQUEST_URI']);
                             <p>நீங்கள் விரும்பினால், உங்கள் செய்தியில் ஒரு குரல் பதிவை இணைக்கவும்.</p>
                         </div>
                         <div class="col-4 d-flex align-items-center justify-content-end">
-                            <button type="button" class="btn btn-danger me-2" id="startRecording">அதை பதிவு செய்யுங்கள்</button>
-                            <button type="button" class="btn btn-danger d-none" id="stopRecording">பதிவு செய்வதை நிறுத்து</button>
+                            <button type="button" class="btn btn-primary me-2" id="startRecording">அதை பதிவு செய்யுங்கள்</button>
+                            <button type="button" class="btn btn-primary d-none" id="stopRecording">பதிவு செய்வதை நிறுத்து</button>
                         </div>
                     </div>
                     <audio id="audioPlayback" class="mb-2 w-100 d-none" controls></audio>

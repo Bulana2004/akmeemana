@@ -445,7 +445,7 @@
 
     <!-- Chat Box -->
     <div class="card chat-box d-none" id="chatBox">
-      <div class="card-header text-bg-danger">
+      <div class="card-header text-bg-primary">
       කතාබස් කරන්න
         <button type="button" class="btn-close btn-close-white float-end" onclick="toggleChat()"></button>
       </div>
@@ -464,8 +464,8 @@
               <p>ඔබට අවශ්‍ය නම්,ඔබේ පණිවිඩයට හඩ පටිගත කිරීමක් අමුණන්න.</p>
             </div>
             <div class="col-4 d-flex align-items-center justify-content-end">
-              <button type="button" class="btn btn-danger me-2" id="startRecording">පටිගත් කරන්න</button>
-              <button type="button" class="btn btn-danger d-none" id="stopRecording">පටිගත් කිරීම නවත්වන්න</button>
+              <button type="button" class="btn btn-primary me-2" id="startRecording">පටිගත් කරන්න</button>
+              <button type="button" class="btn btn-primary d-none" id="stopRecording">පටිගත් කිරීම නවත්වන්න</button>
             </div>
           </div>
           <audio id="audioPlayback" class="mb-2 w-100 d-none" controls></audio>
