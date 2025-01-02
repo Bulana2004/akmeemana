@@ -64,7 +64,7 @@
       </head>
       <?php
       include './../config/config.php';
-      $current_page = basename($_SERVER['REQUEST_URI']) . ".php";
+      $current_page = basename($_SERVER['REQUEST_URI']);
       ?>
 
       <body class="index-page">
@@ -72,7 +72,7 @@
         <div class="logo_section container d-flex">
           <a href="" class="d-flex align-items-center">
             <img src="./images/akmeemanalogo-removebg-preview.png" alt="">
-            <h2 class="ms-3" class="logo_name"><b>Akmeemana</b> Pradeshiya Sabha</h2>
+            <h2 class="ms-3" class="logo_name"><b>அக்மீமன</b>மாகாண சபை</h2>
           </a>
           <div class="language_btn d-flex justify-content-end align-items-center w-100">
             <a href="../sinhala/publication.php"><button class="btn">සිංහල</button></a>
@@ -85,7 +85,7 @@
             <a href="index.html" class="logo logoAndNameFormobile d-flex align-items-center me-auto me-xl-0">
               <!-- Uncomment the line below if you also wish to use an image logo -->
               <img class="d-flex align-items-center" src="./images/akmeemanalogo-removebg-preview.png" alt="">
-              <h3 class="sitename"><b>Akmeemana</b> Pradeshiya Sabha</h3>
+              <h3 class="sitename"><b>அக்மீமன</b>மாகாண சபை</h3>
             </a>
 
             <nav id="navmenu" class="navmenu">
