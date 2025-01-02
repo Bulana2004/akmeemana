@@ -28,31 +28,31 @@
         <link href="assets/css/main.css" rel="stylesheet">
 
         <style>
-          html{
+          html {
             scroll-padding-top: 110px;
             scroll-behavior: smooth;
           }
 
-          #language_btn{
+          #language_btn {
             background-color: #6e1215;
             color: white;
             transition: background-color 0.3s ease;
           }
 
-          #language_btn:hover{
+          #language_btn:hover {
             background-color: #a21a1e;
           }
 
-          .date_card{
+          .date_card {
             font-size: 12px;
           }
 
           @media screen and (max-width: 578px) {
-            #language_btn{
+            #language_btn {
               font-size: 8px;
             }
 
-            .date{
+            .date {
               font-size: 10px;
             }
           }
@@ -64,125 +64,125 @@
       </head>
       <?php
       include './config/config.php';
-      $current_page = basename($_SERVER['REQUEST_URI']) ;
+      $current_page = basename($_SERVER['REQUEST_URI']);
       ?>
 
       <body class="index-page">
 
       <div class="logo_section container d-flex">
-            <a href="" class="d-flex align-items-center">
-                <img src="./images/akmeemanalogo-removebg-preview.png" alt="">
-                <h2 class="ms-3" class="logo_name"><b>Akmeemana</b> Pradeshiya Sabha</h2>
-            </a>
-            <div class="language_btn d-flex justify-content-end align-items-center w-100">
-            <a href="./sinhala/application.php"><button class="btn">සිංහල</button></a>
-            <a href="./tamil/application.php"><button class="btn ms-3">தமிழ்</button></a>
-            </div>
-        </div>
-      <header id="header" class="header shadow d-flex align-items-center sticky-top">
-        <div class="container d-flex align-items-center">
-
-          <a href="index.html" class="logo logoAndNameFormobile d-flex align-items-center me-auto me-xl-0">
-            <!-- Uncomment the line below if you also wish to use an image logo -->
-            <img class="d-flex align-items-center" src="./images/akmeemanalogo-removebg-preview.png" alt="">
-            <h3 class="sitename"><b>Akmeemana</b> Pradeshiya Sabha</h3>
+          <a href="" class="d-flex align-items-center">
+            <img src="./images/akmeemanalogo-removebg-preview.png" alt="">
+            <h2 class="ms-3" class="logo_name"><b>Akmeemana</b> Pradeshiya Sabha</h2>
           </a>
+          <div class="language_btn d-flex justify-content-end align-items-center w-100">
+            <a href="./sinhala/publication.php"><button class="btn">සිංහල</button></a>
+            <a href="./Tamil/publication.php"><button class="btn ms-3">தமிழ்</button></a>
+          </div>
+        </div>
+        <header id="header" class="header shadow d-flex align-items-center sticky-top">
+          <div class="container d-flex align-items-center">
 
-          <nav id="navmenu" class="navmenu">
+            <a href="index.html" class="logo logoAndNameFormobile d-flex align-items-center me-auto me-xl-0">
+              <!-- Uncomment the line below if you also wish to use an image logo -->
+              <img class="d-flex align-items-center" src="./images/akmeemanalogo-removebg-preview.png" alt="">
+              <h3 class="sitename"><b>Akmeemana</b> Pradeshiya Sabha</h3>
+            </a>
+
+            <nav id="navmenu" class="navmenu">
               <ul>
-                <?php 
-                  $sql = $bdd -> prepare('SELECT * FROM navbar');
-                  $sql -> execute();
+                <?php
+                $sql = $bdd->prepare('SELECT * FROM navbar');
+                $sql->execute();
 
-                  while($data = $sql -> fetch()) {
+                while ($data = $sql->fetch()) {
                 ?>
-                  <?php 
-                    if($data[3]){ 
-                      $name = explode("," , $data[1]);
-                      $link = explode("," , $data[2]);
-                        $is_activeDropdowns = in_array($current_page, $link) ? 'active' : '' ;
-                    ?>
-                      <li class="dropdown"><a class="<?= $is_activeDropdowns ?>" href="<?= $link[0] ?>"><span><?= $name[0] ?></span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                        <ul>
+                  <?php
+                  if ($data[3]) {
+                    $name = explode(",", $data[1]);
+                    $link = explode(",", $data[2]);
+                    $is_activeDropdowns = in_array($current_page, $link) ? 'active' : '';
+                  ?>
+                    <li class="dropdown"><a class="<?= $is_activeDropdowns ?>" href="<?= $link[0] ?>"><span><?= $name[0] ?></span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                      <ul>
                         <?php
-                          for($i = 1; $i < count($name) ; $i++){
-                            $active = ($current_page == basename($link[$i])) ? 'active' : '';  
+                        for ($i = 1; $i < count($name); $i++) {
+                          $active = ($current_page == basename($link[$i])) ? 'active' : '';
                         ?>
                           <li><a class="<?= $active ?>" href="./<?= $link[$i] ?>"><?= $name[$i] ?></a></li>
                         <?php
-                          }
+                        }
                         ?>
-                        </ul>
-                      </li>
-                    <?php
-                    }else{ 
-                      $active = ($current_page == basename($data[2])) ? 'active' : '';  
-                      ?>
-                      <li><a class="<?= $active ?>" href="./<?= $data[2] ?>" class=""><?= $data[1] ?></a></li>
-                    <?php
-                    }
+                      </ul>
+                    </li>
+                  <?php
+                  } else {
+                    $active = ($current_page == basename($data[2])) ? 'active' : '';
                   ?>
-              <?php } ?>
+                    <li><a class="<?= $active ?>" href="./<?= $data[2] ?>" class=""><?= $data[1] ?></a></li>
+                  <?php
+                  }
+                  ?>
+                <?php } ?>
               </ul>
               <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
 
-        </div>
-      </header>
+          </div>
+        </header>
 
         <main class="main">
-            <div class="page-title">
-                <div class="container d-lg-flex justify-content-between align-items-center">
-                    <h1 class="mb-1 mb-lg-0">Publication</h1>
-                    <nav class="breadcrumbs">
-                    <ol>
-                        <li><a href="./index.php">Home</a></li>
-                        <li class="current">Publication</li>
-                    </ol>
-                    </nav>
-                </div>
+          <div class="page-title">
+            <div class="container d-lg-flex justify-content-between align-items-center">
+              <h1 class="mb-1 mb-lg-0">Publication</h1>
+              <nav class="breadcrumbs">
+                <ol>
+                  <li><a href="./index.php">Home</a></li>
+                  <li class="current">Publication</li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+
+          <section class="container">
+
+            <div class="row justify-content-end mb-5">
+              <div class="col-lg-2">
+                <label for="all-years">Year</label>
+                <select name="" class="form-control border-dark alighn-item-center" id="all-years">
+                  <option value="all">All</option>
+                  <?php
+                  $sql = $bdd->prepare("SELECT DISTINCT year FROM publication");
+                  $sql->execute();
+
+                  while ($data = $sql->fetch()) {
+                    $data = $data['year'];
+                  ?>
+                    <option value="<?= $data ?>"><?= $data ?></option>
+                  <?php } ?>
+                </select>
+              </div>
+              <div class="col-lg-3">
+                <label for="section">Section</label>
+                <select name="" class="form-control border-dark alighn-item-center" id="section">
+                  <option value="all">All</option>
+                  <?php
+                  $sql = $bdd->prepare("SELECT DISTINCT section FROM publication");
+                  $sql->execute();
+
+                  while ($data = $sql->fetch()) {
+                    $data = $data['section'];
+                  ?>
+                    <option value="<?= $data ?>"><?= $data ?></option>
+                  <?php } ?>
+                </select>
+              </div>
+              <div class="col-lg-1">
+                <button class="btn btn-primary align-item-center mt-4" onclick="okbutton()">OK</button>
+              </div>
             </div>
 
-            <section class="container">
-
-                <div class="row justify-content-end mb-5">
-                  <div class="col-lg-2">
-                    <label for="all-years">Year</label>
-                    <select name="" class="form-control border-dark alighn-item-center" id="all-years">
-                      <option value="all">All</option>
-                      <?php
-                        $sql = $bdd -> prepare("SELECT DISTINCT year FROM publication");
-                        $sql -> execute();
-
-                        while($data = $sql -> fetch()){
-                          $data = $data['year'];
-                      ?>
-                      <option value="<?= $data ?>"><?= $data ?></option>
-                      <?php } ?>
-                    </select>
-                  </div>
-                  <div class="col-lg-3">
-                    <label for="section">Section</label>
-                    <select name="" class="form-control border-dark alighn-item-center" id="section">
-                      <option value="all">All</option>
-                      <?php
-                        $sql = $bdd -> prepare("SELECT DISTINCT section FROM publication");
-                        $sql -> execute();
-
-                        while($data = $sql -> fetch()){
-                          $data = $data['section'];
-                      ?>
-                      <option value="<?= $data ?>"><?= $data ?></option>
-                      <?php } ?>
-                    </select>
-                  </div>
-                  <div class="col-lg-1">
-                    <button class="btn btn-primary align-item-center mt-4" onclick="okbutton()">OK</button>
-                  </div>
-                </div>
-
-                <div id="table_output"></div>
-            </section>
+            <div id="table_output"></div>
+          </section>
 
 
 
@@ -232,7 +232,7 @@
                 </ul>
               </div>
 
-          </div>
+            </div>
           </div>
 
           <div class="container copyright text-center mt-4">
@@ -261,161 +261,169 @@
         </div>
         <script>
           // Show Toast on Page Load
-          document.addEventListener('DOMContentLoaded', function () {
+          document.addEventListener('DOMContentLoaded', function() {
             const myToast = document.getElementById('myToast');
-            const toast = new bootstrap.Toast(myToast, {delay: 7000});
+            const toast = new bootstrap.Toast(myToast, {
+              delay: 7000
+            });
             toast.show();
           });
         </script>
 
         <!-- ChatBox -->
         <div class="container">
-            <!-- Chat Button -->
-            <button class="btn chat-toggle" onclick="toggleChat()"><i class="bi bi-chat-dots-fill" style="font-size: 2rem;"></i></button>
+          <!-- Chat Button -->
+          <button class="btn chat-toggle" onclick="toggleChat()"><i class="bi bi-chat-dots-fill" style="font-size: 2rem;"></i></button>
 
-            <!-- Chat Box -->
-            <div class="card chat-box d-none" id="chatBox">
-                <div class="card-header text-bg-danger">
-                    Chat
-                    <button type="button" class="btn-close btn-close-white float-end" onclick="toggleChat()"></button>
-                </div>
-                <div class="card-body">
-                    <form id="contactForm" enctype="multipart/form-data">
-                        <label for="name">Name :</label>
-                        <input type="text" id="name" name="name" class="form-control border-dark mb-2" placeholder="Enter Your Name">
-                        <label for="phonenumber">Phone Number :</label>
-                        <input type="number" id="phonenumber" name="phonenumber" class="form-control border-dark mb-2" placeholder="Enter Your Phone Number">
-                        <label for="email">Email :</label>
-                        <input type="email" id="email" name="email" class="form-control border-dark mb-2" placeholder="Enter Your Email">
-                        <label for="message">Message :</label>
-                        <textarea name="message" id="message" class="form-control border-dark mb-2" placeholder="Enter Your Message" style="height: 150px;"></textarea>
-                        <div class="row mb-2">
-                            <div class="col-8">
-                                <p>If you want, you can attach a voice recording to your message.</p>
-                            </div>
-                            <div class="col-4 d-flex align-items-center justify-content-end">
-                                <button type="button" class="btn btn-danger me-2" id="startRecording">Record</button>
-                                <button type="button" class="btn btn-danger d-none" id="stopRecording">Stop</button>
-                            </div>
-                        </div>
-                        <audio id="audioPlayback" class="mb-2 w-100 d-none" controls></audio>
-                        <input type="file" id="voice" name="voice" class="d-none" accept="audio/*">
-                        <button type="submit" class="btn btn-success d-block mx-auto">
-                            <span id="sbmsg">Submit Message</span>
-                            <div class="spinner-border text-light d-none" id="loader" role="status">
-                                <span class="visually-hidden">Loading...</span>
-                            </div>
-                        </button>
-                        <div id="responseMessage" class="mt-3"></div>
-                    </form>
-                </div>
+          <!-- Chat Box -->
+          <div class="card chat-box d-none" id="chatBox">
+            <div class="card-header text-bg-primary">
+              Chat
+              <button type="button" class="btn-close btn-close-white float-end" onclick="toggleChat()"></button>
             </div>
+            <div class="card-body">
+              <form id="contactForm" enctype="multipart/form-data">
+                <label for="name">Name :</label>
+                <input type="text" id="name" name="name" class="form-control border-dark mb-2" placeholder="Enter Your Name">
+                <label for="phonenumber">Phone Number :</label>
+                <input type="number" id="phonenumber" name="phonenumber" class="form-control border-dark mb-2" placeholder="Enter Your Phone Number">
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" class="form-control border-dark mb-2" placeholder="Enter Your Email">
+                <label for="message">Message :</label>
+                <textarea name="message" id="message" class="form-control border-dark mb-2" placeholder="Enter Your Message" style="height: 90px;"></textarea>
+                <div class="row mb-2">
+                  <div class="col-8">
+                    <p>If you want, you can attach a voice recording to your message.</p>
+                  </div>
+                  <div class="col-4 d-flex align-items-center justify-content-end">
+                    <button type="button" class="btn btn-primary me-2" id="startRecording">Record</button>
+                    <button type="button" class="btn btn-primary d-none" id="stopRecording">Stop</button>
+                  </div>
+                </div>
+                <audio id="audioPlayback" class="mb-2 w-100 d-none" controls></audio>
+                <input type="file" id="voice" name="voice" class="d-none" accept="audio/*">
+                <button type="submit" class="btn btn-success d-block mx-auto">
+                  <span id="sbmsg">Submit Message</span>
+                  <div class="spinner-border text-light d-none" id="loader" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                </button>
+                <div id="responseMessage" class="mt-3"></div>
+              </form>
+            </div>
+          </div>
         </div>
 
         <script>
           function toggleChat() {
             $('#chatBox').toggleClass('d-none');
-        }
+          }
 
-        document.addEventListener('DOMContentLoaded', function() {
+          document.addEventListener('DOMContentLoaded', function() {
             let mediaRecorder;
             let audioChunks = [];
             const startRecordingBtn = document.getElementById('startRecording');
             const stopRecordingBtn = document.getElementById('stopRecording');
             const audioPlayback = document.getElementById('audioPlayback');
             const contactForm = document.getElementById('contactForm');
-            
+
             function toggleChat() {
-                document.getElementById('chatBox').classList.toggle('d-none');
+              document.getElementById('chatBox').classList.toggle('d-none');
             }
 
             // Recording functionality
             startRecordingBtn.addEventListener('click', async function() {
-                try {
-                    const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-                    mediaRecorder = new MediaRecorder(stream);
-                    audioChunks = [];
+              try {
+                const stream = await navigator.mediaDevices.getUserMedia({
+                  audio: true
+                });
+                mediaRecorder = new MediaRecorder(stream);
+                audioChunks = [];
 
-                    mediaRecorder.addEventListener('dataavailable', event => {
-                        audioChunks.push(event.data);
-                    });
+                mediaRecorder.addEventListener('dataavailable', event => {
+                  audioChunks.push(event.data);
+                });
 
-                    mediaRecorder.addEventListener('stop', () => {
-                        const audioBlob = new Blob(audioChunks, { type: 'audio/webm' });
-                        const audioUrl = URL.createObjectURL(audioBlob);
-                        audioPlayback.src = audioUrl;
-                        audioPlayback.classList.remove('d-none');
+                mediaRecorder.addEventListener('stop', () => {
+                  const audioBlob = new Blob(audioChunks, {
+                    type: 'audio/webm'
+                  });
+                  const audioUrl = URL.createObjectURL(audioBlob);
+                  audioPlayback.src = audioUrl;
+                  audioPlayback.classList.remove('d-none');
 
-                        // Create file for form submission
-                        const userName = document.getElementById('name').value || 'Unnamed';
-                        const fileName = `${userName}-voiceRecord.webm`;
-                        const file = new File([audioBlob], fileName, { type: 'audio/webm' });
-                        
-                        // Add file to file input
-                        const dataTransfer = new DataTransfer();
-                        dataTransfer.items.add(file);
-                        document.getElementById('voice').files = dataTransfer.files;
+                  // Create file for form submission
+                  const userName = document.getElementById('name').value || 'Unnamed';
+                  const fileName = `${userName}-voiceRecord.webm`;
+                  const file = new File([audioBlob], fileName, {
+                    type: 'audio/webm'
+                  });
 
-                        // Stop all tracks to release microphone
-                        stream.getTracks().forEach(track => track.stop());
-                    });
+                  // Add file to file input
+                  const dataTransfer = new DataTransfer();
+                  dataTransfer.items.add(file);
+                  document.getElementById('voice').files = dataTransfer.files;
 
-                    mediaRecorder.start();
-                    startRecordingBtn.classList.add('d-none');
-                    stopRecordingBtn.classList.remove('d-none');
-                } catch (err) {
-                    console.error('Error accessing microphone:', err);
-                    alert('Microphone access is required to record audio. Please ensure you have granted permission.');
-                }
+                  // Stop all tracks to release microphone
+                  stream.getTracks().forEach(track => track.stop());
+                });
+
+                mediaRecorder.start();
+                startRecordingBtn.classList.add('d-none');
+                stopRecordingBtn.classList.remove('d-none');
+              } catch (err) {
+                console.error('Error accessing microphone:', err);
+                alert('Microphone access is required to record audio. Please ensure you have granted permission.');
+              }
             });
 
             stopRecordingBtn.addEventListener('click', function() {
-                if (mediaRecorder && mediaRecorder.state === 'recording') {
-                    mediaRecorder.stop();
-                    stopRecordingBtn.classList.add('d-none');
-                    startRecordingBtn.classList.remove('d-none');
-                    startRecordingBtn.textContent = 'Record Again';
-                }
+              if (mediaRecorder && mediaRecorder.state === 'recording') {
+                mediaRecorder.stop();
+                stopRecordingBtn.classList.add('d-none');
+                startRecordingBtn.classList.remove('d-none');
+                startRecordingBtn.textContent = 'Record Again';
+              }
             });
 
             // Form submission
             contactForm.addEventListener('submit', function(event) {
-                event.preventDefault();
-                const formData = new FormData(this);
-                const loader = document.getElementById('loader');
-                const submitMsg = document.getElementById('sbmsg');
-                const responseMessage = document.getElementById('responseMessage');
+              event.preventDefault();
+              const formData = new FormData(this);
+              const loader = document.getElementById('loader');
+              const submitMsg = document.getElementById('sbmsg');
+              const responseMessage = document.getElementById('responseMessage');
 
-                loader.classList.remove('d-none');
-                submitMsg.style.display = 'none';
-                responseMessage.innerHTML = '';
+              loader.classList.remove('d-none');
+              submitMsg.style.display = 'none';
+              responseMessage.innerHTML = '';
 
-                fetch('./pages/contact_process', {
-                    method: 'POST',
-                    body: formData
+              fetch('./pages/contact_process', {
+                  method: 'POST',
+                  body: formData
                 })
                 .then(response => response.text())
                 .then(data => {
-                    loader.classList.add('d-none');
-                    submitMsg.style.display = '';
-                    responseMessage.innerHTML = data;
-                    
-                    // Reset form and recording elements if submission was successful
-                    if (!data.includes('error')) {
-                        contactForm.reset();
-                        audioPlayback.classList.add('d-none');
-                        audioPlayback.src = '';
-                        startRecordingBtn.textContent = 'Record';
-                    }
+                  loader.classList.add('d-none');
+                  submitMsg.style.display = '';
+                  responseMessage.innerHTML = data;
+
+                  // Reset form and recording elements if submission was successful
+                  if (!data.includes('error')) {
+                    contactForm.reset();
+                    audioPlayback.classList.add('d-none');
+                    audioPlayback.src = '';
+                    startRecordingBtn.textContent = 'Record';
+                  }
                 })
                 .catch(error => {
-                    console.error('Error:', error);
-                    loader.classList.add('d-none');
-                    submitMsg.style.display = '';
-                    responseMessage.innerHTML = 'An error occurred. Please try again.';
+                  console.error('Error:', error);
+                  loader.classList.add('d-none');
+                  submitMsg.style.display = '';
+                  responseMessage.innerHTML = 'An error occurred. Please try again.';
                 });
             });
-        });
+          });
         </script>
 
 
@@ -429,31 +437,35 @@
         <script src="assets/js/main.js"></script>
 
         <script>
-          $(document).ready(function(){
+          $(document).ready(function() {
             var years = $("#all-years").val();
             var section = $("#section").val();
             var vals = [years, section];
 
             $.ajax({
-              type:'post',
-              data:{vals : vals},
-              url:'./pages/publication_table',
-              success:function(responce){
+              type: 'post',
+              data: {
+                vals: vals
+              },
+              url: './pages/publication_table',
+              success: function(responce) {
                 $('#table_output').html(responce);
               }
             })
           });
 
-          function okbutton(){
+          function okbutton() {
             var year = $("#all-years").val();
             var section = $("#section").val();
             var vals = [year, section];
 
             $.ajax({
-              type:'post',
-              data:{vals : vals},
-              url:'./pages/publication_table',
-              success:function(responce){
+              type: 'post',
+              data: {
+                vals: vals
+              },
+              url: './pages/publication_table',
+              success: function(responce) {
                 $("#table_output").html(responce);
               }
             });

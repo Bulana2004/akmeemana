@@ -41,66 +41,66 @@ $current_page = basename($_SERVER['REQUEST_URI']) . ".php";
 <body class="contact-page">
 
 
-<div class="logo_section container d-flex">
-            <a href="" class="d-flex align-items-center">
-                <img src="./images/akmeemanalogo-removebg-preview.png" alt="">
-                <h2 class="ms-3" class="logo_name"><b>Akmeemana</b> Pradeshiya Sabha</h2>
-            </a>
-            <div class="language_btn d-flex justify-content-end align-items-center w-100">
-            <a href="./sinhala/application.php"><button class="btn">සිංහල</button></a>
-            <a href="./tamil/application.php"><button class="btn ms-3">தமிழ்</button></a>
-            </div>
-        </div>
-      <header id="header" class="header shadow d-flex align-items-center sticky-top">
-        <div class="container d-flex align-items-center">
+  <div class="logo_section container d-flex">
+    <a href="" class="d-flex align-items-center">
+      <img src="./images/akmeemanalogo-removebg-preview.png" alt="">
+      <h2 class="ms-3" class="logo_name"><b>Akmeemana</b> Pradeshiya Sabha</h2>
+    </a>
+    <div class="language_btn d-flex justify-content-end align-items-center w-100">
+      <a href="./sinhala/contact.php"><button class="btn">සිංහල</button></a>
+      <a href="./Tamil/contact.php"><button class="btn ms-3">தமிழ்</button></a>
+    </div>
+  </div>
+  <header id="header" class="header shadow d-flex align-items-center sticky-top">
+    <div class="container d-flex align-items-center">
 
-          <a href="index.html" class="logo logoAndNameFormobile d-flex align-items-center me-auto me-xl-0">
-            <!-- Uncomment the line below if you also wish to use an image logo -->
-            <img class="d-flex align-items-center" src="./images/akmeemanalogo-removebg-preview.png" alt="">
-            <h3 class="sitename"><b>Akmeemana</b> Pradeshiya Sabha</h3>
-          </a>
+      <a href="index.html" class="logo logoAndNameFormobile d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img class="d-flex align-items-center" src="./images/akmeemanalogo-removebg-preview.png" alt="">
+        <h3 class="sitename"><b>Akmeemana</b> Pradeshiya Sabha</h3>
+      </a>
 
-          <nav id="navmenu" class="navmenu">
-              <ul>
-                <?php 
-                  $sql = $bdd -> prepare('SELECT * FROM navbar');
-                  $sql -> execute();
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <?php
+          $sql = $bdd->prepare('SELECT * FROM navbar');
+          $sql->execute();
 
-                  while($data = $sql -> fetch()) {
-                ?>
-                  <?php 
-                    if($data[3]){ 
-                      $name = explode("," , $data[1]);
-                      $link = explode("," , $data[2]);
-                        $is_activeDropdowns = in_array($current_page, $link) ? 'active' : '' ;
-                    ?>
-                      <li class="dropdown"><a class="<?= $is_activeDropdowns ?>" href="<?= $link[0] ?>"><span><?= $name[0] ?></span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                        <ul>
-                        <?php
-                          for($i = 1; $i < count($name) ; $i++){
-                            $active = ($current_page == basename($link[$i])) ? 'active' : '';  
-                        ?>
-                          <li><a class="<?= $active ?>" href="./<?= $link[$i] ?>"><?= $name[$i] ?></a></li>
-                        <?php
-                          }
-                        ?>
-                        </ul>
-                      </li>
-                    <?php
-                    }else{ 
-                      $active = ($current_page == basename($data[2])) ? 'active' : '';  
-                      ?>
-                      <li><a class="<?= $active ?>" href="./<?= $data[2] ?>" class=""><?= $data[1] ?></a></li>
-                    <?php
-                    }
+          while ($data = $sql->fetch()) {
+          ?>
+            <?php
+            if ($data[3]) {
+              $name = explode(",", $data[1]);
+              $link = explode(",", $data[2]);
+              $is_activeDropdowns = in_array($current_page, $link) ? 'active' : '';
+            ?>
+              <li class="dropdown"><a class="<?= $is_activeDropdowns ?>" href="<?= $link[0] ?>"><span><?= $name[0] ?></span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <?php
+                  for ($i = 1; $i < count($name); $i++) {
+                    $active = ($current_page == basename($link[$i])) ? 'active' : '';
                   ?>
-              <?php } ?>
-              </ul>
-              <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-            </nav>
+                    <li><a class="<?= $active ?>" href="./<?= $link[$i] ?>"><?= $name[$i] ?></a></li>
+                  <?php
+                  }
+                  ?>
+                </ul>
+              </li>
+            <?php
+            } else {
+              $active = ($current_page == basename($data[2])) ? 'active' : '';
+            ?>
+              <li><a class="<?= $active ?>" href="./<?= $data[2] ?>" class=""><?= $data[1] ?></a></li>
+            <?php
+            }
+            ?>
+          <?php } ?>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
 
-        </div>
-      </header>
+    </div>
+  </header>
 
   <main class="main">
 
@@ -295,7 +295,7 @@ $current_page = basename($_SERVER['REQUEST_URI']) . ".php";
 
     <!-- Chat Box -->
     <div class="card chat-box d-none" id="chatBox">
-      <div class="card-header text-bg-danger">
+      <div class="card-header text-bg-primary">
         Chat
         <button type="button" class="btn-close btn-close-white float-end" onclick="toggleChat()"></button>
       </div>
@@ -308,14 +308,14 @@ $current_page = basename($_SERVER['REQUEST_URI']) . ".php";
           <label for="email">Email :</label>
           <input type="email" id="email" name="email" class="form-control border-dark mb-2" placeholder="Enter Your Email">
           <label for="message">Message :</label>
-          <textarea name="message" id="message" class="form-control border-dark mb-2" placeholder="Enter Your Message" style="height: 150px;"></textarea>
+          <textarea name="message" id="message" class="form-control border-dark mb-2" placeholder="Enter Your Message" style="height: 90px;"></textarea>
           <div class="row mb-2">
             <div class="col-8">
               <p>If you want, you can attach a voice recording to your message.</p>
             </div>
             <div class="col-4 d-flex align-items-center justify-content-end">
-              <button type="button" class="btn btn-danger me-2" id="startRecording">Record</button>
-              <button type="button" class="btn btn-danger d-none" id="stopRecording">Stop</button>
+              <button type="button" class="btn btn-primary me-2" id="startRecording">Record</button>
+              <button type="button" class="btn btn-primary d-none" id="stopRecording">Stop</button>
             </div>
           </div>
           <audio id="audioPlayback" class="mb-2 w-100 d-none" controls></audio>

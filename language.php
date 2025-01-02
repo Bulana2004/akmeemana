@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -83,12 +84,12 @@
       font-size: 10px;
     }
 
-    .card:hover{
+    .card:hover {
       background-color: rgb(96, 18, 20);
     }
 
     @media screen and (min-width: 768px) {
-      .card-container{
+      .card-container {
         margin-left: 15%;
         margin-right: 15%;
       }
@@ -122,26 +123,41 @@
       .card p {
         font-size: 10px;
       }
+
       .card span {
         font-size: 8px;
       }
     }
   </style>
 </head>
+
 <body>
   <div class="content-container">
     <div class="flag">
-      <img src="./images/Emblem_of_Sri_Lanka.svg.webp" alt="Flag"> 
+      <img src="./images/Emblem_of_Sri_Lanka.svg.webp" alt="Flag">
     </div>
-    
+
     <div class="card-container">
-      <a href="./sinhala/index.php"  class="card"><p>වැලිවිටිය දිවිතුර ප්‍රාදේශීය සභාව</p></a>
-      <a href="./Tamil/index.php"  class="card"><p>வெலிவிட்டிய திவித்துறை பிராந்திய சபை</p></a>
-      <a href="./index.php"  class="card"><p>Welivitiya Divithura Pradeshiya Sabha</p></a>
-      <a href="./sinhala/index.php"  class="card"><p>ආයුබෝවන් <br> <span>සිංහලෙන් බලන්න</span></p></a>
-      <a href="./Tamil/index.php"  class="card"><p>வணக்கம் <br> <span>தமிழில் பார்க்கவும்</span></p></a>
-      <a href="./index.php"  class="card"><p>Welcome <br> <span>Watch in English</span></p></a>
+      <a href="./sinhala/index.php" class="card">
+        <p>වැලිවිටිය දිවිතුර ප්‍රාදේශීය සභාව</p>
+      </a>
+      <a href="./Tamil/index.php" class="card">
+        <p>வெலிவிட்டிய திவித்துறை பிராந்திய சபை</p>
+      </a>
+      <a href="./index.php" class="card">
+        <p>Welivitiya Divithura Pradeshiya Sabha</p>
+      </a>
+      <a href="./sinhala/index.php" class="card">
+        <p>ආයුබෝවන් <br> <span>සිංහලෙන් බලන්න</span></p>
+      </a>
+      <a href="./Tamil/index.php" class="card">
+        <p>வணக்கம் <br> <span>தமிழில் பார்க்கவும்</span></p>
+      </a>
+      <a href="./index.php" class="card">
+        <p>Welcome <br> <span>Watch in English</span></p>
+      </a>
     </div>
   </div>
 </body>
+
 </html>
