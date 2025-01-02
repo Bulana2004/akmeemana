@@ -35,7 +35,7 @@
 </head>
 
 <?php include './config/config.php';
-$current_page = basename($_SERVER['REQUEST_URI']) . ".php";
+$current_page = basename($_SERVER['REQUEST_URI']) ;
 ?>
 
 <body class="contact-page">
