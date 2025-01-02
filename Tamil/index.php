@@ -319,32 +319,32 @@
                 <div class="col-lg-3 col-md-6">
                   <div class="stats-item text-center w-100 h-100" data-aos="fade-up" data-aos-delay="100">
                     <i class="bi bi-people-fill" style="font-size: 2rem;"></i>
-                    <span class="number" data-count="32560+">0</span>
-                    <p>Population</p>
+                    <span class="number" data-count="83288+">0</span>
+                    <p>ஜனாபா</p>
                   </div>
                 </div>
 
                 <div class="col-lg-3 col-md-6">
                   <div class="stats-item text-center w-100 h-100" data-aos="fade-up" data-aos-delay="200">
                     <i class="bi bi-globe" style="font-size: 2rem;"></i>
-                    <span class="number" data-count="55+">0</span>
-                    <p>Area (km<sup>2</sup>)</p>
+                    <span class="number" data-count="65+">0</span>
+                    <p>பரப்பு (km<sup>2</sup>)</p>
                   </div>
                 </div>
 
                 <div class="col-lg-3 col-md-6">
                   <div class="stats-item text-center w-100 h-100" data-aos="fade-up" data-aos-delay="300">
                     <i class="bi bi-person-badge-fill" style="font-size: 2rem;"></i>
-                    <span class="number" data-count="52+">0</span>
-                    <p>Staff</p>
+                    <span class="number" data-count="102+">0</span>
+                    <p>லதி</p>
                   </div>
                 </div>
 
                 <div class="col-lg-3 col-md-6">
                   <div class="stats-item text-center w-100 h-100" data-aos="fade-up" data-aos-delay="400">
                     <i class="bi bi-geo-alt-fill" style="font-size: 2rem;"></i>
-                    <span class="number" data-count="20">0</span>
-                    <p>Grama Niladari Divisions</p>
+                    <span class="number" data-count="63">0</span>
+                    <p>கிராம சேவகர் பிரிவுகள்</p>
                   </div>
                 </div>
 
@@ -404,7 +404,7 @@
           </div>
 
           <div class="container copyright text-center mt-4">
-            <p>© <span>Copyright</span> <strong class="px-1 sitename">Welivitya Divithura Pradeshiya Sabha</strong> <span>All Rights Reserved</span></p>
+            <p>© <span>Copyright</span> <strong class="px-1 sitename">Akmeemana Pradeshiya Sabha</strong> <span>All Rights Reserved</span></p>
             <div class="credits">
               Designed by <a href="#" class="ms-2 me-3" style="text-decoration: underline;">N Code UX Private Limited</a><img src="./../images/company logo.png" alt="" width="40px">
             </div>

@@ -115,7 +115,7 @@ $current_page = basename($_SERVER['REQUEST_URI']);
         <!-- End Page Title -->
         <div class="container">
             <div class="mt-4">
-                <embed src="../pdf/citizenship.pdf" type="application/pdf" width="100%" height="700px" />
+                <embed src="../pdf/citizenship(sin).pdf" type="application/pdf" width="100%" height="700px" />
             </div>
         </div>
         <!-- <div class="container">
@@ -176,7 +176,7 @@ $current_page = basename($_SERVER['REQUEST_URI']);
         </div>
 
         <div class="container copyright text-center mt-4">
-            <p>© <span>Copyright</span> <strong class="px-1 sitename">Welivitya Divithura Pradeshiya Sabha</strong> <span>All Rights Reserved</span></p>
+            <p>© <span>Copyright</span> <strong class="px-1 sitename">Akmeemana Pradeshiya Sabha</strong> <span>All Rights Reserved</span></p>
             <div class="credits">
                 Designed by <a href="#" class="ms-2 me-3" style="text-decoration: underline;">N Code UX Private Limited</a><img src="./../images/company logo.png" alt="" width="40px">
             </div>
