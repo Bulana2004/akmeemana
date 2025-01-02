@@ -11,7 +11,7 @@ $sql -> execute([
 $row = $sql -> fetch();
 $img = explode(',' , $row[1]);
 
-$dr = '../controllers/assets/img/news/';
+$dr = './assets/img/news/';
 
 for ($i = 0; $i < count($img); $i++){
 

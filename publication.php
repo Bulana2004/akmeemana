@@ -447,7 +447,7 @@
               data: {
                 vals: vals
               },
-              url: './pages/publication_table',
+              url: './pages/publication_table.php',
               success: function(responce) {
                 $('#table_output').html(responce);
               }
@@ -464,7 +464,7 @@
               data: {
                 vals: vals
               },
-              url: './pages/publication_table',
+              url: './pages/publication_table.php',
               success: function(responce) {
                 $("#table_output").html(responce);
               }

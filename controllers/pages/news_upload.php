@@ -50,7 +50,7 @@ if ($vals[2] > 0) {
 
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         if (isset($_FILES['uploadedFiles'])) {
-            $uploadFileDir = '../controllers/assets/img/news/';
+            $uploadFileDir = '../assets/img/news/';
 
             // Check if the directory exists; if not, create it
             if (!is_dir($uploadFileDir)) {

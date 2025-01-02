@@ -14,7 +14,7 @@ $sql_data =[
     ['table' => 'tam_publication']
 ];
 
-$dir = "../controllers/assets/files/publication/" . $filename;
+$dir = "../assets/files/publication/" . $filename;
 if(file_exists($dir)){
     unlink($dir);
 
