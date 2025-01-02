@@ -45,26 +45,29 @@
 
       <body class="index-page">
 
-      <div class="d-flex justify-content-end p-1">
-          <!-- <button class="btn rounded-5 me-2 shadow tran_btn" ><a href="./index.php" style="color: white;">සිංහල</a></button> -->
-          <button class="btn rounded-5 me-2 shadow tran_btn"><a href="../tenders.php" style="color: white;">English</a></button>
-          <button class="btn rounded-5 shadow tran_btn"><a href="../Tamil/tenders.php" style="color: white;">தமிழ்</a></button>
-        </div>
-
-        <header id="header" class="header shadow d-flex align-items-center sticky-top">
-          <div class="container d-flex align-items-center justify-content-between">
-
-            <a href="./index.php" class="logo d-flex align-items-center me-auto me-xl-0">
-              <!-- Uncomment the line below if you also wish to use an image logo -->
-              <img src="./../images/logo.png" alt="">
-              <h3 class="sitename">වැලිවිටිය දිවිතුර ප්‍රාදේශීය සභාව</h3>
+      <div class="logo_section container d-flex">
+            <a href="" class="d-flex align-items-center">
+                <img src="./images/akmeemanalogo-removebg-preview.png" alt="">
+                <h2 class="ms-3" class="logo_name"><b>Akmeemana</b> Pradeshiya Sabha</h2>
             </a>
+            <div class="language_btn d-flex justify-content-end align-items-center w-100">
+                <a href="#"><button class="btn">සිංහල</button></a>
+                <a href="#"><button class="btn ms-3">தமிழ்</button></a>
+            </div>
+        </div>
+      <header id="header" class="header shadow d-flex align-items-center sticky-top">
+        <div class="container d-flex align-items-center">
 
-            <!--===============================================================Navigation Bar Start============================================================-->
-            <nav id="navmenu" class="navmenu">
+          <a href="index.html" class="logo logoAndNameFormobile d-flex align-items-center me-auto me-xl-0">
+            <!-- Uncomment the line below if you also wish to use an image logo -->
+            <img class="d-flex align-items-center" src="./images/akmeemanalogo-removebg-preview.png" alt="">
+            <h3 class="sitename"><b>Akmeemana</b> Pradeshiya Sabha</h3>
+          </a>
+
+          <nav id="navmenu" class="navmenu">
               <ul>
                 <?php 
-                  $sql = $bdd -> prepare('SELECT * FROM sinnavbar');
+                  $sql = $bdd -> prepare('SELECT * FROM navbar');
                   $sql -> execute();
 
                   while($data = $sql -> fetch()) {
@@ -99,18 +102,9 @@
               </ul>
               <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
-            <!--================================================================Navigation Bar Stop=================================================================-->
 
-
-            <!-- <div class="header-social-links">
-              <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-            </div> -->
-
-          </div>
-        </header>
+        </div>
+      </header>
 
         <main class="main">
             <div class="page-title">
