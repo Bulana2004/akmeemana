@@ -122,59 +122,14 @@
               <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="service-item text-center pt-3">
                   <div class="p-1">
-                    <a href="#" target="_blank">
+                    <a href="../pdf/Trade License Application Form.pdf" target="_blank">
                       <h5 class="mb-3">வர்த்தக உரிம விண்ணப்பப் படிவம்.</h5>
                     </a>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
-                <a href="#" target="_blank">
-                  <div class="service-item text-center pt-3">
-                    <div class="p-1">
-                      <h5 class="mb-3">வர்த்தக வணிகத்தை நடத்துவதற்கான விண்ணப்பப் படிவம்.</h5>
-                    </div>
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
-              <a href="#" target="_blank">
-                <div class="service-item text-center pt-3">
-                  <div class="p-1">
-                    <h5 class="mb-3">தடையற்ற/தெருக் கோடு சான்றிதழைப் பெறுவதற்கான விண்ணப்பப் படிவம்.</h5>
-                  </div>
-              </a>
             </div>
           </div>
-          <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
-            <a href="#" target="_blank">
-              <div class="service-item text-center pt-3">
-                <div class="p-1">
-                  <h5 class="mb-3">அபாயகரமான மரங்களை அகற்றக் கோருவதற்கான விண்ணப்பப் படிவம்.</h5>
-                </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
-          <a href="#" target="_blank">
-            <div class="service-item text-center pt-3">
-              <div class="p-1">
-                <h5 class="mb-3">இறுதிச் சடங்கு அறையை முன்பதிவு செய்வதற்கான விண்ணப்பப் படிவம்.</h5>
-              </div>
-          </a>
-        </div>
-        </div>
-        <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
-          <a href="#" target="_blank">
-            <div class="service-item text-center pt-3">
-              <div class="p-1">
-                <h5 class="mb-3">சொத்து உரிமைச் சான்றிதழ்/உரிமைச் சரிபார்ப்புக்கான விண்ணப்பப் படிவம்.</h5>
-              </div>
-          </a>
-        </div>
-        </div>
-        </div>
-        </div>
         </div>
         <!-- Service End -->
 
@@ -184,21 +139,21 @@
 
         <div class="container footer-top">
           <div class="row gy-4">
-          <div class="col-lg-4 col-md-6 footer-about">
-                <a href="./index.php" class="logo d-flex align-items-center">
-                  <span class="sitename">அக்மீமன <br> மாகாண சபை</span>
-                </a>
-                <div class="footer-contact pt-3">
+            <div class="col-lg-4 col-md-6 footer-about">
+              <a href="./index.php" class="logo d-flex align-items-center">
+                <span class="sitename">அக்மீமன <br> மாகாண சபை</span>
+              </a>
+              <div class="footer-contact pt-3">
                 <p>அக்மீமன</p>
-                  <p>பிரதேச சபை, பின்னாதுவை</p>
-                  <p class="mt-3"><strong>தொலைபேசி எண்:</strong> <span>0912222375</span></p>
-                  <p><strong>மின்னஞ்சல் முகவரி:</strong> <span>akmeemanaps@gmail.com</span></p>
-                </div>
-                <div class="social-links d-flex mt-4">
-                  <a href="https://www.facebook.com/profile.php?id=61552307069235&mibextid=ZbWKwL" target="_blank" class="text-primary" style="border-color: #0d6efd;"><i class="bi bi-facebook"></i></a>
-                  <!-- <a href="https://play.google.com/store/apps/details?id=io.akva.esabha&pcampaignid=web_share" target="_blank" style="color: #0074b1;border-color:#0074b1;"><i class="bi bi-bank"></i></a> <span class="mt-2"  style="color: #0074b1;border-color:#0074b1;">eSabha App</span> -->
-                </div>
+                <p>பிரதேச சபை, பின்னாதுவை</p>
+                <p class="mt-3"><strong>தொலைபேசி எண்:</strong> <span>0912222375</span></p>
+                <p><strong>மின்னஞ்சல் முகவரி:</strong> <span>akmeemanaps@gmail.com</span></p>
               </div>
+              <div class="social-links d-flex mt-4">
+                <a href="https://www.facebook.com/profile.php?id=61552307069235&mibextid=ZbWKwL" target="_blank" class="text-primary" style="border-color: #0d6efd;"><i class="bi bi-facebook"></i></a>
+                <!-- <a href="https://play.google.com/store/apps/details?id=io.akva.esabha&pcampaignid=web_share" target="_blank" style="color: #0074b1;border-color:#0074b1;"><i class="bi bi-bank"></i></a> <span class="mt-2"  style="color: #0074b1;border-color:#0074b1;">eSabha App</span> -->
+              </div>
+            </div>
 
             <div class="col-lg-2"></div>
 

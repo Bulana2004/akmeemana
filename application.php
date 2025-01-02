@@ -33,71 +33,71 @@
     </head>
 
     <?php include './config/config.php';
-    $current_page = basename($_SERVER['REQUEST_URI']) ;
+    $current_page = basename($_SERVER['REQUEST_URI']);
     ?>
 
     <body class="about-page">
 
-    <div class="logo_section container d-flex">
-          <a href="" class="d-flex align-items-center">
-            <img src="./images/akmeemanalogo-removebg-preview.png" alt="">
-            <h2 class="ms-3" class="logo_name"><b>Akmeemana</b> Pradeshiya Sabha</h2>
-          </a>
-          <div class="language_btn d-flex justify-content-end align-items-center w-100">
-            <a href="./sinhala/application.php"><button class="btn">සිංහල</button></a>
-            <a href="./Tamil/application.php"><button class="btn ms-3">தமிழ்</button></a>
-          </div>
+      <div class="logo_section container d-flex">
+        <a href="" class="d-flex align-items-center">
+          <img src="./images/akmeemanalogo-removebg-preview.png" alt="">
+          <h2 class="ms-3" class="logo_name"><b>Akmeemana</b> Pradeshiya Sabha</h2>
+        </a>
+        <div class="language_btn d-flex justify-content-end align-items-center w-100">
+          <a href="./sinhala/application.php"><button class="btn">සිංහල</button></a>
+          <a href="./Tamil/application.php"><button class="btn ms-3">தமிழ்</button></a>
         </div>
-        <header id="header" class="header shadow d-flex align-items-center sticky-top">
-          <div class="container d-flex align-items-center">
+      </div>
+      <header id="header" class="header shadow d-flex align-items-center sticky-top">
+        <div class="container d-flex align-items-center">
 
-            <a href="index.html" class="logo logoAndNameFormobile d-flex align-items-center me-auto me-xl-0">
-              <!-- Uncomment the line below if you also wish to use an image logo -->
-              <img class="d-flex align-items-center" src="./images/akmeemanalogo-removebg-preview.png" alt="">
-              <h3 class="sitename"><b>Akmeemana</b> Pradeshiya Sabha</h3>
-            </a>
+          <a href="index.html" class="logo logoAndNameFormobile d-flex align-items-center me-auto me-xl-0">
+            <!-- Uncomment the line below if you also wish to use an image logo -->
+            <img class="d-flex align-items-center" src="./images/akmeemanalogo-removebg-preview.png" alt="">
+            <h3 class="sitename"><b>Akmeemana</b> Pradeshiya Sabha</h3>
+          </a>
 
-            <nav id="navmenu" class="navmenu">
-              <ul>
+          <nav id="navmenu" class="navmenu">
+            <ul>
+              <?php
+              $sql = $bdd->prepare('SELECT * FROM navbar');
+              $sql->execute();
+
+              while ($data = $sql->fetch()) {
+              ?>
                 <?php
-                $sql = $bdd->prepare('SELECT * FROM navbar');
-                $sql->execute();
-
-                while ($data = $sql->fetch()) {
+                if ($data[3]) {
+                  $name = explode(",", $data[1]);
+                  $link = explode(",", $data[2]);
+                  $is_activeDropdowns = in_array($current_page, $link) ? 'active' : '';
                 ?>
-                  <?php
-                  if ($data[3]) {
-                    $name = explode(",", $data[1]);
-                    $link = explode(",", $data[2]);
-                    $is_activeDropdowns = in_array($current_page, $link) ? 'active' : '';
-                  ?>
-                    <li class="dropdown"><a class="<?= $is_activeDropdowns ?>" href="<?= $link[0] ?>"><span><?= $name[0] ?></span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                      <ul>
-                        <?php
-                        for ($i = 1; $i < count($name); $i++) {
-                          $active = ($current_page == basename($link[$i])) ? 'active' : '';
-                        ?>
-                          <li><a class="<?= $active ?>" href="./<?= $link[$i] ?>"><?= $name[$i] ?></a></li>
-                        <?php
-                        }
-                        ?>
-                      </ul>
-                    </li>
-                  <?php
-                  } else {
-                    $active = ($current_page == basename($data[2])) ? 'active' : '';
-                  ?>
-                    <li><a class="<?= $active ?>" href="./<?= $data[2] ?>" class=""><?= $data[1] ?></a></li>
-                  <?php
-                  }
-                  ?>
-                <?php } ?>
-              </ul>
-              <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-            </nav>
+                  <li class="dropdown"><a class="<?= $is_activeDropdowns ?>" href="<?= $link[0] ?>"><span><?= $name[0] ?></span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+                      <?php
+                      for ($i = 1; $i < count($name); $i++) {
+                        $active = ($current_page == basename($link[$i])) ? 'active' : '';
+                      ?>
+                        <li><a class="<?= $active ?>" href="./<?= $link[$i] ?>"><?= $name[$i] ?></a></li>
+                      <?php
+                      }
+                      ?>
+                    </ul>
+                  </li>
+                <?php
+                } else {
+                  $active = ($current_page == basename($data[2])) ? 'active' : '';
+                ?>
+                  <li><a class="<?= $active ?>" href="./<?= $data[2] ?>" class=""><?= $data[1] ?></a></li>
+                <?php
+                }
+                ?>
+              <?php } ?>
+            </ul>
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          </nav>
 
-          </div>
-        </header>
+        </div>
+      </header>
 
       <main class="main">
 
@@ -122,59 +122,14 @@
               <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="service-item text-center pt-3">
                   <div class="p-1">
-                    <a href="#" target="_blank">
+                    <a href="./pdf/Trade License Application Form.pdf" target="_blank">
                       <h5 class="mb-3">Trade License Application Form.</h5>
                     </a>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
-                <a href="#" target="_blank">
-                  <div class="service-item text-center pt-3">
-                    <div class="p-1">
-                      <h5 class="mb-3">Application Form for Operating a Trade Business.</h5>
-                    </div>
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
-              <a href="#" target="_blank">
-                <div class="service-item text-center pt-3">
-                  <div class="p-1">
-                    <h5 class="mb-3">Application Form for Obtaining a Non-Encumbrance/Street Line Certificate.</h5>
-                  </div>
-              </a>
             </div>
           </div>
-          <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
-            <a href="#" target="_blank">
-              <div class="service-item text-center pt-3">
-                <div class="p-1">
-                  <h5 class="mb-3">Application Form for Requesting the Removal of Hazardous Trees.</h5>
-                </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
-          <a href="#" target="_blank">
-            <div class="service-item text-center pt-3">
-              <div class="p-1">
-                <h5 class="mb-3">Application Form for Reserving the Funeral Parlour.</h5>
-              </div>
-          </a>
-        </div>
-        </div>
-        <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
-          <a href="#" target="_blank">
-            <div class="service-item text-center pt-3">
-              <div class="p-1">
-                <h5 class="mb-3">Application Form for Property Ownership Certificate/Ownership Verification.</h5>
-              </div>
-          </a>
-        </div>
-        </div>
-        </div>
-        </div>
         </div>
         <!-- Service End -->
 
@@ -184,21 +139,21 @@
 
         <div class="container footer-top">
           <div class="row gy-4">
-          <div class="col-lg-4 col-md-6 footer-about">
-                <a href="./index.php" class="logo d-flex align-items-center">
-                  <span class="sitename">Akmeemana <br> Pradeshiya Sabha</span>
-                </a>
-                <div class="footer-contact pt-3">
-                  <p>Akmeemana</p>
-                  <p>Pradeshiya Sabha, Pinnaduwa</p>
-                  <p class="mt-3"><strong>Phone:</strong> <span>0912222375</span></p>
-                  <p><strong>Email:</strong> <span>akmeemanaps@gmail.com</span></p>
-                </div>
-                <div class="social-links d-flex mt-4">
-                  <a href="https://www.facebook.com/profile.php?id=61552307069235&mibextid=ZbWKwL" target="_blank" class="text-primary" style="border-color: #0d6efd;"><i class="bi bi-facebook"></i></a>
-                  <!-- <a href="https://play.google.com/store/apps/details?id=io.akva.esabha&pcampaignid=web_share" target="_blank" style="color: #0074b1;border-color:#0074b1;"><i class="bi bi-bank"></i></a> <span class="mt-2"  style="color: #0074b1;border-color:#0074b1;">eSabha App</span> -->
-                </div>
+            <div class="col-lg-4 col-md-6 footer-about">
+              <a href="./index.php" class="logo d-flex align-items-center">
+                <span class="sitename">Akmeemana <br> Pradeshiya Sabha</span>
+              </a>
+              <div class="footer-contact pt-3">
+                <p>Akmeemana</p>
+                <p>Pradeshiya Sabha, Pinnaduwa</p>
+                <p class="mt-3"><strong>Phone:</strong> <span>0912222375</span></p>
+                <p><strong>Email:</strong> <span>akmeemanaps@gmail.com</span></p>
               </div>
+              <div class="social-links d-flex mt-4">
+                <a href="https://www.facebook.com/profile.php?id=61552307069235&mibextid=ZbWKwL" target="_blank" class="text-primary" style="border-color: #0d6efd;"><i class="bi bi-facebook"></i></a>
+                <!-- <a href="https://play.google.com/store/apps/details?id=io.akva.esabha&pcampaignid=web_share" target="_blank" style="color: #0074b1;border-color:#0074b1;"><i class="bi bi-bank"></i></a> <span class="mt-2"  style="color: #0074b1;border-color:#0074b1;">eSabha App</span> -->
+              </div>
+            </div>
 
             <div class="col-lg-2"></div>
 
