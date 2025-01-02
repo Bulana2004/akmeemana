@@ -269,7 +269,7 @@ $current_page = basename($_SERVER['REQUEST_URI']);
   <div class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true" id="myToast">
     <div class="d-flex">
       <div class="toast-body">
-        இப்போது நீங்கள் உங்கள் புகார்களை இணையதளம் மூலம் நேரடியாக எங்களிடம் தெரிவிக்கலாம்.
+      දැන් ඔබට ඔබගේ පැමිණිලි වෙබ් අඩවිය හරහා සෘජුවම අප වෙත යොමු කළ හැක.
       </div>
       <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
     </div>
@@ -293,32 +293,32 @@ $current_page = basename($_SERVER['REQUEST_URI']);
     <!-- Chat Box -->
     <div class="card chat-box d-none" id="chatBox">
       <div class="card-header text-bg-danger">
-        அரட்டையடிக்கவும்
+      කතාබස් කරන්න
         <button type="button" class="btn-close btn-close-white float-end" onclick="toggleChat()"></button>
       </div>
       <div class="card-body">
         <form id="contactForm" enctype="multipart/form-data">
-          <label for="name">பெயர் :</label>
-          <input type="text" id="name" name="name" class="form-control border-dark mb-2" placeholder="உங்கள் பெயரை உள்ளிடவும்">
-          <label for="phonenumber">தொலைபேசி எண் :</label>
-          <input type="number" id="phonenumber" name="phonenumber" class="form-control border-dark mb-2" placeholder="உங்கள் தொலைபேசி எண்ணை உள்ளிடவும்">
-          <label for="email">மின்னஞ்சல் :</label>
-          <input type="email" id="email" name="email" class="form-control border-dark mb-2" placeholder="உங்கள் மின்னஞ்சலை உள்ளிடவும்">
-          <label for="message">செய்தி :</label>
-          <textarea name="message" id="message" class="form-control border-dark mb-2" placeholder="உங்கள் செய்தியை உள்ளிடவும்" style="height: 150px;"></textarea>
+          <label for="name">නම :</label>
+          <input type="text" id="name" name="name" class="form-control border-dark mb-2" placeholder="ඔබගේ නම ඇතුලත් කරන්න">
+          <label for="phonenumber">දුරකතන අංකය :</label>
+          <input type="number" id="phonenumber" name="phonenumber" class="form-control border-dark mb-2" placeholder="ඔබගේ දුරකථන අංකය ඇතුලත් කරන්න">
+          <label for="email">ඊමේල් :</label>
+          <input type="email" id="email" name="email" class="form-control border-dark mb-2" placeholder="ඔබගේ විද්‍යුත් ලිපිනය ඇතුලත් කරන්න">
+          <label for="message">පණිවිඩය :</label>
+          <textarea name="message" id="message" class="form-control border-dark mb-2" placeholder="ඔබගේ පණිවිඩය ඇතුලත් කරන්න" style="height: 150px;"></textarea>
           <div class="row mb-2">
             <div class="col-8">
-              <p>நீங்கள் விரும்பினால், உங்கள் செய்தியில் ஒரு குரல் பதிவை இணைக்கவும்.</p>
+              <p>ඔබට අවශ්‍ය නම්,ඔබේ පණිවිඩයට හඩ පටිගත කිරීමක් අමුණන්න.</p>
             </div>
             <div class="col-4 d-flex align-items-center justify-content-end">
-              <button type="button" class="btn btn-danger me-2" id="startRecording">அதை பதிவு செய்யுங்கள்</button>
-              <button type="button" class="btn btn-danger d-none" id="stopRecording">பதிவு செய்வதை நிறுத்து</button>
+              <button type="button" class="btn btn-danger me-2" id="startRecording">පටිගත් කරන්න</button>
+              <button type="button" class="btn btn-danger d-none" id="stopRecording">පටිගත් කිරීම නවත්වන්න</button>
             </div>
           </div>
           <audio id="audioPlayback" class="mb-2 w-100 d-none" controls></audio>
           <input type="file" id="voice" name="voice" class="d-none" accept="audio/*">
           <button type="submit" class="btn btn-success d-block mx-auto">
-            <span id="sbmsg">செய்தியை சமர்ப்பிக்கவும்</span>
+            <span id="sbmsg">පණිවිඩය ඉදිරිපත් කරන්න</span>
             <div class="spinner-border text-light d-none" id="loader" role="status">
               <span class="visually-hidden">Loading...</span>
             </div>
@@ -397,7 +397,7 @@ $current_page = basename($_SERVER['REQUEST_URI']);
           mediaRecorder.stop();
           stopRecordingBtn.classList.add('d-none');
           startRecordingBtn.classList.remove('d-none');
-          startRecordingBtn.textContent = 'பதிவு நிறுத்தங்கள்';
+          startRecordingBtn.textContent = 'නැවත්ත පටිගත කරන්න';
         }
       });
 
@@ -428,7 +428,7 @@ $current_page = basename($_SERVER['REQUEST_URI']);
               contactForm.reset();
               audioPlayback.classList.add('d-none');
               audioPlayback.src = '';
-              startRecordingBtn.textContent = 'அதை பதிவு செய்யுங்கள்';
+              startRecordingBtn.textContent = 'පටිගත කරන්න';
             }
           })
           .catch(error => {

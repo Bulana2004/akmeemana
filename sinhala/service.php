@@ -478,180 +478,180 @@ $current_page = basename($_SERVER['REQUEST_URI']);
     <div id="preloader"></div>
 
     <!-- Toast Element -->
-    <div class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true" id="myToast">
-        <div class="d-flex">
-            <div class="toast-body">
-                இப்போது நீங்கள் உங்கள் புகார்களை இணையதளம் மூலம் நேரடியாக எங்களிடம் தெரிவிக்கலாம்.
-            </div>
-            <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
-        </div>
+  <div class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true" id="myToast">
+    <div class="d-flex">
+      <div class="toast-body">
+      දැන් ඔබට ඔබගේ පැමිණිලි වෙබ් අඩවිය හරහා සෘජුවම අප වෙත යොමු කළ හැක.
+      </div>
+      <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
     </div>
-    <script>
-        // Show Toast on Page Load
-        document.addEventListener('DOMContentLoaded', function() {
-            const myToast = document.getElementById('myToast');
-            const toast = new bootstrap.Toast(myToast, {
-                delay: 7000
+  </div>
+  <script>
+    // Show Toast on Page Load
+    document.addEventListener('DOMContentLoaded', function() {
+      const myToast = document.getElementById('myToast');
+      const toast = new bootstrap.Toast(myToast, {
+        delay: 7000
+      });
+      toast.show();
+    });
+  </script>
+
+  <!-- ChatBox -->
+  <div class="container">
+    <!-- Chat Button -->
+    <button class="btn chat-toggle" onclick="toggleChat()"><i class="bi bi-chat-dots-fill" style="font-size: 2rem;"></i></button>
+
+    <!-- Chat Box -->
+    <div class="card chat-box d-none" id="chatBox">
+      <div class="card-header text-bg-danger">
+      කතාබස් කරන්න
+        <button type="button" class="btn-close btn-close-white float-end" onclick="toggleChat()"></button>
+      </div>
+      <div class="card-body">
+        <form id="contactForm" enctype="multipart/form-data">
+          <label for="name">නම :</label>
+          <input type="text" id="name" name="name" class="form-control border-dark mb-2" placeholder="ඔබගේ නම ඇතුලත් කරන්න">
+          <label for="phonenumber">දුරකතන අංකය :</label>
+          <input type="number" id="phonenumber" name="phonenumber" class="form-control border-dark mb-2" placeholder="ඔබගේ දුරකථන අංකය ඇතුලත් කරන්න">
+          <label for="email">ඊමේල් :</label>
+          <input type="email" id="email" name="email" class="form-control border-dark mb-2" placeholder="ඔබගේ විද්‍යුත් ලිපිනය ඇතුලත් කරන්න">
+          <label for="message">පණිවිඩය :</label>
+          <textarea name="message" id="message" class="form-control border-dark mb-2" placeholder="ඔබගේ පණිවිඩය ඇතුලත් කරන්න" style="height: 150px;"></textarea>
+          <div class="row mb-2">
+            <div class="col-8">
+              <p>ඔබට අවශ්‍ය නම්,ඔබේ පණිවිඩයට හඩ පටිගත කිරීමක් අමුණන්න.</p>
+            </div>
+            <div class="col-4 d-flex align-items-center justify-content-end">
+              <button type="button" class="btn btn-danger me-2" id="startRecording">පටිගත් කරන්න</button>
+              <button type="button" class="btn btn-danger d-none" id="stopRecording">පටිගත් කිරීම නවත්වන්න</button>
+            </div>
+          </div>
+          <audio id="audioPlayback" class="mb-2 w-100 d-none" controls></audio>
+          <input type="file" id="voice" name="voice" class="d-none" accept="audio/*">
+          <button type="submit" class="btn btn-success d-block mx-auto">
+            <span id="sbmsg">පණිවිඩය ඉදිරිපත් කරන්න</span>
+            <div class="spinner-border text-light d-none" id="loader" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </button>
+          <div id="responseMessage" class="mt-3"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleChat() {
+      $('#chatBox').toggleClass('d-none');
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      let mediaRecorder;
+      let audioChunks = [];
+      const startRecordingBtn = document.getElementById('startRecording');
+      const stopRecordingBtn = document.getElementById('stopRecording');
+      const audioPlayback = document.getElementById('audioPlayback');
+      const contactForm = document.getElementById('contactForm');
+
+      function toggleChat() {
+        document.getElementById('chatBox').classList.toggle('d-none');
+      }
+
+      // Recording functionality
+      startRecordingBtn.addEventListener('click', async function() {
+        try {
+          const stream = await navigator.mediaDevices.getUserMedia({
+            audio: true
+          });
+          mediaRecorder = new MediaRecorder(stream);
+          audioChunks = [];
+
+          mediaRecorder.addEventListener('dataavailable', event => {
+            audioChunks.push(event.data);
+          });
+
+          mediaRecorder.addEventListener('stop', () => {
+            const audioBlob = new Blob(audioChunks, {
+              type: 'audio/webm'
             });
-            toast.show();
-        });
-    </script>
+            const audioUrl = URL.createObjectURL(audioBlob);
+            audioPlayback.src = audioUrl;
+            audioPlayback.classList.remove('d-none');
 
-    <!-- ChatBox -->
-    <div class="container">
-        <!-- Chat Button -->
-        <button class="btn chat-toggle" onclick="toggleChat()"><i class="bi bi-chat-dots-fill" style="font-size: 2rem;"></i></button>
+            // Create file for form submission
+            const userName = document.getElementById('name').value || 'Unnamed';
+            const fileName = `${userName}-voiceRecord.webm`;
+            const file = new File([audioBlob], fileName, {
+              type: 'audio/webm'
+            });
 
-        <!-- Chat Box -->
-        <div class="card chat-box d-none" id="chatBox">
-            <div class="card-header text-bg-danger">
-                அரட்டையடிக்கவும்
-                <button type="button" class="btn-close btn-close-white float-end" onclick="toggleChat()"></button>
-            </div>
-            <div class="card-body">
-                <form id="contactForm" enctype="multipart/form-data">
-                    <label for="name">பெயர் :</label>
-                    <input type="text" id="name" name="name" class="form-control border-dark mb-2" placeholder="உங்கள் பெயரை உள்ளிடவும்">
-                    <label for="phonenumber">தொலைபேசி எண் :</label>
-                    <input type="number" id="phonenumber" name="phonenumber" class="form-control border-dark mb-2" placeholder="உங்கள் தொலைபேசி எண்ணை உள்ளிடவும்">
-                    <label for="email">மின்னஞ்சல் :</label>
-                    <input type="email" id="email" name="email" class="form-control border-dark mb-2" placeholder="உங்கள் மின்னஞ்சலை உள்ளிடவும்">
-                    <label for="message">செய்தி :</label>
-                    <textarea name="message" id="message" class="form-control border-dark mb-2" placeholder="உங்கள் செய்தியை உள்ளிடவும்" style="height: 150px;"></textarea>
-                    <div class="row mb-2">
-                        <div class="col-8">
-                            <p>நீங்கள் விரும்பினால், உங்கள் செய்தியில் ஒரு குரல் பதிவை இணைக்கவும்.</p>
-                        </div>
-                        <div class="col-4 d-flex align-items-center justify-content-end">
-                            <button type="button" class="btn btn-danger me-2" id="startRecording">அதை பதிவு செய்யுங்கள்</button>
-                            <button type="button" class="btn btn-danger d-none" id="stopRecording">பதிவு செய்வதை நிறுத்து</button>
-                        </div>
-                    </div>
-                    <audio id="audioPlayback" class="mb-2 w-100 d-none" controls></audio>
-                    <input type="file" id="voice" name="voice" class="d-none" accept="audio/*">
-                    <button type="submit" class="btn btn-success d-block mx-auto">
-                        <span id="sbmsg">செய்தியை சமர்ப்பிக்கவும்</span>
-                        <div class="spinner-border text-light d-none" id="loader" role="status">
-                            <span class="visually-hidden">Loading...</span>
-                        </div>
-                    </button>
-                    <div id="responseMessage" class="mt-3"></div>
-                </form>
-            </div>
-        </div>
-    </div>
+            // Add file to file input
+            const dataTransfer = new DataTransfer();
+            dataTransfer.items.add(file);
+            document.getElementById('voice').files = dataTransfer.files;
 
-    <script>
-        function toggleChat() {
-            $('#chatBox').toggleClass('d-none');
+            // Stop all tracks to release microphone
+            stream.getTracks().forEach(track => track.stop());
+          });
+
+          mediaRecorder.start();
+          startRecordingBtn.classList.add('d-none');
+          stopRecordingBtn.classList.remove('d-none');
+        } catch (err) {
+          console.error('Error accessing microphone:', err);
+          alert('Microphone access is required to record audio. Please ensure you have granted permission.');
         }
+      });
 
-        document.addEventListener('DOMContentLoaded', function() {
-            let mediaRecorder;
-            let audioChunks = [];
-            const startRecordingBtn = document.getElementById('startRecording');
-            const stopRecordingBtn = document.getElementById('stopRecording');
-            const audioPlayback = document.getElementById('audioPlayback');
-            const contactForm = document.getElementById('contactForm');
+      stopRecordingBtn.addEventListener('click', function() {
+        if (mediaRecorder && mediaRecorder.state === 'recording') {
+          mediaRecorder.stop();
+          stopRecordingBtn.classList.add('d-none');
+          startRecordingBtn.classList.remove('d-none');
+          startRecordingBtn.textContent = 'නැවත්ත පටිගත කරන්න';
+        }
+      });
 
-            function toggleChat() {
-                document.getElementById('chatBox').classList.toggle('d-none');
+      // Form submission
+      contactForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        const formData = new FormData(this);
+        const loader = document.getElementById('loader');
+        const submitMsg = document.getElementById('sbmsg');
+        const responseMessage = document.getElementById('responseMessage');
+
+        loader.classList.remove('d-none');
+        submitMsg.style.display = 'none';
+        responseMessage.innerHTML = '';
+
+        fetch('../pages/tam_contact_process', {
+            method: 'POST',
+            body: formData
+          })
+          .then(response => response.text())
+          .then(data => {
+            loader.classList.add('d-none');
+            submitMsg.style.display = '';
+            responseMessage.innerHTML = data;
+
+            // Reset form and recording elements if submission was successful
+            if (!data.includes('error')) {
+              contactForm.reset();
+              audioPlayback.classList.add('d-none');
+              audioPlayback.src = '';
+              startRecordingBtn.textContent = 'පටිගත කරන්න';
             }
-
-            // Recording functionality
-            startRecordingBtn.addEventListener('click', async function() {
-                try {
-                    const stream = await navigator.mediaDevices.getUserMedia({
-                        audio: true
-                    });
-                    mediaRecorder = new MediaRecorder(stream);
-                    audioChunks = [];
-
-                    mediaRecorder.addEventListener('dataavailable', event => {
-                        audioChunks.push(event.data);
-                    });
-
-                    mediaRecorder.addEventListener('stop', () => {
-                        const audioBlob = new Blob(audioChunks, {
-                            type: 'audio/webm'
-                        });
-                        const audioUrl = URL.createObjectURL(audioBlob);
-                        audioPlayback.src = audioUrl;
-                        audioPlayback.classList.remove('d-none');
-
-                        // Create file for form submission
-                        const userName = document.getElementById('name').value || 'Unnamed';
-                        const fileName = `${userName}-voiceRecord.webm`;
-                        const file = new File([audioBlob], fileName, {
-                            type: 'audio/webm'
-                        });
-
-                        // Add file to file input
-                        const dataTransfer = new DataTransfer();
-                        dataTransfer.items.add(file);
-                        document.getElementById('voice').files = dataTransfer.files;
-
-                        // Stop all tracks to release microphone
-                        stream.getTracks().forEach(track => track.stop());
-                    });
-
-                    mediaRecorder.start();
-                    startRecordingBtn.classList.add('d-none');
-                    stopRecordingBtn.classList.remove('d-none');
-                } catch (err) {
-                    console.error('Error accessing microphone:', err);
-                    alert('Microphone access is required to record audio. Please ensure you have granted permission.');
-                }
-            });
-
-            stopRecordingBtn.addEventListener('click', function() {
-                if (mediaRecorder && mediaRecorder.state === 'recording') {
-                    mediaRecorder.stop();
-                    stopRecordingBtn.classList.add('d-none');
-                    startRecordingBtn.classList.remove('d-none');
-                    startRecordingBtn.textContent = 'பதிவு நிறுத்தங்கள்';
-                }
-            });
-
-            // Form submission
-            contactForm.addEventListener('submit', function(event) {
-                event.preventDefault();
-                const formData = new FormData(this);
-                const loader = document.getElementById('loader');
-                const submitMsg = document.getElementById('sbmsg');
-                const responseMessage = document.getElementById('responseMessage');
-
-                loader.classList.remove('d-none');
-                submitMsg.style.display = 'none';
-                responseMessage.innerHTML = '';
-
-                fetch('../pages/tam_contact_process', {
-                        method: 'POST',
-                        body: formData
-                    })
-                    .then(response => response.text())
-                    .then(data => {
-                        loader.classList.add('d-none');
-                        submitMsg.style.display = '';
-                        responseMessage.innerHTML = data;
-
-                        // Reset form and recording elements if submission was successful
-                        if (!data.includes('error')) {
-                            contactForm.reset();
-                            audioPlayback.classList.add('d-none');
-                            audioPlayback.src = '';
-                            startRecordingBtn.textContent = 'அதை பதிவு செய்யுங்கள்';
-                        }
-                    })
-                    .catch(error => {
-                        console.error('Error:', error);
-                        loader.classList.add('d-none');
-                        submitMsg.style.display = '';
-                        responseMessage.innerHTML = 'An error occurred. Please try again.';
-                    });
-            });
-        });
-    </script>
+          })
+          .catch(error => {
+            console.error('Error:', error);
+            loader.classList.add('d-none');
+            submitMsg.style.display = '';
+            responseMessage.innerHTML = 'An error occurred. Please try again.';
+          });
+      });
+    });
+  </script>
 
     <script src="../assets/js/jquery.min.js"></script>
 
