@@ -2484,6 +2484,8 @@ section,
   bottom: 80px;
   right: 20px;
   width: 500px;
+  max-height: 80vh;
+  overflow-y: auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   z-index: 999999;
