@@ -42,7 +42,7 @@ if($vals[0] > 0){
 }else{
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         if (isset($_FILES['uploadedFiles'])) {
-            $uploadFileDir = '../controllers/assets/files/publication/';
+            $uploadFileDir = '../assets/files/publication/';
 
             // Check if the directory exists; if not, create it
             if (!is_dir($uploadFileDir)) {

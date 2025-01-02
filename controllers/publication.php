@@ -1,5 +1,5 @@
 <?php 
-include '../config/config.php';
+include './config/config.php';
 $ck = $_COOKIE['login'];
 
 if($ck){
@@ -28,7 +28,7 @@ if($ck){
 	<link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.css">
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
-<?php include '../config/config.php'; ?>
+<?php include './config/config.php'; ?>
 <body>
 	<div class="wrapper">
 		<nav id="sidebar" class="sidebar js-sidebar">
@@ -71,7 +71,7 @@ if($ck){
 
 
 					<li class="sidebar-item">
-						<a class="sidebar-link" href="../index.php">
+						<a class="sidebar-link" href="www.akmeemanaps.lk">
 							<i class="align-middle" data-feather="log-out"></i> <span class="align-middle">LogOut</span>
 						</a>
 					</li>
@@ -294,7 +294,7 @@ if($ck){
 								<p class="mb-0"> Design by : 
 									<a class="text-muted" href="https://adminkit.io/"
 										target="_blank"><strong>N Code UX Private Limited</strong></a> 
-										<img class="ms-2" src="../images/company logo.png" width="33px" alt="">
+										<img class="ms-2" src="./assets/images/company logo.png" width="33px" alt="">
 								</p>
 							</div>
 						<!-- <div class="col-6 text-end">
@@ -320,7 +320,7 @@ if($ck){
 	</div>
 
 	<script src="./assets/js/sidebar.js"></script>
-	<script src="../assets/js/jquery.min.js"></script>
+	<script src="./assets/js/jquery.min.js"></script>
 
 </body>
 
@@ -360,7 +360,7 @@ if($ck){
 			$('#progressBar').css('width', '0%').text('0%').attr('aria-valuenow', '0');
 
 			$.ajax({
-				url: '../pages/publication_upload',
+				url: './pages/publication_upload.php',
 				type: 'POST',
 				data: formData,
 				processData: false, // Do not process the data
@@ -395,7 +395,7 @@ if($ck){
 		$.ajax({
 			type:'post',
 			data:{id : id},
-			url:'../pages/publication_delete',
+			url:'./pages/publication_delete.php',
 			success:function(responce){
 				$("#output").html(responce);
 			}
@@ -406,7 +406,7 @@ if($ck){
 		$.ajax({
 			type:'post',
 			data:{id : id},
-			url:'../pages/publication_update',
+			url:'./pages/publication_update.php',
 			success:function(responce){
 				$("#hidden_file_upload").attr('hidden', true);
 				$("#submitBtn").text('Update');
