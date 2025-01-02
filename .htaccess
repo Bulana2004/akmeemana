@@ -1,2 +1,3 @@
 # Set default DirectoryIndex
-DirectoryIndex index.html 
+DirectoryIndex index.php
+ 
