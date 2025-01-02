@@ -170,7 +170,7 @@ $current_page = basename($_SERVER['REQUEST_URI']);
         <div class="container section-title" data-aos="fade-up">
           <div class="section-title-container d-flex align-items-center justify-content-between">
             <h2>Staff</h2>
-            <a href="https://cs.sp.gov.lk/Hmaster/user_index.php" target="_blank"><button class="btn btn-danger">More</button></a>
+            <a href="https://cs.sp.gov.lk/Hmaster/user_index.php" target="_blank"><button class="btn btn-primary">More</button></a>
           </div>
         </div><!- - End Section Title - ->
 

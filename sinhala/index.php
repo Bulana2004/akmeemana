@@ -40,8 +40,8 @@
 
         <div class="logo_section container d-flex">
           <a href="" class="d-flex align-items-center">
-            <img src="./images/akmeemanalogo-removebg-preview.png" alt="">
-            <h2 class="ms-3" class="logo_name"><b>අක්මීමන</b>ප්‍රාදේශීය සභාව</h2>
+            <img src="../images/akmeemanalogo-removebg-preview.png" alt="">
+            <h2 class="ms-3" class="logo_name"><b>අක්මීමන</b> ප්‍රාදේශීය සභාව</h2>
           </a>
           <div class="language_btn d-flex justify-content-end align-items-center w-100">
             <a href="../index.php"><button class="btn">English</button></a>
@@ -60,7 +60,7 @@
             <nav id="navmenu" class="navmenu">
               <ul>
                 <?php
-                $sql = $bdd->prepare('SELECT * FROM navbar');
+                $sql = $bdd->prepare('SELECT * FROM sinnavbar');
                 $sql->execute();
 
                 while ($data = $sql->fetch()) {
@@ -138,8 +138,8 @@
                   <?php while ($data = $sql->fetch()) { ?>
                     <div class="swiper-slide" style="background-image: url('./../controllers/assets/img/slider/<?= $data[1] ?>');">
                       <div class="content">
-                        <h1 class="slider-h1"><a href="./about.php">වැලිවිටිය දිවිතුර ප්‍රාදේශීය සභාව</a></h1>
-                        <button class="btn slider-button" style="background-color: #981b1f; color: white;"><a href="./about.php">තවත් කියවන්න</a></button>
+                        <h1 class="slider-h1"><a href="./about.php">අක්මීමන ප්‍රාදේශීය සභාව</a></h1>
+                        <button class="btn slider-button" style="background-color: #00659d; color: white;"><a href="./about.php">තවත් කියවන්න</a></button>
                       </div>
                     </div>
                   <?php } ?>
