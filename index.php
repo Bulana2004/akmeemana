@@ -39,65 +39,65 @@
       <body class="index-page">
 
         <div class="logo_section container d-flex">
-            <a href="" class="d-flex align-items-center">
-                <img src="./images/akmeemanalogo-removebg-preview.png" alt="">
-                <h2 class="ms-3" class="logo_name"><b>Akmeemana</b> Pradeshiya Sabha</h2>
-            </a>
-            <div class="language_btn d-flex justify-content-end align-items-center w-100">
-                <a href="./sinhala/index.php"><button class="btn">සිංහල</button></a>
-                <a href="./Tamil/index.php"><button class="btn ms-3">தமிழ்</button></a>
-            </div>
-        </div>
-      <header id="header" class="header shadow d-flex align-items-center sticky-top">
-        <div class="container d-flex align-items-center">
-
-          <a href="index.html" class="logo logoAndNameFormobile d-flex align-items-center me-auto me-xl-0">
-            <!-- Uncomment the line below if you also wish to use an image logo -->
-            <img class="d-flex align-items-center" src="./images/akmeemanalogo-removebg-preview.png" alt="">
-            <h3 class="sitename"><b>Akmeemana</b> Pradeshiya Sabha</h3>
+          <a href="" class="d-flex align-items-center">
+            <img src="./images/akmeemanalogo-removebg-preview.png" alt="">
+            <h2 class="ms-3" class="logo_name"><b>Akmeemana</b> Pradeshiya Sabha</h2>
           </a>
+          <div class="language_btn d-flex justify-content-end align-items-center w-100">
+            <a href="./sinhala/index.php"><button class="btn">සිංහල</button></a>
+            <a href="./Tamil/index.php"><button class="btn ms-3">தமிழ்</button></a>
+          </div>
+        </div>
+        <header id="header" class="header shadow d-flex align-items-center sticky-top">
+          <div class="container d-flex align-items-center">
 
-          <nav id="navmenu" class="navmenu">
+            <a href="index.html" class="logo logoAndNameFormobile d-flex align-items-center me-auto me-xl-0">
+              <!-- Uncomment the line below if you also wish to use an image logo -->
+              <img class="d-flex align-items-center" src="./images/akmeemanalogo-removebg-preview.png" alt="">
+              <h3 class="sitename"><b>Akmeemana</b> Pradeshiya Sabha</h3>
+            </a>
+
+            <nav id="navmenu" class="navmenu">
               <ul>
-                <?php 
-                  $sql = $bdd -> prepare('SELECT * FROM navbar');
-                  $sql -> execute();
+                <?php
+                $sql = $bdd->prepare('SELECT * FROM navbar');
+                $sql->execute();
 
-                  while($data = $sql -> fetch()) {
+                while ($data = $sql->fetch()) {
                 ?>
-                  <?php 
-                    if($data[3]){ 
-                      $name = explode("," , $data[1]);
-                      $link = explode("," , $data[2]);
-                        $is_activeDropdowns = in_array($current_page, $link) ? 'active' : '' ;
-                    ?>
-                      <li class="dropdown"><a class="<?= $is_activeDropdowns ?>" href="<?= $link[0] ?>"><span><?= $name[0] ?></span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                        <ul>
+                  <?php
+                  if ($data[3]) {
+                    $name = explode(",", $data[1]);
+                    $link = explode(",", $data[2]);
+                    $is_activeDropdowns = in_array($current_page, $link) ? 'active' : '';
+                  ?>
+                    <li class="dropdown"><a class="<?= $is_activeDropdowns ?>" href="<?= $link[0] ?>"><span><?= $name[0] ?></span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                      <ul>
                         <?php
-                          for($i = 1; $i < count($name) ; $i++){
-                            $active = ($current_page == basename($link[$i])) ? 'active' : '';  
+                        for ($i = 1; $i < count($name); $i++) {
+                          $active = ($current_page == basename($link[$i])) ? 'active' : '';
                         ?>
                           <li><a class="<?= $active ?>" href="./<?= $link[$i] ?>"><?= $name[$i] ?></a></li>
                         <?php
-                          }
+                        }
                         ?>
-                        </ul>
-                      </li>
-                    <?php
-                    }else{ 
-                      $active = ($current_page == basename($data[2])) ? 'active' : '';  
-                      ?>
-                      <li><a class="<?= $active ?>" href="./<?= $data[2] ?>" class=""><?= $data[1] ?></a></li>
-                    <?php
-                    }
+                      </ul>
+                    </li>
+                  <?php
+                  } else {
+                    $active = ($current_page == basename($data[2])) ? 'active' : '';
                   ?>
-              <?php } ?>
+                    <li><a class="<?= $active ?>" href="./<?= $data[2] ?>" class=""><?= $data[1] ?></a></li>
+                  <?php
+                  }
+                  ?>
+                <?php } ?>
               </ul>
               <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
 
-        </div>
-      </header>
+          </div>
+        </header>
 
         <main class="main">
 
@@ -215,7 +215,7 @@
                           <a href="./news.php#<?= $Id ?>"><img class="d-block mx-auto w-100 news_image" src="./controllers/assets/img/news/<?= $img[0] ?>" alt="" class="img-fluid"></a>
                           <div class="post-meta"><span class="mx-1">•</span> <span><?= $data[4] ?></span></div>
                           <h3><a href="./news.php#<?= $Id ?>" class="home_link"><?= $data[2] ?></a></h3>
-                          <p class="mb-4 d-block"><?= $data[3]?></p>
+                          <p class="mb-4 d-block"><?= $data[3] ?></p>
                         </div>
                       <?php } ?>
 
@@ -271,45 +271,45 @@
                     <p><a href="./tenders.php">See All Tender</a></p>
                   </div>
                 </div>
-                  
-                <?php
-                  $sql = $bdd -> prepare("SELECT * FROM tenders ORDER BY id DESC LIMIT 5");
-                  $sql -> execute();
 
-                  while($data = $sql -> fetch()) {
-                    $Id = $data[0];
+                <?php
+                $sql = $bdd->prepare("SELECT * FROM tenders ORDER BY id DESC LIMIT 5");
+                $sql->execute();
+
+                while ($data = $sql->fetch()) {
+                  $Id = $data[0];
                 ?>
-                <div class="container post-list border-bottom" data-aos="fade-up" data-aos-delay="100">
-                  <div class="post-meta"><span class="mx-1">•</span><?= $data[3] ?></span></div>
-                  <h2 class="mb-2"><a href="./tenders.php#<?= $Id ?>"><?= $data[2] ?></a></h2>
-                  <div class="text-end">
-                    <button class="btn mb-2 rounded-5" style="background-color: #00506f; color: white;">
-                      <a href="./controllers/assets/files/tenders/<?= $data[1] ?>" target="_blank" style="color: white;">Download</a>
-                    </button>
+                  <div class="container post-list border-bottom" data-aos="fade-up" data-aos-delay="100">
+                    <div class="post-meta"><span class="mx-1">•</span><?= $data[3] ?></span></div>
+                    <h2 class="mb-2"><a href="./tenders.php#<?= $Id ?>"><?= $data[2] ?></a></h2>
+                    <div class="text-end">
+                      <button class="btn mb-2 rounded-5" style="background-color: #00506f; color: white;">
+                        <a href="./controllers/assets/files/tenders/<?= $data[1] ?>" target="_blank" style="color: white;">Download</a>
+                      </button>
+                    </div>
                   </div>
-                </div>
                 <?php } ?>
               </div>
             </div>
           </section>
 
           <section class="logoes mt-5">
-              <div class="container">
-                <div class="row">
-                  <div class="col-lg-4 logos-items">
-                    <img src="./images/Flag_of_Sri_Lanka.svg.png" 
-                      alt="Flag of sri lanka" width="180px" class="d-block mx-auto" data-aos="fade-up" data-aos-delay="100">
-                  </div>
-                  <div class="col-lg-4 logos-items">
-                    <img src="./images/Emblem_of_Sri_Lanka.svg.webp" 
-                      alt="Emblem_of_Sri_Lanka" width="80px" class="d-block mx-auto" data-aos="fade-up" data-aos-delay="200">
-                  </div>
-                  <div class="col-lg-4 logos-items">
-                    <img src="./images/Flag_of_the_Southern_Province_(Sri_Lanka).PNG" 
-                      alt="Flag_of_the_Southern_Province_(Sri_Lanka)" width="180px" class="d-block mx-auto" data-aos="fade-up" data-aos-delay="400">
-                  </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-4 logos-items">
+                  <img src="./images/Flag_of_Sri_Lanka.svg.png"
+                    alt="Flag of sri lanka" width="180px" class="d-block mx-auto" data-aos="fade-up" data-aos-delay="100">
+                </div>
+                <div class="col-lg-4 logos-items">
+                  <img src="./images/Emblem_of_Sri_Lanka.svg.webp"
+                    alt="Emblem_of_Sri_Lanka" width="80px" class="d-block mx-auto" data-aos="fade-up" data-aos-delay="200">
+                </div>
+                <div class="col-lg-4 logos-items">
+                  <img src="./images/Flag_of_the_Southern_Province_(Sri_Lanka).PNG"
+                    alt="Flag_of_the_Southern_Province_(Sri_Lanka)" width="180px" class="d-block mx-auto" data-aos="fade-up" data-aos-delay="400">
                 </div>
               </div>
+            </div>
           </section>
 
           <section id="stats" class="stats">
@@ -402,7 +402,7 @@
                 </ul>
               </div>
 
-          </div>
+            </div>
           </div>
 
           <div class="container copyright text-center mt-4">
@@ -419,7 +419,7 @@
 
         <!-- Preloader -->
         <div id="preloader"></div>
-        
+
         <!-- Toast Element -->
         <div class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true" id="myToast">
           <div class="d-flex">
@@ -431,134 +431,142 @@
         </div>
         <script>
           // Show Toast on Page Load
-          document.addEventListener('DOMContentLoaded', function () {
+          document.addEventListener('DOMContentLoaded', function() {
             const myToast = document.getElementById('myToast');
-            const toast = new bootstrap.Toast(myToast, {delay: 7000});
+            const toast = new bootstrap.Toast(myToast, {
+              delay: 7000
+            });
             toast.show();
           });
         </script>
 
         <!-- ChatBox -->
         <div class="container">
-            <!-- Chat Button -->
-            <button class="btn chat-toggle" onclick="toggleChat()"><i class="bi bi-chat-dots-fill" style="font-size: 2rem;"></i></button>
+          <!-- Chat Button -->
+          <button class="btn chat-toggle" onclick="toggleChat()"><i class="bi bi-chat-dots-fill" style="font-size: 2rem;"></i></button>
 
-            <!-- Chat Box -->
-            <div class="card chat-box d-none" id="chatBox">
-                <div class="card-header text-bg-primary">
-                    Chat
-                    <button type="button" class="btn-close btn-close-white float-end" onclick="toggleChat()"></button>
-                </div>
-                <div class="card-body">
-                    <form id="contactForm" enctype="multipart/form-data">
-                        <label for="name">Name :</label>
-                        <input type="text" id="name" name="name" class="form-control border-dark mb-2" placeholder="Enter Your Name">
-                        <label for="phonenumber">Phone Number :</label>
-                        <input type="number" id="phonenumber" name="phonenumber" class="form-control border-dark mb-2" placeholder="Enter Your Phone Number">
-                        <label for="email">Email :</label>
-                        <input type="email" id="email" name="email" class="form-control border-dark mb-2" placeholder="Enter Your Email">
-                        <label for="message">Message :</label>
-                        <textarea name="message" id="message" class="form-control border-dark mb-2" placeholder="Enter Your Message" style="height: 90px;"></textarea>
-                        <div class="row mb-2">
-                            <div class="col-8">
-                                <p>If you want, you can attach a voice recording to your message.</p>
-                            </div>
-                            <div class="col-4 d-flex align-items-center justify-content-end">
-                                <button type="button" class="btn btn-primary me-2" id="startRecording">Record</button>
-                                <button type="button" class="btn btn-primary d-none" id="stopRecording">Stop</button>
-                            </div>
-                        </div>
-                        <audio id="audioPlayback" class="mb-2 w-100 d-none" controls></audio>
-                        <input type="file" id="voice" name="voice" class="d-none" accept="audio/*">
-                        <button type="submit" class="btn btn-success d-block mx-auto">
-                            <span id="sbmsg">Submit Message</span>
-                            <div class="spinner-border text-light d-none" id="loader" role="status">
-                                <span class="visually-hidden">Loading...</span>
-                            </div>
-                        </button>
-                        <div id="responseMessage" class="mt-3"></div>
-                    </form>
-                </div>
+          <!-- Chat Box -->
+          <div class="card chat-box d-none" id="chatBox">
+            <div class="card-header text-bg-primary">
+              Chat
+              <button type="button" class="btn-close btn-close-white float-end" onclick="toggleChat()"></button>
             </div>
+            <div class="card-body">
+              <form id="contactForm" enctype="multipart/form-data">
+                <label for="name">Name :</label>
+                <input type="text" id="name" name="name" class="form-control border-dark mb-2" placeholder="Enter Your Name">
+                <label for="phonenumber">Phone Number :</label>
+                <input type="number" id="phonenumber" name="phonenumber" class="form-control border-dark mb-2" placeholder="Enter Your Phone Number">
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" class="form-control border-dark mb-2" placeholder="Enter Your Email">
+                <label for="message">Message :</label>
+                <textarea name="message" id="message" class="form-control border-dark mb-2" placeholder="Enter Your Message" style="height: 90px;"></textarea>
+                <div class="row mb-2">
+                  <div class="col-8">
+                    <p>If you want, you can attach a voice recording to your message.</p>
+                  </div>
+                  <div class="col-4 d-flex align-items-center justify-content-end">
+                    <button type="button" class="btn btn-primary me-2" id="startRecording">Record</button>
+                    <button type="button" class="btn btn-primary d-none" id="stopRecording">Stop</button>
+                  </div>
+                </div>
+                <audio id="audioPlayback" class="mb-2 w-100 d-none" controls></audio>
+                <input type="file" id="voice" name="voice" class="d-none" accept="audio/*">
+                <button type="submit" class="btn btn-success d-block mx-auto">
+                  <span id="sbmsg">Submit Message</span>
+                  <div class="spinner-border text-light d-none" id="loader" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                </button>
+                <div id="responseMessage" class="mt-3"></div>
+              </form>
+            </div>
+          </div>
         </div>
 
         <script>
           function toggleChat() {
             $('#chatBox').toggleClass('d-none');
-        }
+          }
 
-        document.addEventListener('DOMContentLoaded', function() {
+          document.addEventListener('DOMContentLoaded', function() {
             let mediaRecorder;
             let audioChunks = [];
             const startRecordingBtn = document.getElementById('startRecording');
             const stopRecordingBtn = document.getElementById('stopRecording');
             const audioPlayback = document.getElementById('audioPlayback');
             const contactForm = document.getElementById('contactForm');
-            
+
             function toggleChat() {
-                document.getElementById('chatBox').classList.toggle('d-none');
+              document.getElementById('chatBox').classList.toggle('d-none');
             }
 
             // Recording functionality
             startRecordingBtn.addEventListener('click', async function() {
-                try {
-                    const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-                    mediaRecorder = new MediaRecorder(stream);
-                    audioChunks = [];
+              try {
+                const stream = await navigator.mediaDevices.getUserMedia({
+                  audio: true
+                });
+                mediaRecorder = new MediaRecorder(stream);
+                audioChunks = [];
 
-                    mediaRecorder.addEventListener('dataavailable', event => {
-                        audioChunks.push(event.data);
-                    });
+                mediaRecorder.addEventListener('dataavailable', event => {
+                  audioChunks.push(event.data);
+                });
 
-                    mediaRecorder.addEventListener('stop', () => {
-                        const audioBlob = new Blob(audioChunks, { type: 'audio/webm' });
-                        const audioUrl = URL.createObjectURL(audioBlob);
-                        audioPlayback.src = audioUrl;
-                        audioPlayback.classList.remove('d-none');
+                mediaRecorder.addEventListener('stop', () => {
+                  const audioBlob = new Blob(audioChunks, {
+                    type: 'audio/webm'
+                  });
+                  const audioUrl = URL.createObjectURL(audioBlob);
+                  audioPlayback.src = audioUrl;
+                  audioPlayback.classList.remove('d-none');
 
-                        // Create file for form submission
-                        const userName = document.getElementById('name').value || 'Unnamed';
-                        const fileName = `${userName}-voiceRecord.webm`;
-                        const file = new File([audioBlob], fileName, { type: 'audio/webm' });
-                        
-                        // Add file to file input
-                        const dataTransfer = new DataTransfer();
-                        dataTransfer.items.add(file);
-                        document.getElementById('voice').files = dataTransfer.files;
+                  // Create file for form submission
+                  const userName = document.getElementById('name').value || 'Unnamed';
+                  const fileName = `${userName}-voiceRecord.webm`;
+                  const file = new File([audioBlob], fileName, {
+                    type: 'audio/webm'
+                  });
 
-                        // Stop all tracks to release microphone
-                        stream.getTracks().forEach(track => track.stop());
-                    });
+                  // Add file to file input
+                  const dataTransfer = new DataTransfer();
+                  dataTransfer.items.add(file);
+                  document.getElementById('voice').files = dataTransfer.files;
 
-                    mediaRecorder.start();
-                    startRecordingBtn.classList.add('d-none');
-                    stopRecordingBtn.classList.remove('d-none');
-                } catch (err) {
-                    console.error('Error accessing microphone:', err);
-                    alert('Microphone access is required to record audio. Please ensure you have granted permission.');
-                }
+                  // Stop all tracks to release microphone
+                  stream.getTracks().forEach(track => track.stop());
+                });
+
+                mediaRecorder.start();
+                startRecordingBtn.classList.add('d-none');
+                stopRecordingBtn.classList.remove('d-none');
+              } catch (err) {
+                console.error('Error accessing microphone:', err);
+                alert('Microphone access is required to record audio. Please ensure you have granted permission.');
+              }
             });
 
             stopRecordingBtn.addEventListener('click', function() {
-                if (mediaRecorder && mediaRecorder.state === 'recording') {
-                    mediaRecorder.stop();
-                    stopRecordingBtn.classList.add('d-none');
-                    startRecordingBtn.classList.remove('d-none');
-                    startRecordingBtn.textContent = 'Record Again';
-                }
+              if (mediaRecorder && mediaRecorder.state === 'recording') {
+                mediaRecorder.stop();
+                stopRecordingBtn.classList.add('d-none');
+                startRecordingBtn.classList.remove('d-none');
+                startRecordingBtn.textContent = 'Record Again';
+              }
             });
 
             // Form submission
             contactForm.addEventListener('submit', function(event) {
-                event.preventDefault();
-                const formData = new FormData(this);
-                const loader = document.getElementById('loader');
-                const submitMsg = document.getElementById('sbmsg');
-                const responseMessage = document.getElementById('responseMessage');
+              event.preventDefault();
+              const formData = new FormData(this);
+              const loader = document.getElementById('loader');
+              const submitMsg = document.getElementById('sbmsg');
+              const responseMessage = document.getElementById('responseMessage');
 
-                loader.classList.remove('d-none');
-                submitMsg.style.display = 'none';
-                responseMessage.innerHTML = '';
+              loader.classList.remove('d-none');
+              submitMsg.style.display = 'none';
+              responseMessage.innerHTML = '';
 
                 fetch('./pages/contact_process.php', {
                     method: 'POST',
@@ -566,26 +574,26 @@
                 })
                 .then(response => response.text())
                 .then(data => {
-                    loader.classList.add('d-none');
-                    submitMsg.style.display = '';
-                    responseMessage.innerHTML = data;
-                    
-                    // Reset form and recording elements if submission was successful
-                    if (!data.includes('error')) {
-                        contactForm.reset();
-                        audioPlayback.classList.add('d-none');
-                        audioPlayback.src = '';
-                        startRecordingBtn.textContent = 'Record';
-                    }
+                  loader.classList.add('d-none');
+                  submitMsg.style.display = '';
+                  responseMessage.innerHTML = data;
+
+                  // Reset form and recording elements if submission was successful
+                  if (!data.includes('error')) {
+                    contactForm.reset();
+                    audioPlayback.classList.add('d-none');
+                    audioPlayback.src = '';
+                    startRecordingBtn.textContent = 'Record';
+                  }
                 })
                 .catch(error => {
-                    console.error('Error:', error);
-                    loader.classList.add('d-none');
-                    submitMsg.style.display = '';
-                    responseMessage.innerHTML = 'An error occurred. Please try again.';
+                  console.error('Error:', error);
+                  loader.classList.add('d-none');
+                  submitMsg.style.display = '';
+                  responseMessage.innerHTML = 'An error occurred. Please try again.';
                 });
             });
-        });
+          });
         </script>
 
         <!-- Vendor JS Files -->
@@ -601,19 +609,19 @@
       </body>
       <script>
         function animateCounters() {
-        const counters = document.querySelectorAll('.number');
+          const counters = document.querySelectorAll('.number');
 
-        function isElementInViewport(el) {
+          function isElementInViewport(el) {
             const rect = el.getBoundingClientRect();
             return (
-                rect.top >= 0 &&
-                rect.left >= 0 &&
-                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+              rect.top >= 0 &&
+              rect.left >= 0 &&
+              rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+              rect.right <= (window.innerWidth || document.documentElement.clientWidth)
             );
-        }
+          }
 
-        function startCounterAnimation(counter) {
+          function startCounterAnimation(counter) {
             const targetValue = counter.getAttribute('data-count');
             const isPlus = targetValue.includes('+');
             const target = parseInt(targetValue, 10);
@@ -622,35 +630,35 @@
 
             let currentCount = 0;
             const updateCounter = () => {
-                if (currentCount < target) {
-                    currentCount += increment;
-                    counter.textContent = Math.round(currentCount);
-                    requestAnimationFrame(updateCounter);
-                } else {
-                    // Ensure final value matches target and add "+" if needed
-                    counter.textContent = target + (isPlus ? '+' : '');
-                }
+              if (currentCount < target) {
+                currentCount += increment;
+                counter.textContent = Math.round(currentCount);
+                requestAnimationFrame(updateCounter);
+              } else {
+                // Ensure final value matches target and add "+" if needed
+                counter.textContent = target + (isPlus ? '+' : '');
+              }
             };
 
             updateCounter();
-        }
+          }
 
-        function checkAndAnimateCounters() {
+          function checkAndAnimateCounters() {
             counters.forEach(counter => {
-                if (isElementInViewport(counter) && !counter.classList.contains('animated')) {
-                    startCounterAnimation(counter);
-                    counter.classList.add('animated');
-                }
+              if (isElementInViewport(counter) && !counter.classList.contains('animated')) {
+                startCounterAnimation(counter);
+                counter.classList.add('animated');
+              }
             });
+          }
+
+          // Check on scroll and initial load
+          window.addEventListener('scroll', checkAndAnimateCounters);
+          window.addEventListener('load', checkAndAnimateCounters);
         }
 
-        // Check on scroll and initial load
-        window.addEventListener('scroll', checkAndAnimateCounters);
-        window.addEventListener('load', checkAndAnimateCounters);
-    }
-
-    // Initialize the counter animation
-    animateCounters();
-    </script>
+        // Initialize the counter animation
+        animateCounters();
+      </script>
 
       </html>

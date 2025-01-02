@@ -33,72 +33,72 @@
 </head>
 <?php
 include './../config/config.php';
-$current_page = basename($_SERVER['REQUEST_URI']) ;
+$current_page = basename($_SERVER['REQUEST_URI']);
 ?>
 
 <body class="contact-page">
 
 
-<div class="logo_section container d-flex">
-            <a href="" class="d-flex align-items-center">
-                <img src="./images/akmeemanalogo-removebg-preview.png" alt="">
-                <h2 class="ms-3" class="logo_name"><b>Akmeemana</b> Pradeshiya Sabha</h2>
-            </a>
-            <div class="language_btn d-flex justify-content-end align-items-center w-100">
-                <a href="#"><button class="btn">සිංහල</button></a>
-                <a href="#"><button class="btn ms-3">தமிழ்</button></a>
-            </div>
-        </div>
-      <header id="header" class="header shadow d-flex align-items-center sticky-top">
-        <div class="container d-flex align-items-center">
+  <div class="logo_section container d-flex">
+    <a href="" class="d-flex align-items-center">
+      <img src="./images/akmeemanalogo-removebg-preview.png" alt="">
+      <h2 class="ms-3" class="logo_name"><b>Akmeemana</b> Pradeshiya Sabha</h2>
+    </a>
+    <div class="language_btn d-flex justify-content-end align-items-center w-100">
+      <a href="../contact.php"><button class="btn">English</button></a>
+      <a href="../Tamil/contact.php"><button class="btn ms-3">தமிழ்</button></a>
+    </div>
+  </div>
+  <header id="header" class="header shadow d-flex align-items-center sticky-top">
+    <div class="container d-flex align-items-center">
 
-          <a href="index.html" class="logo logoAndNameFormobile d-flex align-items-center me-auto me-xl-0">
-            <!-- Uncomment the line below if you also wish to use an image logo -->
-            <img class="d-flex align-items-center" src="./images/akmeemanalogo-removebg-preview.png" alt="">
-            <h3 class="sitename"><b>Akmeemana</b> Pradeshiya Sabha</h3>
-          </a>
+      <a href="index.html" class="logo logoAndNameFormobile d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img class="d-flex align-items-center" src="./images/akmeemanalogo-removebg-preview.png" alt="">
+        <h3 class="sitename"><b>Akmeemana</b> Pradeshiya Sabha</h3>
+      </a>
 
-          <nav id="navmenu" class="navmenu">
-              <ul>
-                <?php 
-                  $sql = $bdd -> prepare('SELECT * FROM navbar');
-                  $sql -> execute();
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <?php
+          $sql = $bdd->prepare('SELECT * FROM navbar');
+          $sql->execute();
 
-                  while($data = $sql -> fetch()) {
-                ?>
-                  <?php 
-                    if($data[3]){ 
-                      $name = explode("," , $data[1]);
-                      $link = explode("," , $data[2]);
-                        $is_activeDropdowns = in_array($current_page, $link) ? 'active' : '' ;
-                    ?>
-                      <li class="dropdown"><a class="<?= $is_activeDropdowns ?>" href="<?= $link[0] ?>"><span><?= $name[0] ?></span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                        <ul>
-                        <?php
-                          for($i = 1; $i < count($name) ; $i++){
-                            $active = ($current_page == basename($link[$i])) ? 'active' : '';  
-                        ?>
-                          <li><a class="<?= $active ?>" href="./<?= $link[$i] ?>"><?= $name[$i] ?></a></li>
-                        <?php
-                          }
-                        ?>
-                        </ul>
-                      </li>
-                    <?php
-                    }else{ 
-                      $active = ($current_page == basename($data[2])) ? 'active' : '';  
-                      ?>
-                      <li><a class="<?= $active ?>" href="./<?= $data[2] ?>" class=""><?= $data[1] ?></a></li>
-                    <?php
-                    }
+          while ($data = $sql->fetch()) {
+          ?>
+            <?php
+            if ($data[3]) {
+              $name = explode(",", $data[1]);
+              $link = explode(",", $data[2]);
+              $is_activeDropdowns = in_array($current_page, $link) ? 'active' : '';
+            ?>
+              <li class="dropdown"><a class="<?= $is_activeDropdowns ?>" href="<?= $link[0] ?>"><span><?= $name[0] ?></span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <?php
+                  for ($i = 1; $i < count($name); $i++) {
+                    $active = ($current_page == basename($link[$i])) ? 'active' : '';
                   ?>
-              <?php } ?>
-              </ul>
-              <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-            </nav>
+                    <li><a class="<?= $active ?>" href="./<?= $link[$i] ?>"><?= $name[$i] ?></a></li>
+                  <?php
+                  }
+                  ?>
+                </ul>
+              </li>
+            <?php
+            } else {
+              $active = ($current_page == basename($data[2])) ? 'active' : '';
+            ?>
+              <li><a class="<?= $active ?>" href="./<?= $data[2] ?>" class=""><?= $data[1] ?></a></li>
+            <?php
+            }
+            ?>
+          <?php } ?>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
 
-        </div>
-      </header>
+    </div>
+  </header>
 
   <main class="main">
 
@@ -193,7 +193,7 @@ $current_page = basename($_SERVER['REQUEST_URI']) ;
               </div>
             </form>
           </div>-->
-          
+
           <!--End Contact Form -->
 
         </div>
@@ -269,7 +269,7 @@ $current_page = basename($_SERVER['REQUEST_URI']) ;
   <div class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true" id="myToast">
     <div class="d-flex">
       <div class="toast-body">
-        දැන් ඔබට ඔබගේ පැමිණිලි වෙබ් අඩවිය හරහා සෘජුවම අප වෙත යොමු කළ හැක.
+        இப்போது நீங்கள் உங்கள் புகார்களை இணையதளம் மூலம் நேரடியாக எங்களிடம் தெரிவிக்கலாம்.
       </div>
       <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
     </div>
@@ -293,32 +293,32 @@ $current_page = basename($_SERVER['REQUEST_URI']) ;
     <!-- Chat Box -->
     <div class="card chat-box d-none" id="chatBox">
       <div class="card-header text-bg-danger">
-        කතාබස් කරන්න
+        அரட்டையடிக்கவும்
         <button type="button" class="btn-close btn-close-white float-end" onclick="toggleChat()"></button>
       </div>
       <div class="card-body">
         <form id="contactForm" enctype="multipart/form-data">
-          <label for="name">නම :</label>
-          <input type="text" id="name" name="name" class="form-control border-dark mb-2" placeholder="ඔබගේ නම ඇතුළත් කරන්න">
-          <label for="phonenumber">දුරකථන අංකය :</label>
-          <input type="number" id="phonenumber" name="phonenumber" class="form-control border-dark mb-2" placeholder="ඔබගේ දුරකථන අංකය ඇතුළත් කරන්න">
-          <label for="email">විද්යුත් තැපෑල :</label>
-          <input type="email" id="email" name="email" class="form-control border-dark mb-2" placeholder="ඔබගේ විද්‍යුත් තැපෑල ඇතුළත් කරන්න">
-          <label for="message">පණිවිඩය :</label>
-          <textarea name="message" id="message" class="form-control border-dark mb-2" placeholder="ඔබගේ පණිවිඩය ඇතුළත් කරන්න" style="height: 150px;"></textarea>
+          <label for="name">பெயர் :</label>
+          <input type="text" id="name" name="name" class="form-control border-dark mb-2" placeholder="உங்கள் பெயரை உள்ளிடவும்">
+          <label for="phonenumber">தொலைபேசி எண் :</label>
+          <input type="number" id="phonenumber" name="phonenumber" class="form-control border-dark mb-2" placeholder="உங்கள் தொலைபேசி எண்ணை உள்ளிடவும்">
+          <label for="email">மின்னஞ்சல் :</label>
+          <input type="email" id="email" name="email" class="form-control border-dark mb-2" placeholder="உங்கள் மின்னஞ்சலை உள்ளிடவும்">
+          <label for="message">செய்தி :</label>
+          <textarea name="message" id="message" class="form-control border-dark mb-2" placeholder="உங்கள் செய்தியை உள்ளிடவும்" style="height: 150px;"></textarea>
           <div class="row mb-2">
             <div class="col-8">
-              <p>ඔබට අවශ්‍ය නම්, ඔබේ පණිවිඩයට හඬ පටිගත කිරීමක් අමුණන්න.</p>
+              <p>நீங்கள் விரும்பினால், உங்கள் செய்தியில் ஒரு குரல் பதிவை இணைக்கவும்.</p>
             </div>
             <div class="col-4 d-flex align-items-center justify-content-end">
-              <button type="button" class="btn btn-danger me-2" id="startRecording">පටිගත කරන්න</button>
-              <button type="button" class="btn btn-danger d-none" id="stopRecording">පටිගත කිරීම නවත්තන්න</button>
+              <button type="button" class="btn btn-danger me-2" id="startRecording">அதை பதிவு செய்யுங்கள்</button>
+              <button type="button" class="btn btn-danger d-none" id="stopRecording">பதிவு செய்வதை நிறுத்து</button>
             </div>
           </div>
           <audio id="audioPlayback" class="mb-2 w-100 d-none" controls></audio>
           <input type="file" id="voice" name="voice" class="d-none" accept="audio/*">
           <button type="submit" class="btn btn-success d-block mx-auto">
-            <span id="sbmsg">පණිවිඩය ඉදිරිපත් කරන්න</span>
+            <span id="sbmsg">செய்தியை சமர்ப்பிக்கவும்</span>
             <div class="spinner-border text-light d-none" id="loader" role="status">
               <span class="visually-hidden">Loading...</span>
             </div>
@@ -397,7 +397,7 @@ $current_page = basename($_SERVER['REQUEST_URI']) ;
           mediaRecorder.stop();
           stopRecordingBtn.classList.add('d-none');
           startRecordingBtn.classList.remove('d-none');
-          startRecordingBtn.textContent = 'නැවත්ත පටිගත කරන්න';
+          startRecordingBtn.textContent = 'பதிவு நிறுத்தங்கள்';
         }
       });
 
@@ -413,7 +413,7 @@ $current_page = basename($_SERVER['REQUEST_URI']) ;
         submitMsg.style.display = 'none';
         responseMessage.innerHTML = '';
 
-        fetch('../pages/sin_contact_process', {
+        fetch('../pages/tam_contact_process', {
             method: 'POST',
             body: formData
           })
@@ -428,7 +428,7 @@ $current_page = basename($_SERVER['REQUEST_URI']) ;
               contactForm.reset();
               audioPlayback.classList.add('d-none');
               audioPlayback.src = '';
-              startRecordingBtn.textContent = 'පටිගත කරන්න';
+              startRecordingBtn.textContent = 'அதை பதிவு செய்யுங்கள்';
             }
           })
           .catch(error => {
@@ -440,6 +440,7 @@ $current_page = basename($_SERVER['REQUEST_URI']) ;
       });
     });
   </script>
+
   <script src="../assets/js/jquery.min.js"></script>
 
 
