@@ -48,7 +48,7 @@ $current_page = basename($_SERVER['REQUEST_URI']);
   <div class="logo_section container d-flex">
     <a href="" class="d-flex align-items-center">
       <img src="../images/akmeemanalogo-removebg-preview.png" alt="">
-      <h2 class="ms-3" class="logo_name"><b>අක්මීමන</b>ප්‍රාදේශීය සභාව</h2>
+      <h2 class="ms-3" class="logo_name"><b>අක්මීමන</b> ප්‍රාදේශීය සභාව</h2>
     </a>
     <div class="language_btn d-flex justify-content-end align-items-center w-100">
       <a href="../about.php"><button class="btn">English</button></a>
@@ -67,7 +67,7 @@ $current_page = basename($_SERVER['REQUEST_URI']);
       <nav id="navmenu" class="navmenu">
         <ul>
           <?php
-          $sql = $bdd->prepare('SELECT * FROM navbar');
+          $sql = $bdd->prepare('SELECT * FROM sinnavbar');
           $sql->execute();
 
           while ($data = $sql->fetch()) {
@@ -179,7 +179,7 @@ $current_page = basename($_SERVER['REQUEST_URI']);
         <div class="container section-title" data-aos="fade-up">
           <div class="section-title-container d-flex align-items-center justify-content-between">
             <h2>කාර්ය මණ්ඩලය</h2>
-            <a href="https://cs.sp.gov.lk/Hmaster/user_index.php" target="_blank"><button class="btn btn-danger">තව</button></a>
+            <a href="https://cs.sp.gov.lk/Hmaster/user_index.php" target="_blank"><button class="btn btn-primary">තව</button></a>
           </div>
         </div><!- - End Section Title - ->
 

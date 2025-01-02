@@ -43,8 +43,8 @@ $current_page = basename($_SERVER['REQUEST_URI']);
 
   <div class="logo_section container d-flex">
     <a href="" class="d-flex align-items-center">
-      <img src="./images/akmeemanalogo-removebg-preview.png" alt="">
-      <h2 class="ms-3" class="logo_name"><b>அக்மீமன</b>மாகாண சபை</h2>
+      <img src="../images/akmeemanalogo-removebg-preview.png" alt="">
+      <h2 class="ms-3" class="logo_name"><b>அக்மீமன</b> மாகாண சபை</h2>
     </a>
     <div class="language_btn d-flex justify-content-end align-items-center w-100">
       <a href="../sinhala/contact.php"><button class="btn">සිංහල</button></a>
@@ -63,7 +63,7 @@ $current_page = basename($_SERVER['REQUEST_URI']);
       <nav id="navmenu" class="navmenu">
         <ul>
           <?php
-          $sql = $bdd->prepare('SELECT * FROM navbar');
+          $sql = $bdd->prepare('SELECT * FROM tamnavbar');
           $sql->execute();
 
           while ($data = $sql->fetch()) {
@@ -131,7 +131,7 @@ $current_page = basename($_SERVER['REQUEST_URI']);
           <div class="col-lg-12">
             <div class="row">
 
-            <div class="col-lg-4 d-flex justify-content-center">
+            <div class="col-lg-4 d-flex justify-content-start justify-content-lg-center">
                 <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
                   <i class="bi bi-geo-alt flex-shrink-0"></i>
                   <div>
@@ -142,7 +142,7 @@ $current_page = basename($_SERVER['REQUEST_URI']);
               </div>
               <!-- End Info Item -->
 
-              <div class="col-lg-4 d-flex justify-content-center">
+              <div class="col-lg-4 d-flex justify-content-start justify-content-lg-center">
                 <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
                   <i class="bi bi-telephone flex-shrink-0"></i>
                   <div>
@@ -153,7 +153,7 @@ $current_page = basename($_SERVER['REQUEST_URI']);
               </div>
               <!-- End Info Item -->
 
-              <div class="col-lg-4 d-flex justify-content-center">
+              <div class="col-lg-4 d-flex justify-content-start justify-content-lg-center">
                 <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
                   <i class="bi bi-envelope flex-shrink-0"></i>
                   <div>

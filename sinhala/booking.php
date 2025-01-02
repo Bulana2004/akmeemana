@@ -40,8 +40,8 @@ $current_page = basename($_SERVER['REQUEST_URI']);
 
     <div class="logo_section container d-flex">
         <a href="" class="d-flex align-items-center">
-            <img src="./images/akmeemanalogo-removebg-preview.png" alt="">
-            <h2 class="ms-3" class="logo_name"><b>අක්මීමන</b>ප්‍රාදේශීය සභාව</h2>
+            <img src="../images/akmeemanalogo-removebg-preview.png" alt="">
+            <h2 class="ms-3" class="logo_name"><b>අක්මීමන</b> ප්‍රාදේශීය සභාව</h2>
         </a>
         <div class="language_btn d-flex justify-content-end align-items-center w-100">
             <a href="../booking.php"><button class="btn">English</button></a>
@@ -60,7 +60,7 @@ $current_page = basename($_SERVER['REQUEST_URI']);
             <nav id="navmenu" class="navmenu">
                 <ul>
                     <?php
-                    $sql = $bdd->prepare('SELECT * FROM navbar');
+                    $sql = $bdd->prepare('SELECT * FROM sinnavbar');
                     $sql->execute();
 
                     while ($data = $sql->fetch()) {
@@ -122,7 +122,7 @@ $current_page = basename($_SERVER['REQUEST_URI']);
                             class="booking_image d-block mx-auto mb-4 mt-3 "></div>
                         <h3 class="mb-2">ආදාහනාගාර වෙන්කරවා ගැනීම</h3>
                         <hr>
-                        <a href="https://psmis.lk/crbooksel.php?vals=FH61965HBGD" target="_blank"><button class="btn btn-danger mt-2">දැන්ම වෙන්කරවා ගන්න</button></a>
+                        <a href="https://psmis.lk/crbooksel.php?vals=FH61965HBGD" target="_blank"><button class="btn btn-primary mt-2">දැන්ම වෙන්කරවා ගන්න</button></a>
                     </div>
                 </div>
             </div>

@@ -40,8 +40,8 @@
 
       <div class="logo_section container d-flex">
         <a href="" class="d-flex align-items-center">
-          <img src="./images/akmeemanalogo-removebg-preview.png" alt="">
-          <h2 class="ms-3" class="logo_name"><b>அக்மீமன</b>மாகாண சபை</h2>
+          <img src="../images/akmeemanalogo-removebg-preview.png" alt="">
+          <h2 class="ms-3" class="logo_name"><b>அக்மீமன</b> மாகாண சபை</h2>
         </a>
         <div class="language_btn d-flex justify-content-end align-items-center w-100">
           <a href="../sinhala/application.php"><button class="btn">සිංහල</button></a>
@@ -60,7 +60,7 @@
           <nav id="navmenu" class="navmenu">
             <ul>
               <?php
-              $sql = $bdd->prepare('SELECT * FROM navbar');
+              $sql = $bdd->prepare('SELECT * FROM tamnavbar');
               $sql->execute();
 
               while ($data = $sql->fetch()) {

@@ -40,8 +40,8 @@ $current_page = basename($_SERVER['REQUEST_URI']);
 
     <div class="logo_section container d-flex">
         <a href="" class="d-flex align-items-center">
-            <img src="./images/akmeemanalogo-removebg-preview.png" alt="">
-            <h2 class="ms-3" class="logo_name"><b>අක්මීමන</b>ප්‍රාදේශීය සභාව</h2>
+            <img src="./../images/akmeemanalogo-removebg-preview.png" alt="">
+            <h2 class="ms-3" class="logo_name"><b>අක්මීමන</b> ප්‍රාදේශීය සභාව</h2>
         </a>
         <div class="language_btn d-flex justify-content-end align-items-center w-100">
             <a href="../service.php"><button class="btn">English</button></a>
@@ -53,14 +53,14 @@ $current_page = basename($_SERVER['REQUEST_URI']);
 
             <a href="index.html" class="logo logoAndNameFormobile d-flex align-items-center me-auto me-xl-0">
                 <!-- Uncomment the line below if you also wish to use an image logo -->
-                <img class="d-flex align-items-center" src="./images/akmeemanalogo-removebg-preview.png" alt="">
+                <img class="d-flex align-items-center" src="../images/akmeemanalogo-removebg-preview.png" alt="">
                 <h3 class="sitename"><b>අක්මීමන</b>ප්‍රාදේශීය සභාව</h3>
             </a>
 
             <nav id="navmenu" class="navmenu">
                 <ul>
                     <?php
-                    $sql = $bdd->prepare('SELECT * FROM navbar');
+                    $sql = $bdd->prepare('SELECT * FROM sinnavbar');
                     $sql->execute();
 
                     while ($data = $sql->fetch()) {
@@ -126,63 +126,58 @@ $current_page = basename($_SERVER['REQUEST_URI']);
                     </div>
 
                     <div class="col-lg-6 order-2 order-lg-2" data-aos="fade-up" data-aos-delay="0.3s">
-                        <h1 class=" bg-white text-start pe-3">ආයතන හා ගිණුම් අංශය</h1>
+                        <h1 class=" bg-white text-start pe-3">ප්‍රජා හා පරිසර අංශය</h1>
                         <br>
                         <ul>
                             <div class="row gy-2 gx-4 mb-4">
                                 <div class="col-sm-12">
                                     <li>
-                                        <p class="mb-0 ">සභා රැස්වීම්,විශේෂ සභා රැස්වීම් හා කමිටු රැස්වීම් පැවැත්වීම හා එම තීරණ ක්‍රියත්මක කිරීම.
+                                        <p class="mb-0 ">පරිසර බල පත්‍ර ලබා දීම‍.
                                         </p>
                                     </li>
                                 </div>
                                 <div class="col-sm-12">
                                     <li>
-                                        <p class="mb-0">කාර්‍යය මණ්ඩලය මෙහෙයවීම හා පාලනය කිරීම.
+                                        <p class="mb-0">අනතුරුදායක ගස් ඉවත් කිරීම හා නිර්දේශ ලබා දීම.
                                             ලබා දීම.
                                         </p>
                                     </li>
                                 </div>
                                 <div class="col-sm-12">
                                     <li>
-                                        <p class="mb-0">සභාවේ අභ්‍යන්තර විගණන කටයුතු සිදු කිරීම
+                                        <p class="mb-0">පරිසර පැමිණිලි.
                                         </p>
                                     </li>
                                 </div>
                                 <div class="col-sm-12">
                                     <li>
-                                        <p class="mb-0">සභාවට අය විය යුතු සියළු ආදායම් රැස් කිරීම</p>
+                                        <p class="mb-0">පෙර පාසල්,ආයුර්වේද සායන,ළමා හා මාතෘ සායන සම්බන්ධ කටයුතු.</p>
                                     </li>
                                 </div>
                                 <div class="col-sm-12">
                                     <li>
-                                        <p class="mb-0">ටෙන්ඩර් කැඳවීම් හා සියළු මිල දී ගැනීම් සිදුකිරීම</p>
+                                        <p class="mb-0">ප්‍රජා ශාලා ආශ්‍රිත ප්‍රජා මණ්ඩල පිහිට වීම.</p>
                                     </li>
                                 </div>
                                 <div class="col-sm-12">
                                     <li>
-                                        <p class="mb-0">සියළු ගෙවීම් සැලසුම් කිරීම්</p>
+                                        <p class="mb-0">පොදු ළිං සම්බන්ධ කටයුතු.</p>
                                     </li>
                                 </div>
                                 <div class="col-sm-12">
                                     <li>
-                                        <p class="mb-0">ව්‍යාපාර සඳහා බදු පැනවීමේ කටයුතු හා සකස් කිරීම හා වාර්ෂික ගිණුම් සකස් කිරීම හා වාර්ෂික අයවැය සකස් කිරීම.
+                                        <p class="mb-0">පුස්තකාල සම්බන්ධ කටයුතු.
                                         </p>
                                     </li>
                                 </div>
                                 <div class="col-sm-12">
                                     <li>
-                                        <p class="mb-0">වාහන හා යන්ත්‍රෝපකරණ නඩත්තුව</p>
+                                        <p class="mb-0">අයාලේ යන ගවයන් හා සුනඛයින් සම්බන්දව අවශ්‍ය පියවර ගැනීම</p>
                                     </li>
                                 </div>
                                 <div class="col-sm-12">
                                     <li>
-                                        <p class="mb-0">සැලසුම්කරුවන් ලියාපදිංචි කිරීම </p>
-                                    </li>
-                                </div>
-                                <div class="col-sm-12">
-                                    <li>
-                                        <p class="mb-0">පුවත්පත් දැන්වීම් පලකිරීම් හා දෑන්වීම් ගැසට් පත්‍රවල පල කිරීම.</p>
+                                        <p class="mb-0">ආපදා කළමනාකරණය සම්බන්ධ කටයුතු. </p>
                                     </li>
                                 </div>
                             </div>
@@ -198,70 +193,63 @@ $current_page = basename($_SERVER['REQUEST_URI']);
                 <div class="row g-5">
 
                     <div class="col-lg-6 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="0.3s">
-                        <h1 class=" bg-white text-start pe-3">සැලසුම් හා සංවර්ධන අංශය</h1>
+                        <h1 class=" bg-white text-start pe-3">ආදායම් අංශය</h1>
                         <br>
                         <ul class="custemer-bullet">
                             <div class="row gy-2 gx-4 mb-4">
                                 <div class="col-sm-12">
                                     <li>
                                         <p class="mb-0">
-                                            වීථි රේඛා සහතික,නොපවරා ගැනීමේ සහතික හා වරිපනම් සහතික නිකුත් කිරීම
+                                        වරිපනම් හා අක්කර බදු හා සභාවට අයවිය යුතු අනෙකුත් බදු කතු කිරීම.
                                         </p>
                                     </li>
                                 </div>
                                 <div class="col-sm-12">
                                     <li>
                                         <p class="mb-0">
-                                            ඉඩම් පිඹුරු සහ අනුබෙදුම් සඳහා අනුමැතිය ලබාදීම.
+                                        කඩ කාමර කුලී හා ගෙවල් කුලී අය කිරීම.
                                         </p>
                                     </li>
                                 </div>
                                 <div class="col-sm-12">
                                     <li>
                                         <p class="mb-0">
-                                            නිවාස,ව්‍යාපාරික ස්ථාන ආදී ඉදිකිරීම් සඳහා ගොඩනැගිලි අයදුම්පත්‍ර නිකුත් කිරීම හා සැලසුම් අනුමත කිරීම.
+                                        පොළ බදු අකතු කිරීම.
                                         </p>
                                     </li>
                                 </div>
                                 <div class="col-sm-12">
                                     <li>
                                         <p class="mb-0">
-                                            අනුකූලතා සහතික නිකුත් කිරීම.
+                                        දේපළ බදු කතු කිරීම.
                                         </p>
                                     </li>
                                 </div>
                                 <div class="col-sm-12">
                                     <li>
                                         <p class="mb-0">
-                                            ඉදිකිරීම් ඇතුළු කර්මාන්ත සම්බන්ධ සියළු කටයුතු.
+                                        මාර්ග ලියාපදිංචි කිරීම.
                                         </p>
                                     </li>
                                 </div>
                                 <div class="col-sm-12">
                                     <li>
                                         <p class="mb-0">
-                                            ප්‍රාදේශීය සභා ගොඩනැගලි,මාර්ග,කාණු හා බෝක්කු ඇතුලු සියළු ඉදිකිරීම් නඩත්තු කිරීම.
+                                        වීදි පහන් සවි කිරීම හා නඩත්තු කිරීම.
                                         </p>
                                     </li>
                                 </div>
                                 <div class="col-sm-12">
                                     <li>
                                         <p class="mb-0">
-                                            මහජන පැමිණිලි හා පෙත්සම් වලට අදාල කටයුතු සිදු කිරීම.
+                                        ශ්‍රවණාගාරය වෙන් කිරීම හා අදාල ගාස්තු අය කිරීම.
                                         </p>
                                     </li>
                                 </div>
                                 <div class="col-sm-12">
                                     <li>
                                         <p class="mb-0">
-                                            අනවසර ඉදිකිරීම් පාලනය හා ඒ සම්බන්ධව නිත්‍යානුකූල ක්‍රියාමර්ග ගැනීම.
-                                        </p>
-                                    </li>
-                                </div>
-                                <div class="col-sm-12">
-                                    <li>
-                                        <p class="mb-0">
-                                            පොදු ඉඩම් පාලනය කිරීම හා සංවර්ධනය කිරීම
+                                        වෙළඳ ව්‍යාපාර හා වෙළඳ බල පත්‍ර ගාස්තු අය කිරීම.
                                         </p>
                                     </li>
                                 </div>
@@ -288,91 +276,28 @@ $current_page = basename($_SERVER['REQUEST_URI']);
                         </div>
                     </div>
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="0.3s">
-                        <h1 class=" bg-white text-start pe-3">සෞඛ්‍ය,පරිසර හා ප්‍රජා සංවර්ධන අංශය</h1>
+                        <h1 class=" bg-white text-start pe-3">සංවර්ධන අංශය</h1>
                         <br>
                         <ul>
                             <div class="row gy-2 gx-4 mb-4">
                                 <div class="col-sm-12">
                                     <li>
                                         <p class="mb-0">
-                                            සෞඛ්‍ය වෛද්‍ය නිළධාරී කර්‍යයාලය හා එක්ව ප්‍රාදේශයේ රෝග වැලැක්වීමේ සේවා හා මහජන සනීපාරක්ෂාව පිළිබඳ සේවා පවත්වාගෙන යාම.
+                                        කොන්ත්‍රාත්කරුවන් හා කොන්ත්‍රාත් සමිති සමග ගිවිසුම් ගත වීම. මාර්ග, ගොඩනැගිලි, &emsp; නිර්මිත ජල ව්‍යාපෘති හා විශේෂ ව්‍යාපෘති අදිය.
                                         </p>
                                     </li>
                                 </div>
                                 <div class="col-sm-12">
                                     <li>
                                         <p class="mb-0">
-                                            ආයුර්වේද සෞඛ්‍ය සේවා ලබා දීම.
+                                        යන්ත්‍ර හා වාහන කුලී පදනම මත ලබා දීම.
                                         </p>
                                     </li>
                                 </div>
                                 <div class="col-sm-12">
                                     <li>
                                         <p class="mb-0">
-                                            පරිසර බලපත්‍ර නිකුත් කිරීම ඈලුත් කිරීම හා පරිසර පැමිණිලි වලට අදාල කටයුතු කිරීම.
-                                        </p>
-                                    </li>
-                                </div>
-                                <div class="col-sm-12">
-                                    <li>
-                                        <p class="mb-0">
-                                            අනතුරු දායක ගස් ඉවත් කිරීමේ අයදුම් පත් නිකුත් කිරීම හා ඊට අදාළ නියෝග ලබා දීම.
-                                        </p>
-                                    </li>
-                                </div>
-                                <div class="col-sm-12">
-                                    <li>
-                                        <p class="mb-0">
-                                            පුස්තකාල සේවා පවත්වාගෙන යාම.
-                                        </p>
-                                    </li>
-                                </div>
-                                <div class="col-sm-12">
-                                    <li>
-                                        <p class="mb-0">
-                                            පෙරපාසල් සේවා ලබා දීම.
-                                        </p>
-                                    </li>
-                                </div>
-                                <div class="col-sm-12">
-                                    <li>
-                                        <p class="mb-0">
-                                            පොදු වෙළඳපොල නඩත්තුව.
-                                        </p>
-                                    </li>
-                                </div>
-                                <div class="col-sm-12">
-                                    <li>
-                                        <p class="mb-0">
-                                            සුසාන භූමි පවත්වාගෙන යාම.
-                                        </p>
-                                    </li>
-                                </div>
-                                <div class="col-sm-12">
-                                    <li>
-                                        <p class="mb-0">
-                                            බල ප්‍රදේශයේ කසල ඉවත් කිරීම හා කළමණාකරණය කිරීම.
-                                        </p>
-                                    </li>
-                                </div>
-                                <div class="col-sm-12">
-                                    <li>
-                                        <p class="mb-0">
-                                            විථි ආලෝකකරණය.
-                                        </p>
-                                    </li>
-                                </div>
-                                <div class="col-sm-12">
-                                    <li>
-                                        <p class="mb-0">
-                                            ප්‍රජා ශාලා පවත්වාගෙන යාම.
-                                        </p>
-                                    </li>
-                                </div>
-                                <div class="col-sm-12">
-                                    <li>
-                                        <p class="mb-0">
-                                            ආගමික හා සංකෘතික කටයුතු ප්‍රවර්ධනය කිරීම.
+                                        මහජන පැමිණිලි.
                                         </p>
                                     </li>
                                 </div>
@@ -389,14 +314,14 @@ $current_page = basename($_SERVER['REQUEST_URI']);
                 <div class="row g-5">
 
                     <div class="col-lg-6 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="0.3s">
-                        <h1 class=" bg-white text-start pe-3">පුස්ථකාලය</h1>
+                        <h1 class=" bg-white text-start pe-3">ගිණුම් අංශය</h1>
                         <br>
                         <ul>
                             <div class="row gy-2 gx-4 mb-4">
                                 <div class="col-sm-12">
                                     <li>
                                         <p class="mb-0">
-                                            edyeyewuuwgduygedgeuidegdugedguydeudedetf
+                                        සභාවේ සියලුම ගිණුම් පාලන කටයුතු සිදු කරනු ලැබේ.
                                         </p>
                                     </li>
                                 </div>
