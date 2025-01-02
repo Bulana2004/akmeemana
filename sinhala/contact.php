@@ -121,7 +121,7 @@ $current_page = basename($_SERVER['REQUEST_URI']);
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3812.4865752915457!2d80.26597147480193!3d6.0677574939182115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae171f90743e33f%3A0xc761c12abc1a3a30!2sAkmeemana%20Pradeshiya%20Sabha!5e1!3m2!1sen!2slk!4v1735796586300!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3812.4865752915457!2d80.26597147480193!3d6.0677574939182115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae171f90743e33f%3A0xc761c12abc1a3a30!2sAkmeemana%20Pradeshiya%20Sabha!5e1!3m2!1sen!2slk!4v1735796586300!5m2!1sen!2slk" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div><!-- End Google Maps -->
 
         <div class="row gy-4">
@@ -134,7 +134,7 @@ $current_page = basename($_SERVER['REQUEST_URI']);
                   <i class="bi bi-geo-alt flex-shrink-0"></i>
                   <div>
                     <h3>ලිපිනය</h3>
-                    <p>වැලිවිටිය දිවිතුර ප්‍රාදේශීය සභාව, අගලිය</p>
+                    <p>අක්මීමන ප්‍රාදේශීය සභාව,පින්නඳූව</p>
                   </div>
                 </div>
               </div><!-- End Info Item -->
@@ -144,7 +144,7 @@ $current_page = basename($_SERVER['REQUEST_URI']);
                   <i class="bi bi-telephone flex-shrink-0"></i>
                   <div>
                     <h3>අපව අමතන්න</h3>
-                    <p>0912260554</p>
+                    <p>0912222375</p>
                   </div>
                 </div>
               </div><!-- End Info Item -->
@@ -154,7 +154,7 @@ $current_page = basename($_SERVER['REQUEST_URI']);
                   <i class="bi bi-envelope flex-shrink-0"></i>
                   <div>
                     <h3>අපට ඉමෙයිල් කරන්න</h3>
-                    <p>wdps2006@gmail.com</p>
+                    <p>akmeemanaps@gmail.com</p>
                   </div>
                 </div>
               </div><!-- End Info Item -->
