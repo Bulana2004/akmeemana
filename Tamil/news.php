@@ -261,7 +261,7 @@
         </div>
 
         <div class="container copyright text-center mt-4">
-          <p>© <span>Copyright</span> <strong class="px-1 sitename">Welivitya Divithura Pradeshiya Sabha</strong> <span>All Rights Reserved</span></p>
+          <p>© <span>Copyright</span> <strong class="px-1 sitename">Akmeemana Pradeshiya Sabha</strong> <span>All Rights Reserved</span></p>
           <div class="credits">
             Designed by <a href="#" class="ms-2 me-3" style="text-decoration: underline;">N Code UX Private Limited</a><img src="./../images/company logo.png" alt="" width="40px">
           </div>
@@ -302,7 +302,7 @@
 
         <!-- Chat Box -->
         <div class="card chat-box d-none" id="chatBox">
-          <div class="card-header text-bg-danger">
+          <div class="card-header text-bg-primary">
             அரட்டையடிக்கவும்
             <button type="button" class="btn-close btn-close-white float-end" onclick="toggleChat()"></button>
           </div>

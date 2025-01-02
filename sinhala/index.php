@@ -319,7 +319,7 @@
                 <div class="col-lg-3 col-md-6">
                   <div class="stats-item text-center w-100 h-100" data-aos="fade-up" data-aos-delay="100">
                     <i class="bi bi-people-fill" style="font-size: 2rem;"></i>
-                    <span class="number" data-count="32560+">0</span>
+                    <span class="number" data-count="83288+">0</span>
                     <p>ජනගහනය</p>
                   </div>
                 </div>
@@ -327,7 +327,7 @@
                 <div class="col-lg-3 col-md-6">
                   <div class="stats-item text-center w-100 h-100" data-aos="fade-up" data-aos-delay="200">
                     <i class="bi bi-globe" style="font-size: 2rem;"></i>
-                    <span class="number" data-count="55+">0</span>
+                    <span class="number" data-count="65+">0</span>
                     <p>ප්‍රදේශය (km<sup>2</sup>)</p>
                   </div>
                 </div>
@@ -335,7 +335,7 @@
                 <div class="col-lg-3 col-md-6">
                   <div class="stats-item text-center w-100 h-100" data-aos="fade-up" data-aos-delay="300">
                     <i class="bi bi-person-badge-fill" style="font-size: 2rem;"></i>
-                    <span class="number" data-count="52+">0</span>
+                    <span class="number" data-count="102+">0</span>
                     <p>කාර්ය මණ්ඩලය</p>
                   </div>
                 </div>
@@ -343,7 +343,7 @@
                 <div class="col-lg-3 col-md-6">
                   <div class="stats-item text-center w-100 h-100" data-aos="fade-up" data-aos-delay="400">
                     <i class="bi bi-geo-alt-fill" style="font-size: 2rem;"></i>
-                    <span class="number" data-count="20">0</span>
+                    <span class="number" data-count="63">0</span>
                     <p>ග්‍රාම නිලධාරී වසම්</p>
                   </div>
                 </div>
@@ -404,7 +404,7 @@
           </div>
 
           <div class="container copyright text-center mt-4">
-            <p>© <span>Copyright</span> <strong class="px-1 sitename">Welivitya Divithura Pradeshiya Sabha</strong> <span>All Rights Reserved</span></p>
+            <p>© <span>Copyright</span> <strong class="px-1 sitename">Akmeemana Pradeshiya Sabha</strong> <span>All Rights Reserved</span></p>
             <div class="credits">
               Designed by <a href="#" class="ms-2 me-3" style="text-decoration: underline;">N Code UX Private Limited</a><img src="./../images/company logo.png" alt="" width="40px">
             </div>
@@ -445,7 +445,7 @@
 
     <!-- Chat Box -->
     <div class="card chat-box d-none" id="chatBox">
-      <div class="card-header text-bg-danger">
+      <div class="card-header text-bg-primary">
       කතාබස් කරන්න
         <button type="button" class="btn-close btn-close-white float-end" onclick="toggleChat()"></button>
       </div>
@@ -464,8 +464,8 @@
               <p>ඔබට අවශ්‍ය නම්,ඔබේ පණිවිඩයට හඩ පටිගත කිරීමක් අමුණන්න.</p>
             </div>
             <div class="col-4 d-flex align-items-center justify-content-end">
-              <button type="button" class="btn btn-danger me-2" id="startRecording">පටිගත් කරන්න</button>
-              <button type="button" class="btn btn-danger d-none" id="stopRecording">පටිගත් කිරීම නවත්වන්න</button>
+              <button type="button" class="btn btn-primary me-2" id="startRecording">පටිගත් කරන්න</button>
+              <button type="button" class="btn btn-primary d-none" id="stopRecording">පටිගත් කිරීම නවත්වන්න</button>
             </div>
           </div>
           <audio id="audioPlayback" class="mb-2 w-100 d-none" controls></audio>

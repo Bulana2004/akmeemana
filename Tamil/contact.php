@@ -257,7 +257,7 @@ $current_page = basename($_SERVER['REQUEST_URI']);
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Welivitya Divithura Pradeshiya Sabha</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Akmeemana Pradeshiya Sabha</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
         Designed by <a href="#" class="ms-2 me-3" style="text-decoration: underline;">N Code UX Private Limited</a><img src="./../images/company logo.png" alt="" width="40px">
       </div>
@@ -272,64 +272,64 @@ $current_page = basename($_SERVER['REQUEST_URI']);
 
   <!-- Toast Element -->
   <div class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true" id="myToast">
-    <div class="d-flex">
-      <div class="toast-body">
-        Now you can direct your complaints to us directly through the website.
-      </div>
-      <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        <div class="d-flex">
+            <div class="toast-body">
+                இப்போது நீங்கள் உங்கள் புகார்களை இணையதளம் மூலம் நேரடியாக எங்களிடம் தெரிவிக்கலாம்.
+            </div>
+            <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
     </div>
-  </div>
-  <script>
-    // Show Toast on Page Load
-    document.addEventListener('DOMContentLoaded', function() {
-      const myToast = document.getElementById('myToast');
-      const toast = new bootstrap.Toast(myToast, {
-        delay: 7000
-      });
-      toast.show();
-    });
-  </script>
+    <script>
+        // Show Toast on Page Load
+        document.addEventListener('DOMContentLoaded', function() {
+            const myToast = document.getElementById('myToast');
+            const toast = new bootstrap.Toast(myToast, {
+                delay: 7000
+            });
+            toast.show();
+        });
+    </script>
 
-  <!-- ChatBox -->
-  <div class="container">
-    <!-- Chat Button -->
-    <button class="btn chat-toggle" onclick="toggleChat()"><i class="bi bi-chat-dots-fill" style="font-size: 2rem;"></i></button>
+    <!-- ChatBox -->
+    <div class="container">
+        <!-- Chat Button -->
+        <button class="btn chat-toggle" onclick="toggleChat()"><i class="bi bi-chat-dots-fill" style="font-size: 2rem;"></i></button>
 
-    <!-- Chat Box -->
-    <div class="card chat-box d-none" id="chatBox">
-      <div class="card-header text-bg-primary">
-        Chat
-        <button type="button" class="btn-close btn-close-white float-end" onclick="toggleChat()"></button>
-      </div>
-      <div class="card-body">
-        <form id="contactForm" enctype="multipart/form-data">
-          <label for="name">Name :</label>
-          <input type="text" id="name" name="name" class="form-control border-dark mb-2" placeholder="Enter Your Name">
-          <label for="phonenumber">Phone Number :</label>
-          <input type="number" id="phonenumber" name="phonenumber" class="form-control border-dark mb-2" placeholder="Enter Your Phone Number">
-          <label for="email">Email :</label>
-          <input type="email" id="email" name="email" class="form-control border-dark mb-2" placeholder="Enter Your Email">
-          <label for="message">Message :</label>
-          <textarea name="message" id="message" class="form-control border-dark mb-2" placeholder="Enter Your Message" style="height: 90px;"></textarea>
-          <div class="row mb-2">
-            <div class="col-8">
-              <p>If you want, you can attach a voice recording to your message.</p>
+        <!-- Chat Box -->
+        <div class="card chat-box d-none" id="chatBox">
+            <div class="card-header text-bg-primary">
+                அரட்டையடிக்கவும்
+                <button type="button" class="btn-close btn-close-white float-end" onclick="toggleChat()"></button>
             </div>
-            <div class="col-4 d-flex align-items-center justify-content-end">
-              <button type="button" class="btn btn-primary me-2" id="startRecording">Record</button>
-              <button type="button" class="btn btn-primary d-none" id="stopRecording">Stop</button>
-            </div>
-          </div>
-          <audio id="audioPlayback" class="mb-2 w-100 d-none" controls></audio>
-          <input type="file" id="voice" name="voice" class="d-none" accept="audio/*">
-          <button type="submit" class="btn btn-success d-block mx-auto">
-            <span id="sbmsg">Submit Message</span>
-            <div class="spinner-border text-light d-none" id="loader" role="status">
-              <span class="visually-hidden">Loading...</span>
-            </div>
-          </button>
-          <div id="responseMessage" class="mt-3"></div>
-        </form>
+            <div class="card-body">
+                <form id="contactForm" enctype="multipart/form-data">
+                    <label for="name">பெயர் :</label>
+                    <input type="text" id="name" name="name" class="form-control border-dark mb-2" placeholder="உங்கள் பெயரை உள்ளிடவும்">
+                    <label for="phonenumber">தொலைபேசி எண் :</label>
+                    <input type="number" id="phonenumber" name="phonenumber" class="form-control border-dark mb-2" placeholder="உங்கள் தொலைபேசி எண்ணை உள்ளிடவும்">
+                    <label for="email">மின்னஞ்சல் :</label>
+                    <input type="email" id="email" name="email" class="form-control border-dark mb-2" placeholder="உங்கள் மின்னஞ்சலை உள்ளிடவும்">
+                    <label for="message">செய்தி :</label>
+                    <textarea name="message" id="message" class="form-control border-dark mb-2" placeholder="உங்கள் செய்தியை உள்ளிடவும்" style="height: 150px;"></textarea>
+                    <div class="row mb-2">
+                        <div class="col-8">
+                            <p>நீங்கள் விரும்பினால், உங்கள் செய்தியில் ஒரு குரல் பதிவை இணைக்கவும்.</p>
+                        </div>
+                        <div class="col-4 d-flex align-items-center justify-content-end">
+                            <button type="button" class="btn btn-primary me-2" id="startRecording">அதை பதிவு செய்யுங்கள்</button>
+                            <button type="button" class="btn btn-primary d-none" id="stopRecording">பதிவு செய்வதை நிறுத்து</button>
+                        </div>
+                    </div>
+                    <audio id="audioPlayback" class="mb-2 w-100 d-none" controls></audio>
+                    <input type="file" id="voice" name="voice" class="d-none" accept="audio/*">
+                    <button type="submit" class="btn btn-success d-block mx-auto">
+                        <span id="sbmsg">செய்தியை சமர்ப்பிக்கவும்</span>
+                        <div class="spinner-border text-light d-none" id="loader" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                    </button>
+                    <div id="responseMessage" class="mt-3"></div>
+                </form>
       </div>
     </div>
   </div>
