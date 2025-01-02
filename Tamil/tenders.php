@@ -60,8 +60,8 @@
 
             <a href="index.html" class="logo logoAndNameFormobile d-flex align-items-center me-auto me-xl-0">
               <!-- Uncomment the line below if you also wish to use an image logo -->
-              <img class="d-flex align-items-center" src="./images/akmeemanalogo-removebg-preview.png" alt="">
-              <h3 class="sitename"><b>அக்மீமன</b>மாகாண சபை</h3>
+              <img class="d-flex align-items-center" src="./../images/akmeemanalogo-removebg-preview.png" alt="">
+              <h3 class="sitename"><b>அக்மீமன</b><br>மாகாண சபை</h3>
             </a>
 
             <nav id="navmenu" class="navmenu">
@@ -356,7 +356,7 @@
               submitMsg.style.display = 'none';
               responseMessage.innerHTML = '';
 
-              fetch('../pages/tam_contact_process', {
+              fetch('../pages/tam_contact_process.php', {
                   method: 'POST',
                   body: formData
                 })

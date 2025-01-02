@@ -329,7 +329,7 @@ $current_page = basename($_SERVER['REQUEST_URI']) ;
         submitMsg.style.display = 'none';
         responseMessage.innerHTML = '';
 
-        fetch('./pages/contact_process', {
+        fetch('./pages/contact_process.php', {
             method: 'POST',
             body: formData
           })

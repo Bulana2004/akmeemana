@@ -60,8 +60,8 @@ $current_page = basename($_SERVER['REQUEST_URI']);
 
       <a href="index.html" class="logo logoAndNameFormobile d-flex align-items-center me-auto me-xl-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img class="d-flex align-items-center" src="./images/akmeemanalogo-removebg-preview.png" alt="">
-        <h3 class="sitename"><b>අක්මීමන</b>ප්‍රාදේශීය සභාව</h3>
+        <img class="d-flex align-items-center" src="./../images/akmeemanalogo-removebg-preview.png" alt="">
+        <h3 class="sitename"><b>අක්මීමන</b><br>ප්‍රාදේශීය සභාව</h3>
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -187,15 +187,67 @@ $current_page = basename($_SERVER['REQUEST_URI']);
 
             <div class="row gy-4 d-flex justify-content-center">
 
+              <!- - Tam Member - ->
               <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                <div class="team-member d-flex align-items-start">
-                  <div class="pic"><img src="./../images/secretarysir.jpg" class="img-fluid" alt=""></div>
+                <div class="team-member d-flex align-items-center">
+                  <div class="pic"><img src="./../images/lekam.jpg" class="img-fluid" alt=""></div>
                   <div class="member-info">
-                    <h4>අකිල සමීර ප්‍රනාන්දු මහතා </h4>
-                    <span>ලේකම්,
-                      වැලිවිටිය දිවිතුර ප්‍රාදේශීය සභාව
-                    </span>
-                    <p>M.A.(UOR)<br> B.A.(OUSL)</p>
+                        <h4>මංජුලා එච්.එස් දහනායක</h4>
+                        <span>ලේකම්, <br>
+                          අක්මීමන ප්‍රාදේශීය සභාව
+                        </span>
+                      </div>
+                    <!-- <div class="social">
+                          <a href=""><i class="bi bi-twitter-x"></i></a>
+                          <a href=""><i class="bi bi-facebook"></i></a>
+                          <a href=""><i class="bi bi-instagram"></i></a>
+                          <a href=""> <i class="bi bi-linkedin"></i> </a>
+                        </div> -->
+                  </div>
+                </div>
+              <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="team-member d-flex align-items-center">
+                  <div class="pic"><img src="./../images/cc.jpg" class="img-fluid" alt=""></div>
+                  <div class="member-info">
+                        <h4>එච්.කේ මදනායක</h4>
+                        <span>ප්‍රධාන කළමනාකරණ සේවා නිලධාරී, <br>
+                          අක්මීමන ප්‍රාදේශීය සභාව
+                        </span>
+                      </div>
+                    <!-- <div class="social">
+                          <a href=""><i class="bi bi-twitter-x"></i></a>
+                          <a href=""><i class="bi bi-facebook"></i></a>
+                          <a href=""><i class="bi bi-instagram"></i></a>
+                          <a href=""> <i class="bi bi-linkedin"></i> </a>
+                        </div> -->
+                  </div>
+                </div>
+              <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="team-member d-flex align-items-center">
+                  <div class="pic"><img src="./../images/phi.jpg" class="img-fluid" alt=""></div>
+                  <div class="member-info">
+                        <h4>ඩබ්.කේ සුරංග සංජීව</h4>
+                        <span>ආදායම් පරීක්ෂක, <br>
+                          අක්මීමන ප්‍රාදේශීය සභාව
+                        </span>
+                      </div>
+                    <!-- <div class="social">
+                          <a href=""><i class="bi bi-twitter-x"></i></a>
+                          <a href=""><i class="bi bi-facebook"></i></a>
+                          <a href=""><i class="bi bi-instagram"></i></a>
+                          <a href=""> <i class="bi bi-linkedin"></i> </a>
+                        </div> -->
+                  </div>
+                </div>
+              <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="team-member d-flex align-items-center">
+                  <div class="pic"><img src="./../images/adyam.jpg" class="img-fluid" alt=""></div>
+                  <div class="member-info">
+                        <h4>ඒ.ජී ටෙනිසන් ජයතිලක</h4>
+                        <span>ආදායම් පරීක්ෂක, <br>
+                          අක්මීමන ප්‍රාදේශීය සභාව
+                        </span>
+                      </div>
                     <!-- <div class="social">
                           <a href=""><i class="bi bi-twitter-x"></i></a>
                           <a href=""><i class="bi bi-facebook"></i></a>
@@ -207,8 +259,6 @@ $current_page = basename($_SERVER['REQUEST_URI']);
               </div><!- - End Team Member - ->
 
             </div>
-
-          </div>
 
     </section>
 
@@ -424,7 +474,7 @@ $current_page = basename($_SERVER['REQUEST_URI']);
         submitMsg.style.display = 'none';
         responseMessage.innerHTML = '';
 
-        fetch('../pages/tam_contact_process', {
+        fetch('../pages/tam_contact_process.php', {
             method: 'POST',
             body: formData
           })

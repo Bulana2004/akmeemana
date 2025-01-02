@@ -84,8 +84,8 @@
 
             <a href="index.html" class="logo logoAndNameFormobile d-flex align-items-center me-auto me-xl-0">
               <!-- Uncomment the line below if you also wish to use an image logo -->
-              <img class="d-flex align-items-center" src="./images/akmeemanalogo-removebg-preview.png" alt="">
-              <h3 class="sitename"><b>அக்மீமன</b>மாகாண சபை</h3>
+              <img class="d-flex align-items-center" src="./../images/akmeemanalogo-removebg-preview.png" alt="">
+              <h3 class="sitename"><b>அக்மீமன</b><br>மாகாண சபை</h3>
             </a>
 
             <nav id="navmenu" class="navmenu">
@@ -161,7 +161,7 @@
                   <?php } ?>
                 </select>
               </div>
-              <div class="col-lg-3">
+              <div class="col-lg-2">
                 <label for="section">பகுதி</label>
                 <select name="" class="form-control border-dark alighn-item-center" id="section">
                   <option value="all">எல்லாம்</option>
@@ -176,7 +176,7 @@
                   <?php } ?>
                 </select>
               </div>
-              <div class="col-lg-1">
+              <div class="col-lg-2">
                 <button class="btn btn-primary align-item-center mt-4" onclick="okbutton()">தேர்ந்தெடு</button>
               </div>
             </div>
@@ -397,7 +397,7 @@
               submitMsg.style.display = 'none';
               responseMessage.innerHTML = '';
 
-              fetch('../pages/tam_contact_process', {
+              fetch('../pages/tam_contact_process.php', {
                   method: 'POST',
                   body: formData
                 })
@@ -448,7 +448,7 @@
               data: {
                 vals: vals
               },
-              url: '../pages/tam_publication',
+              url: '../pages/tam_publication.php',
               success: function(responce) {
                 $('#table_output').html(responce);
               }
@@ -478,7 +478,7 @@
               data: {
                 vals: vals
               },
-              url: '../pages/tam_publication',
+              url: '../pages/tam_publication.php',
               success: function(responce) {
                 $('#table_output').html(responce);
               }

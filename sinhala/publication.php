@@ -130,7 +130,7 @@ $current_page = basename($_SERVER['REQUEST_URI']);
             <?php } ?>
           </select>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-2">
           <label for="section">කොටස</label>
           <select name="" class="form-control border-dark alighn-item-center" id="section">
             <option value="all">සියල්ල</option>
@@ -145,7 +145,7 @@ $current_page = basename($_SERVER['REQUEST_URI']);
             <?php } ?>
           </select>
         </div>
-        <div class="col-lg-1">
+        <div class="col-lg-2">
           <button class="btn btn-primary align-item-center mt-4" onclick="okbutton()">තෝරන්න</button>
         </div>
       </div>
@@ -367,7 +367,7 @@ $current_page = basename($_SERVER['REQUEST_URI']);
         submitMsg.style.display = 'none';
         responseMessage.innerHTML = '';
 
-        fetch('../pages/tam_contact_process', {
+        fetch('../pages/tam_contact_process.php', {
             method: 'POST',
             body: formData
           })
@@ -419,7 +419,7 @@ $current_page = basename($_SERVER['REQUEST_URI']);
         data: {
           vals: vals
         },
-        url: '../pages/sin_publication_table',
+        url: '../pages/sin_publication_table.php',
         success: function(responce) {
           $('#table_output').html(responce);
         }
@@ -436,7 +436,7 @@ $current_page = basename($_SERVER['REQUEST_URI']);
         data: {
           vals: vals
         },
-        url: '../pages/sin_publication_table',
+        url: '../pages/sin_publication_table.php',
         success: function(responce) {
           $("#table_output").html(responce);
         }

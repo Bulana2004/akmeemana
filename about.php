@@ -180,11 +180,62 @@ $current_page = basename($_SERVER['REQUEST_URI']);
 
               <!- - Tam Member - ->
               <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                <div class="team-member d-flex align-items-start">
+                <div class="team-member d-flex align-items-center">
                   <div class="pic"><img src="./images/lekam.jpg" class="img-fluid" alt=""></div>
                   <div class="member-info">
                         <h4>Manjula H.S Dahanayake</h4>
-                        <span>Secretary ,
+                        <span>Secretary, <br>
+                          Akmeemana Pradeshiya Sabha
+                        </span>
+                      </div>
+                    <!-- <div class="social">
+                          <a href=""><i class="bi bi-twitter-x"></i></a>
+                          <a href=""><i class="bi bi-facebook"></i></a>
+                          <a href=""><i class="bi bi-instagram"></i></a>
+                          <a href=""> <i class="bi bi-linkedin"></i> </a>
+                        </div> -->
+                  </div>
+                </div>
+              <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="team-member d-flex align-items-center">
+                  <div class="pic"><img src="./images/cc.jpg" class="img-fluid" alt=""></div>
+                  <div class="member-info">
+                        <h4>H.K. Madanayake</h4>
+                        <span>Chief Management Services Officer, <br>
+                          Akmeemana Pradeshiya Sabha
+                        </span>
+                      </div>
+                    <!-- <div class="social">
+                          <a href=""><i class="bi bi-twitter-x"></i></a>
+                          <a href=""><i class="bi bi-facebook"></i></a>
+                          <a href=""><i class="bi bi-instagram"></i></a>
+                          <a href=""> <i class="bi bi-linkedin"></i> </a>
+                        </div> -->
+                  </div>
+                </div>
+              <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="team-member d-flex align-items-center">
+                  <div class="pic"><img src="./images/phi.jpg" class="img-fluid" alt=""></div>
+                  <div class="member-info">
+                        <h4>W.K. Suranga Sanjeewa</h4>
+                        <span>Revenue Inspector, <br>
+                          Akmeemana Pradeshiya Sabha
+                        </span>
+                      </div>
+                    <!-- <div class="social">
+                          <a href=""><i class="bi bi-twitter-x"></i></a>
+                          <a href=""><i class="bi bi-facebook"></i></a>
+                          <a href=""><i class="bi bi-instagram"></i></a>
+                          <a href=""> <i class="bi bi-linkedin"></i> </a>
+                        </div> -->
+                  </div>
+                </div>
+              <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="team-member d-flex align-items-center">
+                  <div class="pic"><img src="./images/adyam.jpg" class="img-fluid" alt=""></div>
+                  <div class="member-info">
+                        <h4>A.G. Tennyson Jayatilleke</h4>
+                        <span>Revenue Inspector, <br>
                           Akmeemana Pradeshiya Sabha
                         </span>
                       </div>
@@ -416,7 +467,7 @@ $current_page = basename($_SERVER['REQUEST_URI']);
         submitMsg.style.display = 'none';
         responseMessage.innerHTML = '';
 
-        fetch('./pages/contact_process', {
+        fetch('./pages/contact_process.php', {
             method: 'POST',
             body: formData
           })

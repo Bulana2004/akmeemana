@@ -32,7 +32,7 @@
         </head>
 
         <?php include './../config/config.php';
-        $current_page = basename($_SERVER['REQUEST_URI']);
+        $current_page = basename($_SERVER['PHP_SELF']);
         ?>
 
         <body class="about-page">
@@ -52,48 +52,48 @@
 
                     <a href="index.html" class="logo logoAndNameFormobile d-flex align-items-center me-auto me-xl-0">
                         <!-- Uncomment the line below if you also wish to use an image logo -->
-                        <img class="d-flex align-items-center" src="./images/akmeemanalogo-removebg-preview.png" alt="">
-                        <h3 class="sitename"><b>அக்மீமன</b>மாகாண சபை</h3>
+                        <img class="d-flex align-items-center" src="./../images/akmeemanalogo-removebg-preview.png" alt="">
+                        <h3 class="sitename"><b>அக்மீமன</b><br>மாகாண சபை</h3>
                     </a>
 
                     <nav id="navmenu" class="navmenu">
-                        <ul>
-                            <?php
-                            $sql = $bdd->prepare('SELECT * FROM tamnavbar');
-                            $sql->execute();
+              <ul>
+                <?php
+                $sql = $bdd->prepare('SELECT * FROM tamnavbar');
+                $sql->execute();
 
-                            while ($data = $sql->fetch()) {
-                            ?>
-                                <?php
-                                if ($data[3]) {
-                                    $name = explode(",", $data[1]);
-                                    $link = explode(",", $data[2]);
-                                    $is_activeDropdowns = in_array($current_page, $link) ? 'active' : '';
-                                ?>
-                                    <li class="dropdown"><a class="<?= $is_activeDropdowns ?>" href="<?= $link[0] ?>"><span><?= $name[0] ?></span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                                        <ul>
-                                            <?php
-                                            for ($i = 1; $i < count($name); $i++) {
-                                                $active = ($current_page == basename($link[$i])) ? 'active' : '';
-                                            ?>
-                                                <li><a class="<?= $active ?>" href="./<?= $link[$i] ?>"><?= $name[$i] ?></a></li>
-                                            <?php
-                                            }
-                                            ?>
-                                        </ul>
-                                    </li>
-                                <?php
-                                } else {
-                                    $active = ($current_page == basename($data[2])) ? 'active' : '';
-                                ?>
-                                    <li><a class="<?= $active ?>" href="./<?= $data[2] ?>" class=""><?= $data[1] ?></a></li>
-                                <?php
-                                }
-                                ?>
-                            <?php } ?>
-                        </ul>
-                        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-                    </nav>
+                while ($data = $sql->fetch()) {
+                ?>
+                  <?php
+                  if ($data[3]) {
+                    $name = explode(",", $data[1]);
+                    $link = explode(",", $data[2]);
+                    $is_activeDropdowns = in_array($current_page, $link) ? 'active' : '';
+                  ?>
+                    <li class="dropdown"><a class="<?= $is_activeDropdowns ?>" href="<?= $link[0] ?>"><span><?= $name[0] ?></span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                      <ul>
+                        <?php
+                        for ($i = 1; $i < count($name); $i++) {
+                          $active = ($current_page == basename($link[$i])) ? 'active' : '';
+                        ?>
+                          <li><a class="<?= $active ?>" href="./<?= $link[$i] ?>"><?= $name[$i] ?></a></li>
+                        <?php
+                        }
+                        ?>
+                      </ul>
+                    </li>
+                  <?php
+                  } else {
+                    $active = ($current_page == basename($data[2])) ? 'active' : '';
+                  ?>
+                    <li><a class="<?= $active ?>" href="./<?= $data[2] ?>" class=""><?= $data[1] ?></a></li>
+                  <?php
+                  }
+                  ?>
+                <?php } ?>
+              </ul>
+              <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
 
                 </div>
             </header>
@@ -102,11 +102,11 @@
                 <!-- Page Title -->
                 <div class="page-title">
                     <div class="container d-lg-flex justify-content-between align-items-center">
-                        <h1 class="mb-2 mb-lg-0">Citizenship Charter</h1>
+                        <h1 class="mb-2 mb-lg-0">குடியுரிமை சாசனம்</h1>
                         <nav class="breadcrumbs">
                             <ol>
                                 <li><a href="index.php">முகப்பு பக்கம்</a></li>
-                                <li class="current">Citizenship Charter</li>
+                                <li class="current">குடியுரிமை சாசனம்</li>
                             </ol>
                         </nav>
                     </div>
@@ -330,7 +330,7 @@
                         submitMsg.style.display = 'none';
                         responseMessage.innerHTML = '';
 
-                        fetch('./pages/contact_process', {
+                        fetch('../pages/tam_contact_process.php', {
                                 method: 'POST',
                                 body: formData
                             })

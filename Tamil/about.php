@@ -60,8 +60,8 @@ $current_page = basename($_SERVER['REQUEST_URI']);
 
       <a href="index.html" class="logo logoAndNameFormobile d-flex align-items-center me-auto me-xl-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img class="d-flex align-items-center" src="./images/akmeemanalogo-removebg-preview.png" alt="">
-        <h3 class="sitename"><b>அக்மீமன</b>மாகாண சபை</h3>
+        <img class="d-flex align-items-center" src="./../images/akmeemanalogo-removebg-preview.png" alt="">
+        <h3 class="sitename"><b>அக்மீமன</b><br>மாகாண சபை</h3>
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -183,15 +183,67 @@ $current_page = basename($_SERVER['REQUEST_URI']);
 
             <div class="row gy-4 d-flex justify-content-center">
 
+              <!- - Tam Member - ->
               <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                <div class="team-member d-flex align-items-start">
-                  <div class="pic"><img src="./../images/secretarysir.jpg" class="img-fluid" alt=""></div>
+                <div class="team-member d-flex align-items-center">
+                  <div class="pic"><img src="./../images/lekam.jpg" class="img-fluid" alt=""></div>
                   <div class="member-info">
-                    <h4>திரு அகில சமீர பெர்னாண்டோ </h4>
-                    <span>செயலாளர்,
-                      வெலிவிடிய திவித்துறை பிராந்திய சபை
-                    </span>
-                    <p>M.A.(UOR) <br> B.A.(OUSL)</p>
+                        <h4>மஞ்சுளா எச்.எஸ்.தஹாநாயக்க</h4>
+                        <span>செயலாளர், <br>
+                          அக்மீமன பிராந்திய சபை
+                        </span>
+                      </div>
+                    <!-- <div class="social">
+                          <a href=""><i class="bi bi-twitter-x"></i></a>
+                          <a href=""><i class="bi bi-facebook"></i></a>
+                          <a href=""><i class="bi bi-instagram"></i></a>
+                          <a href=""> <i class="bi bi-linkedin"></i> </a>
+                        </div> -->
+                  </div>
+                </div>
+              <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="team-member d-flex align-items-center">
+                  <div class="pic"><img src="./../images/cc.jpg" class="img-fluid" alt=""></div>
+                  <div class="member-info">
+                        <h4>எச்.கே.மதநாயக்க</h4>
+                        <span>தலைமை நிர்வாக சேவைகள் அதிகாரி, <br>
+                          அக்மீமன பிராந்திய சபை
+                        </span>
+                      </div>
+                    <!-- <div class="social">
+                          <a href=""><i class="bi bi-twitter-x"></i></a>
+                          <a href=""><i class="bi bi-facebook"></i></a>
+                          <a href=""><i class="bi bi-instagram"></i></a>
+                          <a href=""> <i class="bi bi-linkedin"></i> </a>
+                        </div> -->
+                  </div>
+                </div>
+              <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="team-member d-flex align-items-center">
+                  <div class="pic"><img src="./../images/phi.jpg" class="img-fluid" alt=""></div>
+                  <div class="member-info">
+                        <h4>டபிள்யூ.கே.சுரங்கா சஞ்சீவ</h4>
+                        <span>வருவாய் ஆய்வாளர், <br>
+                          அக்மீமன பிராந்திய சபை
+                        </span>
+                      </div>
+                    <!-- <div class="social">
+                          <a href=""><i class="bi bi-twitter-x"></i></a>
+                          <a href=""><i class="bi bi-facebook"></i></a>
+                          <a href=""><i class="bi bi-instagram"></i></a>
+                          <a href=""> <i class="bi bi-linkedin"></i> </a>
+                        </div> -->
+                  </div>
+                </div>
+              <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="team-member d-flex align-items-center">
+                  <div class="pic"><img src="./../images/adyam.jpg" class="img-fluid" alt=""></div>
+                  <div class="member-info">
+                        <h4>ஏ.ஜி.டென்னிசன் ஜயதிலக்க</h4>
+                        <span>வருவாய் ஆய்வாளர், <br>
+                          அக்மீமன பிராந்திய சபை
+                        </span>
+                      </div>
                     <!-- <div class="social">
                           <a href=""><i class="bi bi-twitter-x"></i></a>
                           <a href=""><i class="bi bi-facebook"></i></a>
@@ -203,8 +255,6 @@ $current_page = basename($_SERVER['REQUEST_URI']);
               </div><!- - End Team Member - ->
 
             </div>
-
-          </div>
 
     </section>
 
@@ -420,7 +470,7 @@ $current_page = basename($_SERVER['REQUEST_URI']);
         submitMsg.style.display = 'none';
         responseMessage.innerHTML = '';
 
-        fetch('./pages/contact_process', {
+        fetch('../pages/tam_contact_process.php', {
             method: 'POST',
             body: formData
           })
