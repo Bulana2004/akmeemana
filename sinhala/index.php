@@ -361,19 +361,19 @@
 
           <div class="container footer-top">
             <div class="row gy-4">
-              <div class="col-lg-4 col-md-6 footer-about">
+            <div class="col-lg-4 col-md-6 footer-about">
                 <a href="./index.php" class="logo d-flex align-items-center">
-                  <span class="sitename">වැලිවිටිය දිවිතුර <br> ප්‍රාදේශීය සභාව.</span>
+                  <span class="sitename">අක්මීමන <br> ප්‍රාදේශීය සභාව</span>
                 </a>
                 <div class="footer-contact pt-3">
-                  <p>වැලිවිටිය දිවිතුර</p>
-                  <p>ප්‍රාදේශීය සභාව, අගලිය</p>
-                  <p class="mt-3"><strong>දුරකථන අං:</strong> <span>0912260554</span></p>
-                  <p><strong>විද්‍යුත් ලිපිනය:</strong> <span>wdps2006@gmail.com</span></p>
+                  <p>අක්මීමන</p>
+                  <p>ප්‍රාදේශීය සභාව,පින්නදූව</p>
+                  <p class="mt-3"><strong>දුරකතන අංකය:</strong> <span>0912222375</span></p>
+                  <p><strong>ඊමේල්:</strong> <span>akmeemanaps@gmail.com</span></p>
                 </div>
                 <div class="social-links d-flex mt-4">
                   <a href="https://www.facebook.com/profile.php?id=61552307069235&mibextid=ZbWKwL" target="_blank" class="text-primary" style="border-color: #0d6efd;"><i class="bi bi-facebook"></i></a>
-                  <a href="https://play.google.com/store/apps/details?id=io.akva.esabha&pcampaignid=web_share" target="_blank" style="color: #0074b1;border-color:#0074b1;"><i class="bi bi-bank"></i></a> <span class="mt-2" style="color: #0074b1;border-color:#0074b1;">eSabha යෙදුම</span>
+                  <!-- <a href="https://play.google.com/store/apps/details?id=io.akva.esabha&pcampaignid=web_share" target="_blank" style="color: #0074b1;border-color:#0074b1;"><i class="bi bi-bank"></i></a> <span class="mt-2"  style="color: #0074b1;border-color:#0074b1;">eSabha App</span> -->
                 </div>
               </div>
 

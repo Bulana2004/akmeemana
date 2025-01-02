@@ -123,7 +123,7 @@ $current_page = basename($_SERVER['REQUEST_URI']) ;
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
-          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1039.5063114058596!2d80.17973951308593!3d6.220023344603567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae1795a73f59e8d%3A0x719deae97b8e192c!2sWelivitiya%20-%20Divithura%20Pradeshiya%20Sabha!5e1!3m2!1sen!2slk!4v1734875715586!5m2!1sen!2slk" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3812.4865752915457!2d80.26597147480193!3d6.0677574939182115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae171f90743e33f%3A0xc761c12abc1a3a30!2sAkmeemana%20Pradeshiya%20Sabha!5e1!3m2!1sen!2slk!4v1735796586300!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div><!-- End Google Maps -->
 
         <div class="row gy-4">
@@ -211,21 +211,21 @@ $current_page = basename($_SERVER['REQUEST_URI']) ;
 
     <div class="container footer-top">
       <div class="row gy-4">
-        <div class="col-lg-4 col-md-6 footer-about">
-          <a href="./index.php" class="logo d-flex align-items-center">
-            <span class="sitename">Welivitya Divithura <br> Pradeshiya Sabha</span>
-          </a>
-          <div class="footer-contact pt-3">
-            <p>Welivitiya Divithura</p>
-            <p>Pradeshiya Sabha, Agaliya</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>0912260554</span></p>
-            <p><strong>Email:</strong> <span>wdps2006@gmail.com</span></p>
-          </div>
-          <div class="social-links d-flex mt-4">
-            <a href="" target="_blank" class="text-primary" style="border-color: #0d6efd;"><i class="bi bi-facebook"></i></a>
-            <a href="" target="_blank" style="color: #0074b1;border-color:#0074b1;"><i class="bi bi-bank"></i></a>
-          </div>
-        </div>
+      <div class="col-lg-4 col-md-6 footer-about">
+                <a href="./index.php" class="logo d-flex align-items-center">
+                  <span class="sitename">Akmeemana <br> Pradeshiya Sabha</span>
+                </a>
+                <div class="footer-contact pt-3">
+                  <p>Akmeemana</p>
+                  <p>Pradeshiya Sabha, Pinnaduwa</p>
+                  <p class="mt-3"><strong>Phone:</strong> <span>0912222375</span></p>
+                  <p><strong>Email:</strong> <span>akmeemanaps@gmail.com</span></p>
+                </div>
+                <div class="social-links d-flex mt-4">
+                  <a href="https://www.facebook.com/profile.php?id=61552307069235&mibextid=ZbWKwL" target="_blank" class="text-primary" style="border-color: #0d6efd;"><i class="bi bi-facebook"></i></a>
+                  <!-- <a href="https://play.google.com/store/apps/details?id=io.akva.esabha&pcampaignid=web_share" target="_blank" style="color: #0074b1;border-color:#0074b1;"><i class="bi bi-bank"></i></a> <span class="mt-2"  style="color: #0074b1;border-color:#0074b1;">eSabha App</span> -->
+                </div>
+              </div>
 
         <div class="col-lg-2"></div>
 
