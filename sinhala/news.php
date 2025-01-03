@@ -127,7 +127,7 @@ $current_page = basename($_SERVER['REQUEST_URI']);
 
       <div class="container">
         <?php
-        $sql = $bdd->prepare("SELECT * FROM sin_news ORDER BY id DESC");
+        $sql = $bdd->prepare("SELECT * FROM sin_news ORDER BY date DESC");
         $sql->execute();
         $count = 0;
         ?>

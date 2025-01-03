@@ -127,7 +127,7 @@
 
           <div class="container">
             <?php
-            $sql = $bdd->prepare("SELECT * FROM news ORDER BY id DESC");
+            $sql = $bdd->prepare("SELECT * FROM news ORDER BY date DESC");
             $sql->execute();
             $count = 0;
             ?>
