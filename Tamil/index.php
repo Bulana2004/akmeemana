@@ -132,7 +132,7 @@
 
                 <div class="swiper-wrapper">
                   <?php
-                  $sql = $bdd->prepare('select * from slider');
+                  $sql = $bdd->prepare('select * from slider order by id desc');
                   $sql->execute();
                   ?>
                   <?php while ($data = $sql->fetch()) { ?>

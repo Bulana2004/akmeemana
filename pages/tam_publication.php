@@ -67,7 +67,7 @@ if($year == 'all'){
       <td>
         <a href="./controllers/assets/files/publication/<?= $data[3] ?>" target="_blank">
           <button type="button" class="btn btn-link btn-sm btn-rounded">
-            Download
+            பதிவிறக்கவும்
           </button>
         </a>
       </td>
