@@ -200,56 +200,56 @@ $current_page = basename($_SERVER['REQUEST_URI']);
                                 <div class="col-sm-12">
                                     <li>
                                         <p class="mb-0">
-                                        වරිපනම් හා අක්කර බදු හා සභාවට අයවිය යුතු අනෙකුත් බදු කතු කිරීම.
+                                            වරිපනම් හා අක්කර බදු හා සභාවට අයවිය යුතු අනෙකුත් බදු කතු කිරීම.
                                         </p>
                                     </li>
                                 </div>
                                 <div class="col-sm-12">
                                     <li>
                                         <p class="mb-0">
-                                        කඩ කාමර කුලී හා ගෙවල් කුලී අය කිරීම.
+                                            කඩ කාමර කුලී හා ගෙවල් කුලී අය කිරීම.
                                         </p>
                                     </li>
                                 </div>
                                 <div class="col-sm-12">
                                     <li>
                                         <p class="mb-0">
-                                        පොළ බදු අකතු කිරීම.
+                                            පොළ බදු අකතු කිරීම.
                                         </p>
                                     </li>
                                 </div>
                                 <div class="col-sm-12">
                                     <li>
                                         <p class="mb-0">
-                                        දේපළ බදු කතු කිරීම.
+                                            දේපළ බදු කතු කිරීම.
                                         </p>
                                     </li>
                                 </div>
                                 <div class="col-sm-12">
                                     <li>
                                         <p class="mb-0">
-                                        මාර්ග ලියාපදිංචි කිරීම.
+                                            මාර්ග ලියාපදිංචි කිරීම.
                                         </p>
                                     </li>
                                 </div>
                                 <div class="col-sm-12">
                                     <li>
                                         <p class="mb-0">
-                                        වීදි පහන් සවි කිරීම හා නඩත්තු කිරීම.
+                                            වීදි පහන් සවි කිරීම හා නඩත්තු කිරීම.
                                         </p>
                                     </li>
                                 </div>
                                 <div class="col-sm-12">
                                     <li>
                                         <p class="mb-0">
-                                        ශ්‍රවණාගාරය වෙන් කිරීම හා අදාල ගාස්තු අය කිරීම.
+                                            ශ්‍රවණාගාරය වෙන් කිරීම හා අදාල ගාස්තු අය කිරීම.
                                         </p>
                                     </li>
                                 </div>
                                 <div class="col-sm-12">
                                     <li>
                                         <p class="mb-0">
-                                        වෙළඳ ව්‍යාපාර හා වෙළඳ බල පත්‍ර ගාස්තු අය කිරීම.
+                                            වෙළඳ ව්‍යාපාර හා වෙළඳ බල පත්‍ර ගාස්තු අය කිරීම.
                                         </p>
                                     </li>
                                 </div>
@@ -283,21 +283,21 @@ $current_page = basename($_SERVER['REQUEST_URI']);
                                 <div class="col-sm-12">
                                     <li>
                                         <p class="mb-0">
-                                        කොන්ත්‍රාත්කරුවන් හා කොන්ත්‍රාත් සමිති සමග ගිවිසුම් ගත වීම. මාර්ග, ගොඩනැගිලි, &emsp; නිර්මිත ජල ව්‍යාපෘති හා විශේෂ ව්‍යාපෘති අදිය.
+                                            කොන්ත්‍රාත්කරුවන් හා කොන්ත්‍රාත් සමිති සමග ගිවිසුම් ගත වීම. මාර්ග, ගොඩනැගිලි, &emsp; නිර්මිත ජල ව්‍යාපෘති හා විශේෂ ව්‍යාපෘති අදිය.
                                         </p>
                                     </li>
                                 </div>
                                 <div class="col-sm-12">
                                     <li>
                                         <p class="mb-0">
-                                        යන්ත්‍ර හා වාහන කුලී පදනම මත ලබා දීම.
+                                            යන්ත්‍ර හා වාහන කුලී පදනම මත ලබා දීම.
                                         </p>
                                     </li>
                                 </div>
                                 <div class="col-sm-12">
                                     <li>
                                         <p class="mb-0">
-                                        මහජන පැමිණිලි.
+                                            මහජන පැමිණිලි.
                                         </p>
                                     </li>
                                 </div>
@@ -321,7 +321,7 @@ $current_page = basename($_SERVER['REQUEST_URI']);
                                 <div class="col-sm-12">
                                     <li>
                                         <p class="mb-0">
-                                        සභාවේ සියලුම ගිණුම් පාලන කටයුතු සිදු කරනු ලැබේ.
+                                            සභාවේ සියලුම ගිණුම් පාලන කටයුතු සිදු කරනු ලැබේ.
                                         </p>
                                     </li>
                                 </div>
@@ -345,21 +345,21 @@ $current_page = basename($_SERVER['REQUEST_URI']);
 
         <div class="container footer-top">
             <div class="row gy-4">
-            <div class="col-lg-4 col-md-6 footer-about">
-                <a href="./index.php" class="logo d-flex align-items-center">
-                  <span class="sitename">අක්මීමන <br> ප්‍රාදේශීය සභාව</span>
-                </a>
-                <div class="footer-contact pt-3">
-                  <p>අක්මීමන</p>
-                  <p>ප්‍රාදේශීය සභාව,පින්නදූව</p>
-                  <p class="mt-3"><strong>දුරකතන අංකය:</strong> <span>0912222375</span></p>
-                  <p><strong>ඊමේල්:</strong> <span>akmeemanaps@gmail.com</span></p>
+                <div class="col-lg-4 col-md-6 footer-about">
+                    <a href="./index.php" class="logo d-flex align-items-center">
+                        <span class="sitename">අක්මීමන <br> ප්‍රාදේශීය සභාව</span>
+                    </a>
+                    <div class="footer-contact pt-3">
+                        <p>අක්මීමන</p>
+                        <p>ප්‍රාදේශීය සභාව,පින්නදූව</p>
+                        <p class="mt-3"><strong>දුරකතන අංකය:</strong> <span>0912222375</span></p>
+                        <p><strong>ඊමේල්:</strong> <span>akmeemanaps@gmail.com</span></p>
+                    </div>
+                    <div class="social-links d-flex mt-4">
+                        <a href="https://www.facebook.com/profile.php?id=61552307069235&mibextid=ZbWKwL" target="_blank" class="text-primary" style="border-color: #0d6efd;"><i class="bi bi-facebook"></i></a>
+                        <!-- <a href="https://play.google.com/store/apps/details?id=io.akva.esabha&pcampaignid=web_share" target="_blank" style="color: #0074b1;border-color:#0074b1;"><i class="bi bi-bank"></i></a> <span class="mt-2"  style="color: #0074b1;border-color:#0074b1;">eSabha App</span> -->
+                    </div>
                 </div>
-                <div class="social-links d-flex mt-4">
-                  <a href="https://www.facebook.com/profile.php?id=61552307069235&mibextid=ZbWKwL" target="_blank" class="text-primary" style="border-color: #0d6efd;"><i class="bi bi-facebook"></i></a>
-                  <!-- <a href="https://play.google.com/store/apps/details?id=io.akva.esabha&pcampaignid=web_share" target="_blank" style="color: #0074b1;border-color:#0074b1;"><i class="bi bi-bank"></i></a> <span class="mt-2"  style="color: #0074b1;border-color:#0074b1;">eSabha App</span> -->
-                </div>
-              </div>
 
                 <div class="col-lg-2"></div>
 
@@ -403,180 +403,180 @@ $current_page = basename($_SERVER['REQUEST_URI']);
     <div id="preloader"></div>
 
     <!-- Toast Element -->
-  <div class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true" id="myToast">
-    <div class="d-flex">
-      <div class="toast-body">
-      දැන් ඔබට ඔබගේ පැමිණිලි වෙබ් අඩවිය හරහා සෘජුවම අප වෙත යොමු කළ හැක.
-      </div>
-      <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+    <div class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true" id="myToast">
+        <div class="d-flex">
+            <div class="toast-body">
+                දැන් ඔබට ඔබගේ පැමිණිලි වෙබ් අඩවිය හරහා සෘජුවම අප වෙත යොමු කළ හැක.
+            </div>
+            <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
     </div>
-  </div>
-  <script>
-    // Show Toast on Page Load
-    document.addEventListener('DOMContentLoaded', function() {
-      const myToast = document.getElementById('myToast');
-      const toast = new bootstrap.Toast(myToast, {
-        delay: 7000
-      });
-      toast.show();
-    });
-  </script>
+    <script>
+        // Show Toast on Page Load
+        document.addEventListener('DOMContentLoaded', function() {
+            const myToast = document.getElementById('myToast');
+            const toast = new bootstrap.Toast(myToast, {
+                delay: 7000
+            });
+            toast.show();
+        });
+    </script>
 
-  <!-- ChatBox -->
-  <div class="container">
-    <!-- Chat Button -->
-    <button class="btn chat-toggle" onclick="toggleChat()"><i class="bi bi-chat-dots-fill" style="font-size: 2rem;"></i></button>
+    <!-- ChatBox -->
+    <div class="container">
+        <!-- Chat Button -->
+        <button class="btn chat-toggle" onclick="toggleChat()"><i class="bi bi-chat-dots-fill" style="font-size: 2rem;"></i></button>
 
-    <!-- Chat Box -->
-    <div class="card chat-box d-none" id="chatBox">
-      <div class="card-header text-bg-primary">
-      කතාබස් කරන්න
-        <button type="button" class="btn-close btn-close-white float-end" onclick="toggleChat()"></button>
-      </div>
-      <div class="card-body">
-        <form id="contactForm" enctype="multipart/form-data">
-          <label for="name">නම :</label>
-          <input type="text" id="name" name="name" class="form-control border-dark mb-2" placeholder="ඔබගේ නම ඇතුලත් කරන්න">
-          <label for="phonenumber">දුරකතන අංකය :</label>
-          <input type="number" id="phonenumber" name="phonenumber" class="form-control border-dark mb-2" placeholder="ඔබගේ දුරකථන අංකය ඇතුලත් කරන්න">
-          <label for="email">ඊමේල් :</label>
-          <input type="email" id="email" name="email" class="form-control border-dark mb-2" placeholder="ඔබගේ විද්‍යුත් ලිපිනය ඇතුලත් කරන්න">
-          <label for="message">පණිවිඩය :</label>
-          <textarea name="message" id="message" class="form-control border-dark mb-2" placeholder="ඔබගේ පණිවිඩය ඇතුලත් කරන්න" style="height: 150px;"></textarea>
-          <div class="row mb-2">
-            <div class="col-8">
-              <p>ඔබට අවශ්‍ය නම්,ඔබේ පණිවිඩයට හඩ පටිගත කිරීමක් අමුණන්න.</p>
+        <!-- Chat Box -->
+        <div class="card chat-box d-none" id="chatBox">
+            <div class="card-header text-bg-primary">
+                කතාබස් කරන්න
+                <button type="button" class="btn-close btn-close-white float-end" onclick="toggleChat()"></button>
             </div>
-            <div class="col-4 d-flex align-items-center justify-content-end">
-              <button type="button" class="btn btn-primary me-2" id="startRecording">පටිගත් කරන්න</button>
-              <button type="button" class="btn btn-primary d-none" id="stopRecording">පටිගත් කිරීම නවත්වන්න</button>
+            <div class="card-body">
+                <form id="contactForm" enctype="multipart/form-data">
+                    <label for="name">නම :</label>
+                    <input type="text" id="name" name="name" class="form-control border-dark mb-2" placeholder="ඔබගේ නම ඇතුලත් කරන්න">
+                    <label for="phonenumber">දුරකතන අංකය :</label>
+                    <input type="number" id="phonenumber" name="phonenumber" class="form-control border-dark mb-2" placeholder="ඔබගේ දුරකථන අංකය ඇතුලත් කරන්න">
+                    <label for="email">ඊමේල් :</label>
+                    <input type="email" id="email" name="email" class="form-control border-dark mb-2" placeholder="ඔබගේ විද්‍යුත් ලිපිනය ඇතුලත් කරන්න">
+                    <label for="message">පණිවිඩය :</label>
+                    <textarea name="message" id="message" class="form-control border-dark mb-2" placeholder="ඔබගේ පණිවිඩය ඇතුලත් කරන්න" style="height: 150px;"></textarea>
+                    <div class="row mb-2">
+                        <div class="col-8">
+                            <p>ඔබට අවශ්‍ය නම්,ඔබේ පණිවිඩයට හඩ පටිගත කිරීමක් අමුණන්න.</p>
+                        </div>
+                        <div class="col-4 d-flex align-items-center justify-content-end">
+                            <button type="button" class="btn btn-primary me-2" id="startRecording">පටිගත් කරන්න</button>
+                            <button type="button" class="btn btn-primary d-none" id="stopRecording">පටිගත් කිරීම නවත්වන්න</button>
+                        </div>
+                    </div>
+                    <audio id="audioPlayback" class="mb-2 w-100 d-none" controls></audio>
+                    <input type="file" id="voice" name="voice" class="d-none" accept="audio/*">
+                    <button type="submit" class="btn btn-success d-block mx-auto">
+                        <span id="sbmsg">පණිවිඩය ඉදිරිපත් කරන්න</span>
+                        <div class="spinner-border text-light d-none" id="loader" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                    </button>
+                    <div id="responseMessage" class="mt-3"></div>
+                </form>
             </div>
-          </div>
-          <audio id="audioPlayback" class="mb-2 w-100 d-none" controls></audio>
-          <input type="file" id="voice" name="voice" class="d-none" accept="audio/*">
-          <button type="submit" class="btn btn-success d-block mx-auto">
-            <span id="sbmsg">පණිවිඩය ඉදිරිපත් කරන්න</span>
-            <div class="spinner-border text-light d-none" id="loader" role="status">
-              <span class="visually-hidden">Loading...</span>
-            </div>
-          </button>
-          <div id="responseMessage" class="mt-3"></div>
-        </form>
-      </div>
+        </div>
     </div>
-  </div>
 
-  <script>
-    function toggleChat() {
-      $('#chatBox').toggleClass('d-none');
-    }
-
-    document.addEventListener('DOMContentLoaded', function() {
-      let mediaRecorder;
-      let audioChunks = [];
-      const startRecordingBtn = document.getElementById('startRecording');
-      const stopRecordingBtn = document.getElementById('stopRecording');
-      const audioPlayback = document.getElementById('audioPlayback');
-      const contactForm = document.getElementById('contactForm');
-
-      function toggleChat() {
-        document.getElementById('chatBox').classList.toggle('d-none');
-      }
-
-      // Recording functionality
-      startRecordingBtn.addEventListener('click', async function() {
-        try {
-          const stream = await navigator.mediaDevices.getUserMedia({
-            audio: true
-          });
-          mediaRecorder = new MediaRecorder(stream);
-          audioChunks = [];
-
-          mediaRecorder.addEventListener('dataavailable', event => {
-            audioChunks.push(event.data);
-          });
-
-          mediaRecorder.addEventListener('stop', () => {
-            const audioBlob = new Blob(audioChunks, {
-              type: 'audio/webm'
-            });
-            const audioUrl = URL.createObjectURL(audioBlob);
-            audioPlayback.src = audioUrl;
-            audioPlayback.classList.remove('d-none');
-
-            // Create file for form submission
-            const userName = document.getElementById('name').value || 'Unnamed';
-            const fileName = `${userName}-voiceRecord.webm`;
-            const file = new File([audioBlob], fileName, {
-              type: 'audio/webm'
-            });
-
-            // Add file to file input
-            const dataTransfer = new DataTransfer();
-            dataTransfer.items.add(file);
-            document.getElementById('voice').files = dataTransfer.files;
-
-            // Stop all tracks to release microphone
-            stream.getTracks().forEach(track => track.stop());
-          });
-
-          mediaRecorder.start();
-          startRecordingBtn.classList.add('d-none');
-          stopRecordingBtn.classList.remove('d-none');
-        } catch (err) {
-          console.error('Error accessing microphone:', err);
-          alert('Microphone access is required to record audio. Please ensure you have granted permission.');
+    <script>
+        function toggleChat() {
+            $('#chatBox').toggleClass('d-none');
         }
-      });
 
-      stopRecordingBtn.addEventListener('click', function() {
-        if (mediaRecorder && mediaRecorder.state === 'recording') {
-          mediaRecorder.stop();
-          stopRecordingBtn.classList.add('d-none');
-          startRecordingBtn.classList.remove('d-none');
-          startRecordingBtn.textContent = 'නැවත්ත පටිගත කරන්න';
-        }
-      });
+        document.addEventListener('DOMContentLoaded', function() {
+            let mediaRecorder;
+            let audioChunks = [];
+            const startRecordingBtn = document.getElementById('startRecording');
+            const stopRecordingBtn = document.getElementById('stopRecording');
+            const audioPlayback = document.getElementById('audioPlayback');
+            const contactForm = document.getElementById('contactForm');
 
-      // Form submission
-      contactForm.addEventListener('submit', function(event) {
-        event.preventDefault();
-        const formData = new FormData(this);
-        const loader = document.getElementById('loader');
-        const submitMsg = document.getElementById('sbmsg');
-        const responseMessage = document.getElementById('responseMessage');
-
-        loader.classList.remove('d-none');
-        submitMsg.style.display = 'none';
-        responseMessage.innerHTML = '';
-
-        fetch('../pages/tam_contact_process.php', {
-            method: 'POST',
-            body: formData
-          })
-          .then(response => response.text())
-          .then(data => {
-            loader.classList.add('d-none');
-            submitMsg.style.display = '';
-            responseMessage.innerHTML = data;
-
-            // Reset form and recording elements if submission was successful
-            if (!data.includes('error')) {
-              contactForm.reset();
-              audioPlayback.classList.add('d-none');
-              audioPlayback.src = '';
-              startRecordingBtn.textContent = 'පටිගත කරන්න';
+            function toggleChat() {
+                document.getElementById('chatBox').classList.toggle('d-none');
             }
-          })
-          .catch(error => {
-            console.error('Error:', error);
-            loader.classList.add('d-none');
-            submitMsg.style.display = '';
-            responseMessage.innerHTML = 'An error occurred. Please try again.';
-          });
-      });
-    });
-  </script>
+
+            // Recording functionality
+            startRecordingBtn.addEventListener('click', async function() {
+                try {
+                    const stream = await navigator.mediaDevices.getUserMedia({
+                        audio: true
+                    });
+                    mediaRecorder = new MediaRecorder(stream);
+                    audioChunks = [];
+
+                    mediaRecorder.addEventListener('dataavailable', event => {
+                        audioChunks.push(event.data);
+                    });
+
+                    mediaRecorder.addEventListener('stop', () => {
+                        const audioBlob = new Blob(audioChunks, {
+                            type: 'audio/webm'
+                        });
+                        const audioUrl = URL.createObjectURL(audioBlob);
+                        audioPlayback.src = audioUrl;
+                        audioPlayback.classList.remove('d-none');
+
+                        // Create file for form submission
+                        const userName = document.getElementById('name').value || 'Unnamed';
+                        const fileName = `${userName}-voiceRecord.webm`;
+                        const file = new File([audioBlob], fileName, {
+                            type: 'audio/webm'
+                        });
+
+                        // Add file to file input
+                        const dataTransfer = new DataTransfer();
+                        dataTransfer.items.add(file);
+                        document.getElementById('voice').files = dataTransfer.files;
+
+                        // Stop all tracks to release microphone
+                        stream.getTracks().forEach(track => track.stop());
+                    });
+
+                    mediaRecorder.start();
+                    startRecordingBtn.classList.add('d-none');
+                    stopRecordingBtn.classList.remove('d-none');
+                } catch (err) {
+                    console.error('Error accessing microphone:', err);
+                    alert('Microphone access is required to record audio. Please ensure you have granted permission.');
+                }
+            });
+
+            stopRecordingBtn.addEventListener('click', function() {
+                if (mediaRecorder && mediaRecorder.state === 'recording') {
+                    mediaRecorder.stop();
+                    stopRecordingBtn.classList.add('d-none');
+                    startRecordingBtn.classList.remove('d-none');
+                    startRecordingBtn.textContent = 'නැවත්ත පටිගත කරන්න';
+                }
+            });
+
+            // Form submission
+            contactForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+                const formData = new FormData(this);
+                const loader = document.getElementById('loader');
+                const submitMsg = document.getElementById('sbmsg');
+                const responseMessage = document.getElementById('responseMessage');
+
+                loader.classList.remove('d-none');
+                submitMsg.style.display = 'none';
+                responseMessage.innerHTML = '';
+
+                fetch('../pages/tam_contact_process.php', {
+                        method: 'POST',
+                        body: formData
+                    })
+                    .then(response => response.text())
+                    .then(data => {
+                        loader.classList.add('d-none');
+                        submitMsg.style.display = '';
+                        responseMessage.innerHTML = data;
+
+                        // Reset form and recording elements if submission was successful
+                        if (!data.includes('error')) {
+                            contactForm.reset();
+                            audioPlayback.classList.add('d-none');
+                            audioPlayback.src = '';
+                            startRecordingBtn.textContent = 'පටිගත කරන්න';
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                        loader.classList.add('d-none');
+                        submitMsg.style.display = '';
+                        responseMessage.innerHTML = 'An error occurred. Please try again.';
+                    });
+            });
+        });
+    </script>
 
     <script src="../assets/js/jquery.min.js"></script>
 

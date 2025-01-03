@@ -122,89 +122,62 @@ $current_page = basename($_SERVER['REQUEST_URI']);
                 <div class="row g-5">
                     <div class="col-lg-6 order-1 order-lg-1" data-aos="fade-up" data-aos-delay="0.1s" style="min-height: 400px;">
                         <div class="position-relative h-100">
-                            <img class="img-fluid position-absolute w-100 h-100" src="./../images/sev1.jpg" alt="Responsive Image" style="object-fit: cover;">
+                            <img class="img-fluid position-absolute w-100 h-100" src="../images/sev1.jpg" alt="Responsive Image" style="object-fit: cover;">
                         </div>
                     </div>
 
                     <div class="col-lg-6 order-2 order-lg-2" data-aos="fade-up" data-aos-delay="0.3s">
-                        <h1 class=" bg-white text-start pe-3">நிறுவனங்கள் மற்றும் கணக்குப் பிரிவு</h1>
+                        <h1 class=" bg-white text-start pe-3">சமூகம் மற்றும் சுற்றுச்சூழல் பிரிவு</h1>
                         <br>
                         <ul>
                             <div class="row gy-2 gx-4 mb-4">
                                 <div class="col-sm-12">
                                     <li>
-                                        <p class="mb-0 ">
-                                            சபைக் கூட்டங்கள், விசேட சபைக் கூட்டங்கள், குழுக் கூட்டங்கள் என்பவற்றை நடாத்துதல் மற்றும் அத்தகைய தீர்மானங்களை நடைமுறைப்படுத்தல்.
+                                        <p class="mb-0 ">சுற்றுச்சூழல் அனுமதிகளை வழங்கல்.
                                         </p>
                                     </li>
                                 </div>
                                 <div class="col-sm-12">
                                     <li>
-                                        <p class="mb-0">
-                                            பணிப்பாளர் சபையை நெறிப்படுத்தலும் கட்டுப்படுத்துதலும். கொடுப்பது.
+                                        <p class="mb-0">ஆபத்தான மரங்களை அகற்றுதல் மற்றும் பரிந்துரை வழங்கல்.
                                         </p>
                                     </li>
                                 </div>
                                 <div class="col-sm-12">
                                     <li>
-                                        <p class="mb-0">
-                                            வீட்டின் உள்ளகக் கணக்காய்வை நடாத்துதல்.
+                                        <p class="mb-0">சுற்றுச்சூழல் குறைகளை சரிசெய்தல்.
                                         </p>
                                     </li>
                                 </div>
                                 <div class="col-sm-12">
                                     <li>
-                                        <p class="mb-0">
-                                            பேரவைக்கு அறவிடப்பட வேண்டிய அனைத்து வருமானங்களையும் சேகரித்தல்
+                                        <p class="mb-0">முன்நிலை பள்ளி, ஆயுர்வேத மருத்துவம், குழந்தைகள் மற்றும் தாய்மார்கள் தொடர்பான நடவடிக்கைகள்.</p>
+                                    </li>
+                                </div>
+                                <div class="col-sm-12">
+                                    <li>
+                                        <p class="mb-0">சமூக மண்டபங்களை ஏற்படுத்துதல்.
                                         </p>
                                     </li>
                                 </div>
                                 <div class="col-sm-12">
                                     <li>
-                                        <p class="mb-0">
-                                            ஒப்பந்தப்புள்ளிகளை வரவழைத்தல் மற்றும் அனைத்து கொள்முதல்களையும் செய்தல்
-                                        </p>
+                                        <p class="mb-0">பொது கிணறுகள் தொடர்பான நடவடிக்கைகள்.</p>
                                     </li>
                                 </div>
                                 <div class="col-sm-12">
                                     <li>
-                                        <p class="mb-0">
-                                            அனைத்து கட்டணத் திட்டங்கள்
-                                        </p>
+                                        <p class="mb-0">நூலக நடவடிக்கைகள்.</p>
                                     </li>
                                 </div>
                                 <div class="col-sm-12">
                                     <li>
-                                        <p class="mb-0">
-                                            வியாபாரங்களுக்கான வரிகளைத் தயாரித்தல், தயாரித்தல், வருடாந்த கணக்குகளைத் தயாரித்தல், வருடாந்த வரவு செலவுத் திட்டத்தைத் தயாரித்தல்.
-                                        </p>
+                                        <p class="mb-0">தீவன்அகற்றும் பசுக்கள் மற்றும் நாய்கள் தொடர்பான நடவடிக்கைகள்.</p>
                                     </li>
                                 </div>
                                 <div class="col-sm-12">
                                     <li>
-                                        <p class="mb-0">
-                                            வாகனங்கள் மற்றும் இயந்திரங்களின் பராமரிப்பு</p>
-                                    </li>
-                                </div>
-                                <div class="col-sm-12">
-                                    <li>
-                                        <p class="mb-0">
-                                            வாகனங்கள் மற்றும் இயந்திரங்களின் பராமரிப்பு
-                                        </p>
-                                    </li>
-                                </div>
-                                <div class="col-sm-12">
-                                    <li>
-                                        <p class="mb-0">
-                                            திட்டமிடலாளர்களைப் பதிவு செய்தல்
-                                        </p>
-                                    </li>
-                                </div>
-                                <div class="col-sm-12">
-                                    <li>
-                                        <p class="mb-0">
-                                            செய்தித்தாள் விளம்பரங்கள் மற்றும் விளம்பரங்களை வர்த்தமானியில் வெளியிடுதல்.
-                                        </p>
+                                        <p class="mb-0">அவசரகால மேலாண்மை நடவடிக்கைகள்.</p>
                                     </li>
                                 </div>
                             </div>
@@ -214,69 +187,78 @@ $current_page = basename($_SERVER['REQUEST_URI']);
             </div>
         </div>
         <!-- About End -->
+
         <!-- About Start -->
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="row g-5">
-
                     <div class="col-lg-6 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="0.3s">
                         <h1 class=" bg-white text-start pe-3">வருவாய் பிரிவு</h1>
                         <br>
-                        <ul class="custemer-bullet">
+                        <ul>
                             <div class="row gy-2 gx-4 mb-4">
                                 <div class="col-sm-12">
                                     <li>
-                                        <p class="mb-0">மதிப்பீடு மற்றும் நிலப்பரப்பு மற்றும் சபைக்கு செலுத்த வேண்டிய பிற வரிகளை வசூலித்தல்.
+                                        <p class="mb-0">
+                                            நிலவரிசை வரி மற்றும் ஏக்கர் வரி மற்றும் சபைக்குரிய பிற வரிகளின் வசூல்.
                                         </p>
                                     </li>
                                 </div>
                                 <div class="col-sm-12">
                                     <li>
-                                        <p class="mb-0">கடை வாடகை மற்றும் வீட்டு வாடகை வசூல்.</p>
-                                    </li>
-                                </div>
-                                <div class="col-sm-12">
-                                    <li>
-                                        <p class="mb-0">நியாயமான வரி விதிப்பு.
+                                        <p class="mb-0">
+                                            கடை அறைகள் மற்றும் வீடுகளின் வாடகை வசூல்.
                                         </p>
                                     </li>
                                 </div>
                                 <div class="col-sm-12">
                                     <li>
-                                        <p class="mb-0">சொத்து வரி வசூல்.
+                                        <p class="mb-0">
+                                            சந்தை வரி வசூல்.
                                         </p>
                                     </li>
                                 </div>
                                 <div class="col-sm-12">
                                     <li>
-                                        <p class="mb-0">சொத்து வரி வசூல்.
+                                        <p class="mb-0">
+                                            சொத்து வரி வசூல்.
                                         </p>
                                     </li>
                                 </div>
                                 <div class="col-sm-12">
                                     <li>
-                                        <p class="mb-0">தெரு விளக்குகளை நிறுவுதல் மற்றும் பராமரித்தல்.
+                                        <p class="mb-0">
+                                            சாலைகள் பதிவு செய்தல்.
                                         </p>
                                     </li>
                                 </div>
                                 <div class="col-sm-12">
                                     <li>
-                                        <p class="mb-0">ஆடிட்டோரியம் ஒதுக்கீடு மற்றும் தொடர்புடைய கட்டணம் வசூலிக்கப்படுகிறது.
+                                        <p class="mb-0">
+                                            தெருவிளக்கு அமைத்தல் மற்றும் பராமரித்தல்.
                                         </p>
                                     </li>
                                 </div>
                                 <div class="col-sm-12">
                                     <li>
-                                        <p class="mb-0">வர்த்தக வர்த்தகம் மற்றும் வர்த்தக உரிமக் கட்டணம்.</p>
+                                        <p class="mb-0">
+                                            கேட்போர் கூடம் ஒதுக்கீடு மற்றும் சம்பந்தப்பட்ட கட்டணங்கள் வசூல்.
+                                        </p>
+                                    </li>
+                                </div>
+                                <div class="col-sm-12">
+                                    <li>
+                                        <p class="mb-0">
+                                            வர்த்தக அலுவல்கள் மற்றும் வர்த்தக அனுமதிகள் தொடர்பான கட்டணங்கள் வசூல்.
+                                        </p>
                                     </li>
                                 </div>
                             </div>
                         </ul>
-
                     </div>
                     <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="0.1s" style="min-height: 400px;">
                         <div class="position-relative h-100">
-                            <img class="img-fluid position-absolute w-100 h-100" src="./../images/sev2.jpg" alt="Responsive Image" style="object-fit: cover;">
+                            <img class="img-fluid position-absolute w-100 h-100" src="../images/sev2.jpg" alt="Responsive Image" style="object-fit: cover;">
                         </div>
                     </div>
                 </div>
@@ -289,28 +271,34 @@ $current_page = basename($_SERVER['REQUEST_URI']);
                 <div class="row g-5">
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="0.1s" style="min-height: 400px;">
                         <div class="position-relative h-100">
-                            <img class="img-fluid position-absolute w-100 h-100" src="./../images/sev3.jpg" alt="Responsive Image" style="object-fit: cover;">
+                            <img class="img-fluid position-absolute w-100 h-100" src="../images/sev3.jpg" alt="Responsive Image" style="object-fit: cover;">
                         </div>
                     </div>
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="0.3s">
-                        <h1 class=" bg-white text-start pe-3">வளர்ச்சி பிரிவு</h1>
+                        <h1 class="bg-white text-start pe-3">மேம்பாட்டு பிரிவு</h1>
                         <br>
                         <ul>
                             <div class="row gy-2 gx-4 mb-4">
                                 <div class="col-sm-12">
                                     <li>
-                                        <p class="mb-0">ஒப்பந்ததாரர்கள் மற்றும் ஒப்பந்த சங்கங்களுடன் உடன்படிக்கைகளை மேற்கொள்வது. சாலைகள், கட்டிடங்கள், கட்டப்பட்ட நீர் மற்றும் சிறப்பு திட்டங்கள்.</p>
-                                    </li>
-                                </div>
-                                <div class="col-sm-12">
-                                    <li>
-                                        <p class="mb-0">இயந்திரங்கள் மற்றும் வாகனங்களை வாடகை அடிப்படையில் வழங்குதல்.
+                                        <p class="mb-0">
+                                            ஒப்பந்தக்காரர்களும் ஒப்பந்த சங்கங்களும் உடன்படிக்கைகள் செய்வது. சாலைகள், கட்டிடங்கள்,
+                                            &emsp; செயற்கை நீர் திட்டங்கள் மற்றும் சிறப்பு திட்டங்கள்.
                                         </p>
                                     </li>
                                 </div>
                                 <div class="col-sm-12">
                                     <li>
-                                        <p class="mb-0">பொதுமக்கள் புகார்கள்.</p>
+                                        <p class="mb-0">
+                                            இயந்திரங்கள் மற்றும் வாகனங்கள் வாடகைக்கு வழங்கல்.
+                                        </p>
+                                    </li>
+                                </div>
+                                <div class="col-sm-12">
+                                    <li>
+                                        <p class="mb-0">
+                                            பொது புகார் நடவடிக்கைகள்.
+                                        </p>
                                     </li>
                                 </div>
                             </div>
@@ -326,13 +314,15 @@ $current_page = basename($_SERVER['REQUEST_URI']);
                 <div class="row g-5">
 
                     <div class="col-lg-6 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="0.3s">
-                        <h1 class=" bg-white text-start pe-3">கணக்கு பிரிவு</h1>
+                        <h1 class="bg-white text-start pe-3">கணக்கு பிரிவு</h1>
                         <br>
                         <ul>
                             <div class="row gy-2 gx-4 mb-4">
                                 <div class="col-sm-12">
                                     <li>
-                                        <p class="mb-0">சபையின் அனைத்து கணக்கு கட்டுப்பாட்டு நடவடிக்கைகளும் மேற்கொள்ளப்படுகின்றன.</p>
+                                        <p class="mb-0">
+                                            சபையின் அனைத்து கணக்கு நிர்வாக நடவடிக்கைகளும் மேற்கொள்ளப்படும்.
+                                        </p>
                                     </li>
                                 </div>
                             </div>
@@ -341,7 +331,7 @@ $current_page = basename($_SERVER['REQUEST_URI']);
                     </div>
                     <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="0.1s" style="min-height: 400px;">
                         <div class="position-relative h-100">
-                            <img class="img-fluid position-absolute w-100 h-100" src="./../images/sev4.jpg" alt="Responsive Image" style="object-fit: cover;">
+                            <img class="img-fluid position-absolute w-100 h-100" src="../images/sev4.jpg" alt="Responsive Image" style="object-fit: cover;">
                         </div>
                     </div>
                 </div>
@@ -349,27 +339,28 @@ $current_page = basename($_SERVER['REQUEST_URI']);
         </div>
         <!-- About End -->
 
+
     </main>
 
     <footer id="footer" class="footer dark-background">
 
         <div class="container footer-top">
             <div class="row gy-4">
-            <div class="col-lg-4 col-md-6 footer-about">
-                <a href="./index.php" class="logo d-flex align-items-center">
-                  <span class="sitename">அக்மீமன <br> மாகாண சபை</span>
-                </a>
-                <div class="footer-contact pt-3">
-                <p>அக்மீமன</p>
-                  <p>பிரதேச சபை, பின்னாதுவை</p>
-                  <p class="mt-3"><strong>தொலைபேசி எண்:</strong> <span>0912222375</span></p>
-                  <p><strong>மின்னஞ்சல் முகவரி:</strong> <span>akmeemanaps@gmail.com</span></p>
+                <div class="col-lg-4 col-md-6 footer-about">
+                    <a href="./index.php" class="logo d-flex align-items-center">
+                        <span class="sitename">அக்மீமன <br> மாகாண சபை</span>
+                    </a>
+                    <div class="footer-contact pt-3">
+                        <p>அக்மீமன</p>
+                        <p>பிரதேச சபை, பின்னாதுவை</p>
+                        <p class="mt-3"><strong>தொலைபேசி எண்:</strong> <span>0912222375</span></p>
+                        <p><strong>மின்னஞ்சல் முகவரி:</strong> <span>akmeemanaps@gmail.com</span></p>
+                    </div>
+                    <div class="social-links d-flex mt-4">
+                        <a href="https://www.facebook.com/profile.php?id=61552307069235&mibextid=ZbWKwL" target="_blank" class="text-primary" style="border-color: #0d6efd;"><i class="bi bi-facebook"></i></a>
+                        <!-- <a href="https://play.google.com/store/apps/details?id=io.akva.esabha&pcampaignid=web_share" target="_blank" style="color: #0074b1;border-color:#0074b1;"><i class="bi bi-bank"></i></a> <span class="mt-2"  style="color: #0074b1;border-color:#0074b1;">eSabha App</span> -->
+                    </div>
                 </div>
-                <div class="social-links d-flex mt-4">
-                  <a href="https://www.facebook.com/profile.php?id=61552307069235&mibextid=ZbWKwL" target="_blank" class="text-primary" style="border-color: #0d6efd;"><i class="bi bi-facebook"></i></a>
-                  <!-- <a href="https://play.google.com/store/apps/details?id=io.akva.esabha&pcampaignid=web_share" target="_blank" style="color: #0074b1;border-color:#0074b1;"><i class="bi bi-bank"></i></a> <span class="mt-2"  style="color: #0074b1;border-color:#0074b1;">eSabha App</span> -->
-                </div>
-              </div>
 
                 <div class="col-lg-2"></div>
 

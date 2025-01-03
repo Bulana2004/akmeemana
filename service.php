@@ -34,71 +34,71 @@
 
 
 <?php include './config/config.php';
-$current_page = basename($_SERVER['REQUEST_URI']) ;
+$current_page = basename($_SERVER['REQUEST_URI']);
 ?>
 
 <body class="about-page">
 
-<div class="logo_section container d-flex">
-          <a href="" class="d-flex align-items-center">
+    <div class="logo_section container d-flex">
+        <a href="" class="d-flex align-items-center">
             <img src="./images/akmeemanalogo-removebg-preview.png" alt="">
             <h2 class="ms-3" class="logo_name"><b>Akmeemana</b> Pradeshiya Sabha</h2>
-          </a>
-          <div class="language_btn d-flex justify-content-end align-items-center w-100">
+        </a>
+        <div class="language_btn d-flex justify-content-end align-items-center w-100">
             <a href="./sinhala/service.php"><button class="btn">සිංහල</button></a>
             <a href="./Tamil/service.php"><button class="btn ms-3">தமிழ்</button></a>
-          </div>
         </div>
-        <header id="header" class="header shadow d-flex align-items-center sticky-top">
-          <div class="container d-flex align-items-center">
+    </div>
+    <header id="header" class="header shadow d-flex align-items-center sticky-top">
+        <div class="container d-flex align-items-center">
 
             <a href="index.html" class="logo logoAndNameFormobile d-flex align-items-center me-auto me-xl-0">
-              <!-- Uncomment the line below if you also wish to use an image logo -->
-              <img class="d-flex align-items-center" src="./images/akmeemanalogo-removebg-preview.png" alt="">
-              <h3 class="sitename"><b>Akmeemana</b> Pradeshiya Sabha</h3>
+                <!-- Uncomment the line below if you also wish to use an image logo -->
+                <img class="d-flex align-items-center" src="./images/akmeemanalogo-removebg-preview.png" alt="">
+                <h3 class="sitename"><b>Akmeemana</b> Pradeshiya Sabha</h3>
             </a>
 
             <nav id="navmenu" class="navmenu">
-              <ul>
-                <?php
-                $sql = $bdd->prepare('SELECT * FROM navbar');
-                $sql->execute();
+                <ul>
+                    <?php
+                    $sql = $bdd->prepare('SELECT * FROM navbar');
+                    $sql->execute();
 
-                while ($data = $sql->fetch()) {
-                ?>
-                  <?php
-                  if ($data[3]) {
-                    $name = explode(",", $data[1]);
-                    $link = explode(",", $data[2]);
-                    $is_activeDropdowns = in_array($current_page, $link) ? 'active' : '';
-                  ?>
-                    <li class="dropdown"><a class="<?= $is_activeDropdowns ?>" href="<?= $link[0] ?>"><span><?= $name[0] ?></span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                      <ul>
+                    while ($data = $sql->fetch()) {
+                    ?>
                         <?php
-                        for ($i = 1; $i < count($name); $i++) {
-                          $active = ($current_page == basename($link[$i])) ? 'active' : '';
+                        if ($data[3]) {
+                            $name = explode(",", $data[1]);
+                            $link = explode(",", $data[2]);
+                            $is_activeDropdowns = in_array($current_page, $link) ? 'active' : '';
                         ?>
-                          <li><a class="<?= $active ?>" href="./<?= $link[$i] ?>"><?= $name[$i] ?></a></li>
+                            <li class="dropdown"><a class="<?= $is_activeDropdowns ?>" href="<?= $link[0] ?>"><span><?= $name[0] ?></span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                                <ul>
+                                    <?php
+                                    for ($i = 1; $i < count($name); $i++) {
+                                        $active = ($current_page == basename($link[$i])) ? 'active' : '';
+                                    ?>
+                                        <li><a class="<?= $active ?>" href="./<?= $link[$i] ?>"><?= $name[$i] ?></a></li>
+                                    <?php
+                                    }
+                                    ?>
+                                </ul>
+                            </li>
+                        <?php
+                        } else {
+                            $active = ($current_page == basename($data[2])) ? 'active' : '';
+                        ?>
+                            <li><a class="<?= $active ?>" href="./<?= $data[2] ?>" class=""><?= $data[1] ?></a></li>
                         <?php
                         }
                         ?>
-                      </ul>
-                    </li>
-                  <?php
-                  } else {
-                    $active = ($current_page == basename($data[2])) ? 'active' : '';
-                  ?>
-                    <li><a class="<?= $active ?>" href="./<?= $data[2] ?>" class=""><?= $data[1] ?></a></li>
-                  <?php
-                  }
-                  ?>
-                <?php } ?>
-              </ul>
-              <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+                    <?php } ?>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
 
-          </div>
-        </header>
+        </div>
+    </header>
 
     <main class="save_main">
 
@@ -122,90 +122,58 @@ $current_page = basename($_SERVER['REQUEST_URI']) ;
                 <div class="row g-5">
                     <div class="col-lg-6 order-1 order-lg-1" data-aos="fade-up" data-aos-delay="0.1s" style="min-height: 400px;">
                         <div class="position-relative h-100">
-                            <img class="img-fluid position-absolute w-100 h-100" src="images/sev1.jpg" alt="Responsive Image" style="object-fit: cover;">
+                            <img class="img-fluid position-absolute w-100 h-100" src="./images/sev1.jpg" alt="Responsive Image" style="object-fit: cover;">
                         </div>
                     </div>
 
                     <div class="col-lg-6 order-2 order-lg-2" data-aos="fade-up" data-aos-delay="0.3s">
-                        <h1 class=" bg-white text-start pe-3">Institutions & Accounts Division</h1>
+                        <h1 class="bg-white text-start pe-3">Community and Environment Section</h1>
                         <br>
                         <ul>
                             <div class="row gy-2 gx-4 mb-4">
                                 <div class="col-sm-12">
                                     <li>
-                                        <p class="mb-0 ">
-                                            Holding council meetings, special council meetings and committee meetings and implementing such decisions.
-                                        </p>
+                                        <p class="mb-0">Issuance of environmental permits.</p>
                                     </li>
                                 </div>
                                 <div class="col-sm-12">
                                     <li>
-                                        <p class="mb-0">
-                                            Directing and controlling the Board of Directors. Giving.
-                                        </p>
+                                        <p class="mb-0">Removal of hazardous trees and providing recommendations.</p>
                                     </li>
                                 </div>
                                 <div class="col-sm-12">
                                     <li>
-                                        <p class="mb-0">
-                                            Conducting internal audit of the House
-                                        </p>
+                                        <p class="mb-0">Handling environmental complaints.</p>
                                     </li>
                                 </div>
                                 <div class="col-sm-12">
                                     <li>
-                                        <p class="mb-0">
-                                            Collection of all the revenue to be charged to the Council
-                                        </p>
+                                        <p class="mb-0">Preschools, Ayurvedic clinics, maternal and child clinic activities.</p>
                                     </li>
                                 </div>
                                 <div class="col-sm-12">
                                     <li>
-                                        <p class="mb-0">
-                                            Inviting tenders and making all purchases
-                                        </p>
+                                        <p class="mb-0">Establishment of community councils associated with community halls.</p>
                                     </li>
                                 </div>
                                 <div class="col-sm-12">
                                     <li>
-                                        <p class="mb-0">
-                                            All Payment Plans.
-                                        </p>
+                                        <p class="mb-0">Matters related to public wells.</p>
                                     </li>
                                 </div>
                                 <div class="col-sm-12">
                                     <li>
-                                        <p class="mb-0">
-                                            Maintenance of Vehicles and Machinery.
-                                        </p>
+                                        <p class="mb-0">Library-related activities.</p>
                                     </li>
                                 </div>
                                 <div class="col-sm-12">
                                     <li>
-                                        <p class="mb-0">
-                                            Preparation and preparation of taxes on businesses and preparation of annual accounts and preparation of annual budget.
-                                        </p>
+                                        <p class="mb-0">Taking necessary actions regarding stray cattle and dogs.</p>
                                     </li>
                                 </div>
                                 <div class="col-sm-12">
                                     <li>
-                                        <p class="mb-0">
-                                            Maintenance of Vehicles and Machinery
-                                        </p>
-                                    </li>
-                                </div>
-                                <div class="col-sm-12">
-                                    <li>
-                                        <p class="mb-0">
-                                            Registration of Planners
-                                        </p>
-                                    </li>
-                                </div>
-                                <div class="col-sm-12">
-                                    <li>
-                                        <p class="mb-0">
-                                            Publication of newspaper advertisements and advertisements in gazettes
-                                        </p>
+                                        <p class="mb-0">Disaster management-related activities.</p>
                                     </li>
                                 </div>
                             </div>
@@ -215,60 +183,55 @@ $current_page = basename($_SERVER['REQUEST_URI']) ;
             </div>
         </div>
         <!-- About End -->
+
         <!-- About Start -->
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="row g-5">
 
                     <div class="col-lg-6 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="0.3s">
-                        <h1 class=" bg-white text-start pe-3">Revenue Division</h1>
+                        <h1 class="bg-white text-start pe-3">Revenue Section</h1>
                         <br>
                         <ul class="custemer-bullet">
                             <div class="row gy-2 gx-4 mb-4">
                                 <div class="col-sm-12">
                                     <li>
-                                        <p class="mb-0">Collection of assessment and acreage and other taxes payable to the council.
-                                        </p>
+                                        <p class="mb-0">Collection of land tax, acreage tax, and other taxes payable to the council.</p>
                                     </li>
                                 </div>
                                 <div class="col-sm-12">
                                     <li>
-                                        <p class="mb-0">Collection of shop rent and house rent.</p>
+                                        <p class="mb-0">Collection of rent from shops and houses.</p>
                                     </li>
                                 </div>
                                 <div class="col-sm-12">
                                     <li>
-                                        <p class="mb-0">Levy of fair tax.
-                                        </p>
+                                        <p class="mb-0">Collection of market fees.</p>
                                     </li>
                                 </div>
                                 <div class="col-sm-12">
                                     <li>
-                                        <p class="mb-0">Collection of property taxes.
-                                        </p>
+                                        <p class="mb-0">Collection of property taxes.</p>
                                     </li>
                                 </div>
                                 <div class="col-sm-12">
                                     <li>
-                                        <p class="mb-0">Road registration.
-                                        </p>
+                                        <p class="mb-0">Road registration.</p>
                                     </li>
                                 </div>
                                 <div class="col-sm-12">
                                     <li>
-                                        <p class="mb-0">Installation and maintenance of street lights.
-                                        </p>
+                                        <p class="mb-0">Installation and maintenance of streetlights.</p>
                                     </li>
                                 </div>
                                 <div class="col-sm-12">
                                     <li>
-                                        <p class="mb-0">Allotment of auditorium and charging of related fees.
-                                        </p>
+                                        <p class="mb-0">Allocation of auditoriums and collection of related fees.</p>
                                     </li>
                                 </div>
                                 <div class="col-sm-12">
                                     <li>
-                                        <p class="mb-0">Levy of trade business and trade license fees.</p>
+                                        <p class="mb-0">Collection of trade business and trade license fees.</p>
                                     </li>
                                 </div>
                             </div>
@@ -277,41 +240,41 @@ $current_page = basename($_SERVER['REQUEST_URI']) ;
                     </div>
                     <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="0.1s" style="min-height: 400px;">
                         <div class="position-relative h-100">
-                            <img class="img-fluid position-absolute w-100 h-100" src="images/sev2.jpg" alt="Responsive Image" style="object-fit: cover;">
+                            <img class="img-fluid position-absolute w-100 h-100" src="./images/sev2.jpg" alt="Responsive Image" style="object-fit: cover;">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- About End -->
+
         <!-- About Start -->
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="row g-5">
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="0.1s" style="min-height: 400px;">
                         <div class="position-relative h-100">
-                            <img class="img-fluid position-absolute w-100 h-100" src="images/sev3.jpg" alt="Responsive Image" style="object-fit: cover;">
+                            <img class="img-fluid position-absolute w-100 h-100" src="./images/sev3.jpg" alt="Responsive Image" style="object-fit: cover;">
                         </div>
                     </div>
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="0.3s">
-                        <h1 class=" bg-white text-start pe-3">Development Division</h1>
+                        <h1 class="bg-white text-start pe-3">Development Section</h1>
                         <br>
                         <ul>
                             <div class="row gy-2 gx-4 mb-4">
                                 <div class="col-sm-12">
                                     <li>
-                                        <p class="mb-0">Entering into agreements with contractors and contract societies. Roads, buildings, built water and special projects.</p>
+                                        <p class="mb-0">Contract agreements with contractors and societies. Activities related to roads, buildings, water projects, and special projects.</p>
                                     </li>
                                 </div>
                                 <div class="col-sm-12">
                                     <li>
-                                        <p class="mb-0">Provision of machinery and vehicles on hire basis.
-                                        </p>
+                                        <p class="mb-0">Hiring of machinery and vehicles.</p>
                                     </li>
                                 </div>
                                 <div class="col-sm-12">
                                     <li>
-                                        <p class="mb-0">Public complaints</p>
+                                        <p class="mb-0">Handling public complaints.</p>
                                     </li>
                                 </div>
                             </div>
@@ -321,19 +284,20 @@ $current_page = basename($_SERVER['REQUEST_URI']) ;
             </div>
         </div>
         <!-- About End -->
+
         <!-- About Start -->
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="row g-5">
 
                     <div class="col-lg-6 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="0.3s">
-                        <h1 class=" bg-white text-start pe-3">Accounts Division</h1>
+                        <h1 class="bg-white text-start pe-3">Accounts Section</h1>
                         <br>
                         <ul>
                             <div class="row gy-2 gx-4 mb-4">
                                 <div class="col-sm-12">
                                     <li>
-                                        <p class="mb-0">All account control activities of the council are carried out</p>
+                                        <p class="mb-0">Management of all accounts of the council.</p>
                                     </li>
                                 </div>
                             </div>
@@ -342,13 +306,14 @@ $current_page = basename($_SERVER['REQUEST_URI']) ;
                     </div>
                     <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="0.1s" style="min-height: 400px;">
                         <div class="position-relative h-100">
-                            <img class="img-fluid position-absolute w-100 h-100" src="images/sev4.jpg" alt="Responsive Image" style="object-fit: cover;">
+                            <img class="img-fluid position-absolute w-100 h-100" src="./images/sev4.jpg" alt="Responsive Image" style="object-fit: cover;">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- About End -->
+
 
     </main>
 
@@ -356,21 +321,21 @@ $current_page = basename($_SERVER['REQUEST_URI']) ;
 
         <div class="container footer-top">
             <div class="row gy-4">
-            <div class="col-lg-4 col-md-6 footer-about">
-                <a href="./index.php" class="logo d-flex align-items-center">
-                  <span class="sitename">Akmeemana <br> Pradeshiya Sabha</span>
-                </a>
-                <div class="footer-contact pt-3">
-                  <p>Akmeemana</p>
-                  <p>Pradeshiya Sabha, Pinnaduwa</p>
-                  <p class="mt-3"><strong>Phone:</strong> <span>0912222375</span></p>
-                  <p><strong>Email:</strong> <span>akmeemanaps@gmail.com</span></p>
+                <div class="col-lg-4 col-md-6 footer-about">
+                    <a href="./index.php" class="logo d-flex align-items-center">
+                        <span class="sitename">Akmeemana <br> Pradeshiya Sabha</span>
+                    </a>
+                    <div class="footer-contact pt-3">
+                        <p>Akmeemana</p>
+                        <p>Pradeshiya Sabha, Pinnaduwa</p>
+                        <p class="mt-3"><strong>Phone:</strong> <span>0912222375</span></p>
+                        <p><strong>Email:</strong> <span>akmeemanaps@gmail.com</span></p>
+                    </div>
+                    <div class="social-links d-flex mt-4">
+                        <a href="https://www.facebook.com/profile.php?id=61552307069235&mibextid=ZbWKwL" target="_blank" class="text-primary" style="border-color: #0d6efd;"><i class="bi bi-facebook"></i></a>
+                        <!-- <a href="https://play.google.com/store/apps/details?id=io.akva.esabha&pcampaignid=web_share" target="_blank" style="color: #0074b1;border-color:#0074b1;"><i class="bi bi-bank"></i></a> <span class="mt-2"  style="color: #0074b1;border-color:#0074b1;">eSabha App</span> -->
+                    </div>
                 </div>
-                <div class="social-links d-flex mt-4">
-                  <a href="https://www.facebook.com/profile.php?id=61552307069235&mibextid=ZbWKwL" target="_blank" class="text-primary" style="border-color: #0d6efd;"><i class="bi bi-facebook"></i></a>
-                  <!-- <a href="https://play.google.com/store/apps/details?id=io.akva.esabha&pcampaignid=web_share" target="_blank" style="color: #0074b1;border-color:#0074b1;"><i class="bi bi-bank"></i></a> <span class="mt-2"  style="color: #0074b1;border-color:#0074b1;">eSabha App</span> -->
-                </div>
-              </div>
 
                 <div class="col-lg-2"></div>
 
