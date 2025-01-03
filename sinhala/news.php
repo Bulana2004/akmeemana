@@ -29,7 +29,7 @@
 
   <style>
     html {
-      scroll-padding-top: 240px;
+      scroll-padding-top: 200px;
       scroll-behavior: smooth;
     }
   </style>

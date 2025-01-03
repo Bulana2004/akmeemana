@@ -203,7 +203,7 @@
                     <div class="col-lg-6">
 
                       <?php
-                      $sql = $bdd->prepare("SELECT * FROM tam_news ORDER BY id DESC LIMIT 1");
+                      $sql = $bdd->prepare("SELECT * FROM tam_news ORDER BY date DESC LIMIT 1");
                       $sql->execute();
                       while ($data = $sql->fetch()) {
                         $img = explode(',', $data[1]);
@@ -218,7 +218,7 @@
                       <?php } ?>
 
                       <?php
-                      $sql = $bdd->prepare("SELECT * FROM tam_news ORDER BY id DESC LIMIT 1, 2");
+                      $sql = $bdd->prepare("SELECT * FROM tam_news ORDER BY date DESC LIMIT 1, 2");
                       $sql->execute();
 
                       while ($data = $sql->fetch()) {
@@ -238,7 +238,7 @@
                         <div class="col-lg-1"></div>
                         <div class="col-lg-10 border-start custom-border">
                           <?php
-                          $sql = $bdd->prepare("SELECT * FROM tam_news ORDER BY id DESC LIMIT 3, 3");
+                          $sql = $bdd->prepare("SELECT * FROM tam_news ORDER BY date DESC LIMIT 3, 3");
                           $sql->execute();
                           while ($data = $sql->fetch()) {
                             $img = explode(",", $data[1]);
@@ -271,7 +271,7 @@
                 </div>
 
                 <?php
-                $sql = $bdd->prepare("SELECT * FROM tam_tenders ORDER BY id DESC LIMIT 5");
+                $sql = $bdd->prepare("SELECT * FROM tam_tenders ORDER BY date DESC LIMIT 5");
                 $sql->execute();
 
                 while ($data = $sql->fetch()) {
