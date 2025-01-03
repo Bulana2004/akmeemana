@@ -265,6 +265,80 @@ $current_page = basename($_SERVER['REQUEST_URI']);
             </div>
         </div>
         <!-- About End -->
+        <!-- About Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="0.1s" style="min-height: 400px;">
+                        <div class="position-relative h-100">
+                            <img class="img-fluid position-absolute w-100 h-100" src="../images/sev3.jpg" alt="Responsive Image" style="object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="0.3s">
+                        <h1 class="bg-white text-start pe-3">மேம்பாட்டு பிரிவு</h1>
+                        <br>
+                        <ul>
+                            <div class="row gy-2 gx-4 mb-4">
+                                <div class="col-sm-12">
+                                    <li>
+                                        <p class="mb-0">
+                                            ஒப்பந்தக்காரர்களும் ஒப்பந்த சங்கங்களும் உடன்படிக்கைகள் செய்வது. சாலைகள், கட்டிடங்கள்,
+                                            &emsp; செயற்கை நீர் திட்டங்கள் மற்றும் சிறப்பு திட்டங்கள்.
+                                        </p>
+                                    </li>
+                                </div>
+                                <div class="col-sm-12">
+                                    <li>
+                                        <p class="mb-0">
+                                            இயந்திரங்கள் மற்றும் வாகனங்கள் வாடகைக்கு வழங்கல்.
+                                        </p>
+                                    </li>
+                                </div>
+                                <div class="col-sm-12">
+                                    <li>
+                                        <p class="mb-0">
+                                            பொது புகார் நடவடிக்கைகள்.
+                                        </p>
+                                    </li>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+        <!-- About Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5">
+
+                    <div class="col-lg-6 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="0.3s">
+                        <h1 class="bg-white text-start pe-3">கணக்கு பிரிவு</h1>
+                        <br>
+                        <ul>
+                            <div class="row gy-2 gx-4 mb-4">
+                                <div class="col-sm-12">
+                                    <li>
+                                        <p class="mb-0">
+                                            சபையின் அனைத்து கணக்கு நிர்வாக நடவடிக்கைகளும் மேற்கொள்ளப்படும்.
+                                        </p>
+                                    </li>
+                                </div>
+                            </div>
+                        </ul>
+
+                    </div>
+                    <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="0.1s" style="min-height: 400px;">
+                        <div class="position-relative h-100">
+                            <img class="img-fluid position-absolute w-100 h-100" src="../images/sev4.jpg" alt="Responsive Image" style="object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
 
     </main>
 

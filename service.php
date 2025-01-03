@@ -122,7 +122,7 @@ $current_page = basename($_SERVER['REQUEST_URI']);
                 <div class="row g-5">
                     <div class="col-lg-6 order-1 order-lg-1" data-aos="fade-up" data-aos-delay="0.1s" style="min-height: 400px;">
                         <div class="position-relative h-100">
-                            <img class="img-fluid position-absolute w-100 h-100" src="../images/sev1.jpg" alt="Responsive Image" style="object-fit: cover;">
+                            <img class="img-fluid position-absolute w-100 h-100" src="./images/sev1.jpg" alt="Responsive Image" style="object-fit: cover;">
                         </div>
                     </div>
 
@@ -240,7 +240,7 @@ $current_page = basename($_SERVER['REQUEST_URI']);
                     </div>
                     <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="0.1s" style="min-height: 400px;">
                         <div class="position-relative h-100">
-                            <img class="img-fluid position-absolute w-100 h-100" src="../images/sev2.jpg" alt="Responsive Image" style="object-fit: cover;">
+                            <img class="img-fluid position-absolute w-100 h-100" src="./images/sev2.jpg" alt="Responsive Image" style="object-fit: cover;">
                         </div>
                     </div>
                 </div>
@@ -254,7 +254,7 @@ $current_page = basename($_SERVER['REQUEST_URI']);
                 <div class="row g-5">
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="0.1s" style="min-height: 400px;">
                         <div class="position-relative h-100">
-                            <img class="img-fluid position-absolute w-100 h-100" src="../images/sev3.jpg" alt="Responsive Image" style="object-fit: cover;">
+                            <img class="img-fluid position-absolute w-100 h-100" src="./images/sev3.jpg" alt="Responsive Image" style="object-fit: cover;">
                         </div>
                     </div>
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="0.3s">
@@ -306,7 +306,7 @@ $current_page = basename($_SERVER['REQUEST_URI']);
                     </div>
                     <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="0.1s" style="min-height: 400px;">
                         <div class="position-relative h-100">
-                            <img class="img-fluid position-absolute w-100 h-100" src="../images/sev4.jpg" alt="Responsive Image" style="object-fit: cover;">
+                            <img class="img-fluid position-absolute w-100 h-100" src="./images/sev4.jpg" alt="Responsive Image" style="object-fit: cover;">
                         </div>
                     </div>
                 </div>
