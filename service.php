@@ -332,7 +332,7 @@ $current_page = basename($_SERVER['REQUEST_URI']);
                         <p><strong>Email:</strong> <span>akmeemanaps@gmail.com</span></p>
                     </div>
                     <div class="social-links d-flex mt-4">
-                        <a href="https://www.facebook.com/profile.php?id=61552307069235&mibextid=ZbWKwL" target="_blank" class="text-primary" style="border-color: #0d6efd;"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.facebook.com/akmeemanaps" target="_blank" class="text-primary" style="border-color: #0d6efd;"><i class="bi bi-facebook"></i></a>
                         <!-- <a href="https://play.google.com/store/apps/details?id=io.akva.esabha&pcampaignid=web_share" target="_blank" style="color: #0074b1;border-color:#0074b1;"><i class="bi bi-bank"></i></a> <span class="mt-2"  style="color: #0074b1;border-color:#0074b1;">eSabha App</span> -->
                     </div>
                 </div>
