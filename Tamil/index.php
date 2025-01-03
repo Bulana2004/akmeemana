@@ -192,8 +192,8 @@
                 <!-- Section Title -->
                 <div class="container section-title" data-aos="fade-up">
                   <div class="section-title-container d-flex align-items-center justify-content-between">
-                    <h3 style="letter-spacing: 2px;">News</h3>
-                    <p><a href="./news.php">See All News</a></p>
+                    <h3 style="letter-spacing: 2px;">செய்தி</h3>
+                    <p><a href="./news.php">அனைத்து செய்திகளையும் பார்க்கவும்</a></p>
                   </div>
                 </div><!-- End Section Title -->
 
@@ -265,8 +265,8 @@
               <div class="col-lg-4">
                 <div class="container section-title" data-aos="fade-up">
                   <div class="section-title-container d-flex align-items-center justify-content-between">
-                    <h3 style="letter-spacing: 2px;">Tender</h3>
-                    <p><a href="./tenders.php">See All Tender</a></p>
+                    <h3 style="letter-spacing: 2px;">டெண்டர்</h3>
+                    <p><a href="./tenders.php">அனைத்து டெண்டரையும் பார்க்கவும்</a></p>
                   </div>
                 </div>
 
@@ -281,8 +281,8 @@
                     <div class="post-meta"><span class="mx-1">•</span><?= $data[3] ?></span></div>
                     <h2 class="mb-2"><a href="./tenders.php#<?= $Id ?>"><?= $data[2] ?></a></h2>
                     <div class="text-end">
-                      <button class="btn mb-2 rounded-5" style="background-color: #4a0d0d; color: white;">
-                        <a href="./../controllers/assets/files/tenders/<?= $data[1] ?>" target="_blank" style="color: white;">Download</a>
+                      <button class="btn mb-2 rounded-5" style="background-color: #00506f; color: white;">
+                        <a href="./../controllers/assets/files/tenders/<?= $data[1] ?>" target="_blank" style="color: white;">பதிவிறக்கவும்</a>
                       </button>
                     </div>
                   </div>

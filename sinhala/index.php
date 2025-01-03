@@ -281,8 +281,8 @@
                     <div class="post-meta"><span class="mx-1">•</span><?= $data[3] ?></span></div>
                     <h2 class="mb-2"><a href="./tenders.php#<?= $Id ?>"><?= $data[2] ?></a></h2>
                     <div class="text-end">
-                      <button class="btn mb-2 rounded-5" style="background-color: #4a0d0d; color: white;">
-                        <a href="./../controllers/assets/files/tenders/<?= $data[1] ?>" target="_blank" style="color: white;">බාගන්න</a>
+                      <button class="btn mb-2 rounded-5" style="background-color: #00506f; color: white;">
+                        <a href="./../controllers/assets/files/tenders/<?= $data[1] ?>" target="_blank" style="color: white;">බාගත කරන්න</a>
                       </button>
                     </div>
                   </div>
