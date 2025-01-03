@@ -2534,3 +2534,11 @@ section,
     margin-top: 30px;
   }
 }
+
+.table_head_font_publication{
+  font-size: 20px;
+}
+
+.table_body_font_publication{
+  font-size: 17px;
+}

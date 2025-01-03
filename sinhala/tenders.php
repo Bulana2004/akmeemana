@@ -122,7 +122,7 @@ $current_page = basename($_SERVER['REQUEST_URI']) ;
     <div class="container mb-5 mt-5">
       <div class="accordion accordion-flush" id="accordionFlushExample">
         <?php
-        $sql = $bdd->prepare('SELECT * FROM sin_tenders ORDER BY id DESC');
+        $sql = $bdd->prepare('SELECT * FROM sin_tenders ORDER BY date DESC');
         $sql->execute();
 
         while ($data = $sql->fetch()) {

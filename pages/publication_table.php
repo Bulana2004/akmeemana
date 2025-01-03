@@ -35,7 +35,7 @@ if($year == 'all'){
 ?>
 <table class="table align-middle mb-0 bg-white">
   <thead class="bg-light">
-    <tr>
+    <tr class="table_head_font_publication">
       <th>Year</th>
       <th>Section</th>
       <th>Description</th>
@@ -47,7 +47,7 @@ if($year == 'all'){
     <?php
       while($data = $sql -> fetch()){
     ?>
-    <tr>
+    <tr class="table_body_font_publication">
       <td>
         <div class="d-flex align-items-center">
           <?= $data[1] ?>
