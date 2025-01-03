@@ -120,7 +120,7 @@ $current_page = basename($_SERVER['REQUEST_URI']);
                             class="booking_image d-block mx-auto mb-4 mt-3 "></div>
                         <h3 class="mb-2">Crematorium Booking</h3>
                         <hr>
-                        <a href="https://psmis.lk/crbooksel.php?vals=FH61965HBGD" target="_blank"><button class="btn btn-primary mt-2">Book Now</button></a>
+                        <a href="https://psmis.lk/crbooksel.php?vals=1aH107406HBGD" target="_blank"><button class="btn btn-primary mt-2">Book Now</button></a>
                     </div>
                 </div>
             </div>
