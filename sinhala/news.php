@@ -145,11 +145,11 @@ $current_page = basename($_SERVER['REQUEST_URI']);
                 <div id="<?= $carouselId ?>" class="carousel slide" data-bs-ride="carousel">
                   <div class="carousel-inner">
                     <div class="carousel-item active">
-                      <img src="./../controllers/assets/img/news/<?= $img[0] ?>" class="d-block w-100" alt="...">
+                      <img src="./../controllers/assets/img/news/<?= $img[0] ?>" class="d-block w-100 carousel_for_news" alt="...">
                     </div>
                     <?php for ($i = 1; $i < count($img); $i++) { ?>
                       <div class="carousel-item">
-                        <img src="./../controllers/assets/img/news/<?= $img[$i] ?>" class="d-block w-100" alt="...">
+                        <img src="./../controllers/assets/img/news/<?= $img[$i] ?>" class="d-block w-100 carousel_for_news" alt="...">
                       </div>
                     <?php } ?>
                   </div>
@@ -178,11 +178,11 @@ $current_page = basename($_SERVER['REQUEST_URI']);
                 <div id="<?= $carouselId ?>" class="carousel slide" data-bs-ride="carousel">
                   <div class="carousel-inner">
                     <div class="carousel-item active">
-                      <img src="./../controllers/assets/img/news/<?= $img[0] ?>" class="d-block w-100" alt="...">
+                      <img src="./../controllers/assets/img/news/<?= $img[0] ?>" class="d-block w-100 carousel_for_news" alt="...">
                     </div>
                     <?php for ($i = 1; $i < count($img); $i++) { ?>
                       <div class="carousel-item">
-                        <img src="./../controllers/assets/img/news/<?= $img[$i] ?>" class="d-block w-100" alt="...">
+                        <img src="./../controllers/assets/img/news/<?= $img[$i] ?>" class="d-block w-100 carousel_for_news" alt="...">
                       </div>
                     <?php } ?>
                   </div>
