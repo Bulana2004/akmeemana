@@ -53,7 +53,7 @@ $current_page = basename($_SERVER['REQUEST_URI']);
 
       <a href="index.html" class="logo logoAndNameFormobile d-flex align-items-center me-auto me-xl-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img class="d-flex align-items-center" src="./images/akmeemanalogo-removebg-preview.png" alt="">
+        <img class="d-flex align-items-center" src="./../images/akmeemanalogo-removebg-preview.png" alt="">
         <h3 class="sitename"><b>අක්මීමන</b>ප්‍රාදේශීය සභාව</h3>
       </a>
 
