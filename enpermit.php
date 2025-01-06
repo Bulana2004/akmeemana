@@ -4,7 +4,7 @@
       <head>
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <title>Publication</title>
+        <title>Permit</title>
         <meta name="description" content="">
         <meta name="keywords" content="">
 
@@ -75,8 +75,8 @@
             <h2 class="ms-3" class="logo_name"><b>Akmeemana</b> Pradeshiya Sabha</h2>
           </a>
           <div class="language_btn d-flex justify-content-end align-items-center w-100">
-            <a href="./sinhala/publication.php"><button class="btn">සිංහල</button></a>
-            <a href="./Tamil/publication.php"><button class="btn ms-3">தமிழ்</button></a>
+            <a href="./sinhala/enpermit.php"><button class="btn">සිංහල</button></a>
+            <a href="./Tamil/enpermit.php"><button class="btn ms-3">தமிழ்</button></a>
           </div>
         </div>
         <header id="header" class="header shadow d-flex align-items-center sticky-top">
@@ -144,8 +144,8 @@
           </div>
                   
             <div class="container">
-                <div>
-                    
+                <div class="exelsheet">
+                    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSkEQI768tOedEQuHHaox5hA9vDHriDG6Bo9I2LEYrGOZMadGQo15htbt6dN9iEu_oOJ0vD-0WxyWEs/pubhtml?gid=344634007&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
                 </div>
             </div>
 
