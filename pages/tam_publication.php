@@ -65,9 +65,9 @@ if($year == 'all'){
         <?= $data[5] ?>
       </td>
       <td>
-        <a href="./controllers/assets/files/publication/<?= $data[3] ?>" target="_blank">
+        <a href="./../controllers/assets/files/publication/<?= $data[3] ?>" target="_blank">
           <button type="button" class="btn btn-link btn-sm btn-rounded">
-            Download
+            பதிவிறக்கவும்
           </button>
         </a>
       </td>
