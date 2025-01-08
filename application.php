@@ -128,6 +128,30 @@
                   </div>
                 </div>
               </div>
+              <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item text-center pt-3">
+                  <div class="p-1">
+                    <a href="./pdf/parisara balapthraya.pdf" target="_blank">
+                      <h5 class="mb-3">
+                        Environmental Protection Permit
+                      </h5>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item text-center pt-3">
+                  <div class="p-1">
+                    <a href="./pdf/parisara balapthraya.pdf" target="_blank">
+                      <h5 class="mb-3">
+                        Renewal of Environmental Protection Permit
+                      </h5>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
