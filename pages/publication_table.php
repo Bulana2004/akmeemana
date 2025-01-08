@@ -66,7 +66,7 @@ if($year == 'all'){
       </td>
       <td>
         <a href="./controllers/assets/files/publication/<?= $data[3] ?>" target="_blank">
-          <button type="button" class="btn btn-link btn-sm btn-rounded">
+          <button type="button" class="btn btn-primary btn-sm btn-rounded">
             Download
           </button>
         </a>

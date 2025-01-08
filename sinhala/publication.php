@@ -145,9 +145,6 @@ $current_page = basename($_SERVER['REQUEST_URI']);
             <?php } ?>
           </select>
         </div>
-        <div class="col-lg-2">
-          <button class="btn btn-primary align-item-center mt-4" onclick="okbutton()">තෝරන්න</button>
-        </div>
       </div>
 
       <div id="table_output"></div>
@@ -426,7 +423,7 @@ $current_page = basename($_SERVER['REQUEST_URI']);
       })
     });
 
-    function okbutton() {
+    $("#all-years, #section").change(function (){
       var year = $("#all-years").val();
       var section = $("#section").val();
       var vals = [year, section];
@@ -441,7 +438,7 @@ $current_page = basename($_SERVER['REQUEST_URI']);
           $("#table_output").html(responce);
         }
       });
-    }
+    });
   </script>
 
 </body>

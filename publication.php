@@ -176,9 +176,6 @@
                   <?php } ?>
                 </select>
               </div>
-              <div class="col-lg-1">
-                <button class="btn btn-primary align-item-center mt-4" onclick="okbutton()">OK</button>
-              </div>
             </div>
 
             <div id="table_output"></div>
@@ -454,7 +451,7 @@
             })
           });
 
-          function okbutton() {
+          $("#all-years, #section").change(function() {
             var year = $("#all-years").val();
             var section = $("#section").val();
             var vals = [year, section];
@@ -469,7 +466,7 @@
                 $("#table_output").html(responce);
               }
             });
-          }
+          });
         </script>
 
       </body>
