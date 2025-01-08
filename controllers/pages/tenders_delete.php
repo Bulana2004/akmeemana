@@ -9,7 +9,7 @@ $sql -> execute([
 ]);
 $data = $sql -> fetch();
 
-$filePath = "../controllers/assets/files/tenders/" . $data[1];
+$filePath = "../assets/files/tenders/" . $data[1];
 // echo $filePath;
 
     // Delete the image file from the folder
