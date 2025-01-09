@@ -4,7 +4,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $name = htmlspecialchars($_POST['name']);
     $phoneNumber = $_POST['phonenumber'];
     $email = htmlspecialchars($_POST['email']);
-    $subject = "Message From Akmeemanaps.lk Website";
+    $subject = "Message From Website";
     $message = $_POST['message'];
 
     $fullMessage = "Name: $name\nEmail: $email\nPhone Number: $phoneNumber\n\n$message";
