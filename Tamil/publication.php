@@ -161,7 +161,7 @@
                   <?php } ?>
                 </select>
               </div>
-              <div class="col-lg-2">
+              <div class="col-lg-3">
                 <label for="section">பகுதி</label>
                 <select name="" class="form-control border-dark alighn-item-center" id="section">
                   <option value="all">எல்லாம்</option>

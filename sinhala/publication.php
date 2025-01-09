@@ -130,7 +130,7 @@ $current_page = basename($_SERVER['REQUEST_URI']);
             <?php } ?>
           </select>
         </div>
-        <div class="col-lg-2">
+        <div class="col-lg-3">
           <label for="section">කොටස</label>
           <select name="" class="form-control border-dark alighn-item-center" id="section">
             <option value="all">සියල්ල</option>

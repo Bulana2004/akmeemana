@@ -370,7 +370,7 @@ h6 {
 
 /* Navmenu - Mobile */
 @media (max-width: 1199px) {
-  .logo_section a img, h2 {
+  #hidden_in_mobile{
     display: none !important;
   }
 

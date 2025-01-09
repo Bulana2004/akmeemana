@@ -39,7 +39,7 @@
       <body class="index-page">
 
         <div class="logo_section container d-flex">
-          <a href="" class="d-flex align-items-center">
+          <a id="hidden_in_mobile"  href="" class="d-flex align-items-center">
             <img src="./images/akmeemanalogo-removebg-preview.png" alt="">
             <h2 class="ms-3" class="logo_name"><b>Akmeemana</b> Pradeshiya Sabha</h2>
           </a>
