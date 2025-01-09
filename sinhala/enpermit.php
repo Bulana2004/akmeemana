@@ -39,7 +39,7 @@ $current_page = basename($_SERVER['REQUEST_URI']);
 <body class="about-page">
 
     <div class="logo_section container d-flex">
-        <a href="" class="d-flex align-items-center">
+        <a id="hidden_in_mobile" href="" class="d-flex align-items-center">
             <img src="../images/akmeemanalogo-removebg-preview.png" alt="">
             <h2 class="ms-3" class="logo_name"><b>අක්මීමන</b> ප්‍රාදේශීය සභාව</h2>
         </a>
