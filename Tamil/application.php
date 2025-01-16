@@ -153,6 +153,55 @@
 </div>
 </div>
 
+<div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item text-center pt-3">
+                  <div class="p-1">
+                    <a href="../pdf/NBRO 2.pdf" target="_blank">
+                      <h5 class="mb-3">
+                        NBRO (கட்டிடங்கள்)
+                      </h5>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item text-center pt-3">
+                  <div class="p-1">
+                    <a href="../pdf/NBRO 1.pdf" target="_blank">
+                      <h5 class="mb-3">
+                        NBRO (நிலம்)
+                      </h5>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item text-center pt-3">
+                  <div class="p-1">
+                    <a href="../pdf/depAla.pdf" target="_blank">
+                      <h5 class="mb-3">
+                        சொத்து உரிமைச் சான்றிதழ்
+                      </h5>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item text-center pt-3">
+                  <div class="p-1">
+                    <a href="../pdf/AT Form.pdf" target="_blank">
+                      <h5 class="mb-3">
+                        AT Form
+                      </h5>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+
             </div>
           </div>
         </div>

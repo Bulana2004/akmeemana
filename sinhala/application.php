@@ -151,6 +151,55 @@ $current_page = basename($_SERVER['REQUEST_URI']);
   </div>
 </div>
 </div>
+
+<div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item text-center pt-3">
+                  <div class="p-1">
+                    <a href="../pdf/NBRO 2.pdf" target="_blank">
+                      <h5 class="mb-3">
+                        NBRO (ගොඩනැගිලි)
+                      </h5>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item text-center pt-3">
+                  <div class="p-1">
+                    <a href="../pdf/NBRO 1.pdf" target="_blank">
+                      <h5 class="mb-3">
+                        NBRO (ඉඩම)
+                      </h5>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item text-center pt-3">
+                  <div class="p-1">
+                    <a href="../pdf/depAla.pdf" target="_blank">
+                      <h5 class="mb-3">
+                        දේපල හිමිකම් සහතිකය
+                      </h5>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item text-center pt-3">
+                  <div class="p-1">
+                    <a href="../pdf/AT Form.pdf" target="_blank">
+                      <h5 class="mb-3">
+                        AT Form
+                      </h5>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
         </div>
       </div>
     </div>
